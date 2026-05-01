@@ -1,0 +1,35 @@
+{
+  "task_id": "ClassEval_7",
+  "class_name": "BalancedBrackets",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 15.5,
+  "gen_cost_usd": 0.024071750000000003,
+  "gen_session_id": "8f4ca9ba-cd1e-4457-befe-ece641e9d12e",
+  "wall_time_s": 15.5,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "BalancedBracketsTestClearExpr": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BalancedBracketsTestCheckBalancedBrackets": {
+        "passed": true,
+        "error": "",
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

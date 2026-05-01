@@ -1,0 +1,63 @@
+{
+  "task_id": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 140.5,
+  "gen_cost_usd": 0.21582055,
+  "gen_session_id": "4c3afda7-1200-4da2-8604-170c3ea1848a",
+  "wall_time_s": 140.5,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 6,
+    "method_total": 6,
+    "method_results": {
+      "CalendarTestAddEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestRemoveEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestIsAvailable": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetAvailableSlots": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetUpcomingEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

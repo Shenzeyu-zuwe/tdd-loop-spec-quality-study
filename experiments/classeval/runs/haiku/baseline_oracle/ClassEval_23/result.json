@@ -1,0 +1,56 @@
+{
+  "task_id": "ClassEval_23",
+  "class_name": "CombinationCalculator",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 42.6,
+  "gen_cost_usd": 0.053173250000000005,
+  "gen_session_id": "10b53b21-d349-4872-b86d-2a79ca28142a",
+  "wall_time_s": 42.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "CombinationCalculatorTestCount": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestCountAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelect": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelectAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelect2": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

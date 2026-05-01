@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_15",
+  "class_name": "BoyerMooreSearch",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 45.6,
+  "gen_cost_usd": 0.057163500000000006,
+  "gen_session_id": "d1179921-b97e-48b9-83bb-59fe80347dd4",
+  "wall_time_s": 45.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "BoyerMooreSearchTestMatchInPattern": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestMismatchInText": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestBadCharacterHeuristic": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

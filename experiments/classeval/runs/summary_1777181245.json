@@ -1,0 +1,762 @@
+{
+  "configs": [
+    "baseline",
+    "tdd_loop"
+  ],
+  "models": [
+    "haiku"
+  ],
+  "tasks": [
+    "ClassEval_23",
+    "ClassEval_24",
+    "ClassEval_25",
+    "ClassEval_26",
+    "ClassEval_27",
+    "ClassEval_28",
+    "ClassEval_29"
+  ],
+  "results": [
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 17.4,
+      "gen_cost_usd": 0.057728,
+      "gen_session_id": "f790e310-d185-4461-92ed-4bcfcd7bd8e2",
+      "wall_time_s": 17.5,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 4,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": false,
+            "error": "=================\nFAIL: test_count_all_3 (_sol.CombinationCalculatorTestCountAll.test_count_all_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 9, in test_count_all_3\nAssertionError: inf != False\n\n======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: 9223372036854775807 != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=3)\n",
+            "tests_run": 5,
+            "failures": 3,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 454.6,
+      "gen_cost_usd": 0.753551,
+      "gen_session_count": 33,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 5,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 5,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 454.6,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 4,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": false,
+            "error": "=================\nFAIL: test_count_all_3 (_sol.CombinationCalculatorTestCountAll.test_count_all_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 9, in test_count_all_3\nAssertionError: inf != False\n\n======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: 9223372036854775807 != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=3)\n",
+            "tests_run": 5,
+            "failures": 3,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 11.3,
+      "gen_cost_usd": 0.0209325,
+      "gen_session_id": "298db560-b974-4489-a52d-078dee65b595",
+      "wall_time_s": 11.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 358.9,
+      "gen_cost_usd": 0.585188,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 358.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 10.6,
+      "gen_cost_usd": 0.020915250000000003,
+      "gen_session_id": "17136976-699b-41bd-a54a-b12ef6327bf3",
+      "wall_time_s": 10.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 282.8,
+      "gen_cost_usd": 0.477652,
+      "gen_session_count": 21,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 282.8,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": false,
+            "error": "es.test_load_cookies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 31, in test_load_cookies_5\nAssertionError: {'cookies': {'key1': 'value1', 'key2': 'val[203 chars]10'}} != {'key1': 'value1', 'key2': 'value2'}\n- {'cookies': {'key1': 'value1', 'key2': 'value2'},\n? ------------                                    -\n\n+ {'key1': 'value1', 'key2': 'value2'}\n-  'cookies2': {'key3': 'value3', 'key4': 'value4'},\n-  'cookies3': {'key5': 'value5', 'key6': 'value6'},\n-  'cookies4': {'key7': 'value7', 'key8': 'value8'},\n-  'cookies5': {'key10': 'value10', 'key9': 'value9'}}\n\n----------------------------------------------------------------------\nRan 6 tests in 0.012s\n\nFAILED (failures=5, errors=1)\n",
+            "tests_run": 6,
+            "failures": 5,
+            "errors": 1
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 25.3,
+      "gen_cost_usd": 0.037157249999999996,
+      "gen_session_id": "c3ffe8e0-c964-4999-9b95-2d0a2d53c6ec",
+      "wall_time_s": 25.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.011s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "error",
+      "gen_duration_s": 785.1,
+      "gen_cost_usd": 1.069153,
+      "gen_session_count": 33,
+      "gen_iterations": 8,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 4,
+        "tests_failed": 1,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 785.1,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "03 [INFO]   Progress: [████████████████████████▓▓▓▓▓▓] 80% (4/5 passed, 1 failed, 0 pending, 0 skipped)\n2026-04-26 13:01:56,103 [WARNING] No actionable features remaining\n2026-04-26 13:01:56,103 [WARNING] \nMax iterations reached (15), 13m4s\n2026-04-26 13:01:56,106 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_26\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 20.3,
+      "gen_cost_usd": 0.029821249999999997,
+      "gen_session_id": "a8a7dbcf-aac4-4889-8d89-dd5e7774104b",
+      "wall_time_s": 20.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 3,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_convert_6 (_sol.CurrencyConverterTestConvert.test_convert_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 29, in test_convert_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\baseline\\ClassEval_27\\solution.py\", line 31, in convert\n    amount_in_usd = amount / self.rates[from_currency]\n                             ~~~~~~~~~~^^^^^^^^^^^^^^^\nKeyError: '???'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 1
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 481.1,
+      "gen_cost_usd": 0.725375,
+      "gen_session_count": 30,
+      "gen_iterations": 5,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 481.1,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_convert_6 (_sol.CurrencyConverterTestConvert.test_convert_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 29, in test_convert_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_27\\solution.py\", line 33, in convert\n    return amount * self.rates[to_currency] / self.rates[from_currency]\n                                              ~~~~~~~~~~^^^^^^^^^^^^^^^\nKeyError: '???'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 1
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": false,
+            "error": "======================================================================\nFAIL: test_update_currency_rate_6 (_sol.CurrencyConverterTestUpdateCurrencyRate.test_update_currency_rate_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestUpdateCurrencyRate>\", line 30, in test_update_currency_rate_6\nAssertionError: \"self.rates['???'] = 7.18\" is not false\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (failures=1)\n",
+            "tests_run": 6,
+            "failures": 1,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 48.2,
+      "gen_cost_usd": 0.06078575,
+      "gen_session_id": "8b213e3e-43d7-4035-a8c1-4950e82e0a42",
+      "wall_time_s": 48.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 692.6,
+      "gen_cost_usd": 0.965221,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 692.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "baseline",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 16.2,
+      "gen_cost_usd": 0.025473750000000003,
+      "gen_session_id": "d9605928-b1e2-435f-8e54-ed9bb4cbdccd",
+      "wall_time_s": 16.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "tdd_loop",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 266.2,
+      "gen_cost_usd": 0.437669,
+      "gen_session_count": 21,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 266.2,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 1,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": false,
+            "error": "sertionError: '4.17' != 4.17\n\n======================================================================\nFAIL: test_mean_4 (_sol.DataStatisticsTestMean.test_mean_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMean>\", line 20, in test_mean_4\nAssertionError: '4.71' != 4.71\n\n======================================================================\nFAIL: test_mean_5 (_sol.DataStatisticsTestMean.test_mean_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMean>\", line 25, in test_mean_5\nAssertionError: '5.25' != 5.25\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": false,
+            "error": "4.50' != 4.5\n\n======================================================================\nFAIL: test_median_4 (_sol.DataStatisticsTestMedian.test_median_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMedian>\", line 20, in test_median_4\nAssertionError: '5.00' != 5\n\n======================================================================\nFAIL: test_median_5 (_sol.DataStatisticsTestMedian.test_median_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMedian>\", line 25, in test_median_5\nAssertionError: '5.50' != 5.5\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    }
+  ]
+}

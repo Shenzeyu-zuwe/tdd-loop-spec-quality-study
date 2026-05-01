@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_20",
+  "class_name": "Chat",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 27.4,
+  "gen_cost_usd": 0.03452025,
+  "gen_session_id": "0562ea77-b05a-425d-a212-008b650a7df9",
+  "wall_time_s": 27.4,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "ChatTestAddUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ChatTestRemoveUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ChatTestSendMessage": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ChatTestGetMessages": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

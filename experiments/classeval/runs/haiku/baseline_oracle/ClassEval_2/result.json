@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_2",
+  "class_name": "ArgumentParser",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 80.6,
+  "gen_cost_usd": 0.06662825,
+  "gen_session_id": "fd5af597-5405-4c37-a9aa-2b0a4364a022",
+  "wall_time_s": 80.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "ArgumentParserTestParseArguments": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestGetArgument": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestAddArgument": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestConvertType": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_12",
+  "class_name": "BlackjackGame",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 9.1,
+  "gen_cost_usd": 0.0390198,
+  "gen_session_id": "db6232f1-e5a2-47e8-934c-ec1c9a290db4",
+  "wall_time_s": 9.1,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 3,
+    "method_results": {
+      "BlackjackGameTestCreateDeck": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BlackjackGameTestCalculateHandValue": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_calculate_hand_value_6 (_sol.BlackjackGameTestCalculateHandValue.test_calculate_hand_value_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BlackjackGameTestCalculateHandValue>\", line 30, in test_calculate_hand_value_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\baseline\\ClassEval_12\\solution.py\", line 27, in calculate_hand_value\n    value += int(rank)\n             ^^^^^^^^^\nValueError: invalid literal for int() with base 10: 'B'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 1
+      },
+      "BlackjackGameTestCheckWinner": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

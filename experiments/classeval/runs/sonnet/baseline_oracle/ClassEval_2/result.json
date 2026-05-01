@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_2",
+  "class_name": "ArgumentParser",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 8.7,
+  "gen_cost_usd": 0.04880455000000001,
+  "gen_session_id": "8d706434-7262-4aab-af0c-58f6ed830530",
+  "wall_time_s": 8.7,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "ArgumentParserTestParseArguments": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestGetArgument": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestAddArgument": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestConvertType": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

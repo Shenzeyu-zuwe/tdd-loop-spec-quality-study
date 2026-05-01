@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_8",
+  "class_name": "BankAccount",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 13.9,
+  "gen_cost_usd": 0.026384000000000005,
+  "gen_session_id": "87cc5774-51d6-4f09-babd-5cb3b165dfb7",
+  "wall_time_s": 13.9,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "BankAccountTestDeposit": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BankAccountTestWithdraw": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BankAccountTestViewBalance": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BankAccountTestTransfer": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "ClassEval_7",
+  "class_name": "BalancedBrackets",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.2,
+  "gen_cost_usd": 0.033403050000000004,
+  "gen_session_id": "7fb1b204-ea6e-419d-a8d3-34e9b684f376",
+  "wall_time_s": 6.2,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "BalancedBracketsTestClearExpr": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BalancedBracketsTestCheckBalancedBrackets": {
+        "passed": true,
+        "error": "",
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

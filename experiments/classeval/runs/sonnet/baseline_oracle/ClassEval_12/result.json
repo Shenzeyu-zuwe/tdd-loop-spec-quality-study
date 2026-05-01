@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_12",
+  "class_name": "BlackjackGame",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 10.0,
+  "gen_cost_usd": 0.046509800000000004,
+  "gen_session_id": "41f32697-a27f-4741-8a47-b99630ea013a",
+  "wall_time_s": 10.0,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "BlackjackGameTestCreateDeck": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BlackjackGameTestCalculateHandValue": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "BlackjackGameTestCheckWinner": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,63 @@
+{
+  "task_id": "ClassEval_4",
+  "class_name": "AssessmentSystem",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 23.7,
+  "gen_cost_usd": 0.04170025,
+  "gen_session_id": "103dd072-7b29-48a5-9256-a9675fe29b0c",
+  "wall_time_s": 23.7,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 6,
+    "method_total": 6,
+    "method_results": {
+      "AssessmentSystemTestAddStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestAddCourseScore": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetGPA": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetCourseAverage": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetTopStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

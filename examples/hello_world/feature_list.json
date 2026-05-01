@@ -1,0 +1,39 @@
+{
+  "change_name": "hello-world",
+  "created_at": "2026-04-20",
+  "spec_dir": "SPEC.md",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Module src/greeter.py exposes a greet(name: str) -> str function",
+      "status": "pending",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "File src/greeter.py exists and defines a top-level `def greet` with one parameter named `name`",
+          "status": "pending"
+        },
+        {
+          "id": "T-001-02",
+          "intent": "greet(\"Ada\") returns the string 'Hello, Ada!' (exact match, including punctuation)",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "greet() raises TypeError when name is not a string",
+      "status": "pending",
+      "dependencies": ["F-001"],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "Calling greet(42) raises TypeError with message containing the word 'string'",
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "summary": {}
+}

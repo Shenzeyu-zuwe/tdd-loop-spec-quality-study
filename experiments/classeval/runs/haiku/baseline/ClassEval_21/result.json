@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_21",
+  "class_name": "Classroom",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 27.2,
+  "gen_cost_usd": 0.033881999999999995,
+  "gen_session_id": "168ba46d-f395-41cf-860a-dc14505a74ee",
+  "wall_time_s": 27.2,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "ClassroomTestAddCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassroomTestRemoveCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassroomTestIsFreeAt": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassroomTestCheckCourseConflict": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

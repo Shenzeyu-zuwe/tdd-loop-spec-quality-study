@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_0",
+  "class_name": "AccessGatewayFilter",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 37.6,
+  "gen_cost_usd": 0.043353249999999996,
+  "gen_session_id": "2369dcbb-0ce4-4a60-bd17-0ea0989fd574",
+  "wall_time_s": 37.6,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 4,
+    "method_results": {
+      "AccessGatewayFilterTestFilter": {
+        "passed": false,
+        "error": "======================================================\nFAIL: test_filter_7 (_sol.AccessGatewayFilterTestFilter.test_filter_7)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AccessGatewayFilterTestFilter>\", line 51, in test_filter_7\nAssertionError: False is not None\n\n======================================================================\nFAIL: test_filter_8 (_sol.AccessGatewayFilterTestFilter.test_filter_8)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AccessGatewayFilterTestFilter>\", line 60, in test_filter_8\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=5)\n",
+        "tests_run": 8,
+        "failures": 5,
+        "errors": 0
+      },
+      "AccessGatewayFilterTestIsStartWith": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTestGetJwtUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTest": {
+        "passed": false,
+        "error": "======================================================================\nFAIL: test_AccessGatewayFilter (_sol.AccessGatewayFilterTest.test_AccessGatewayFilter)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AccessGatewayFilterTest>\", line 6, in test_AccessGatewayFilter\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\n",
+        "tests_run": 1,
+        "failures": 1,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

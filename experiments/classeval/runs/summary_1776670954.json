@@ -1,0 +1,74 @@
+{
+  "configs": [
+    "tdd_loop"
+  ],
+  "models": [
+    "sonnet"
+  ],
+  "tasks": [
+    "ClassEval_0"
+  ],
+  "results": [
+    {
+      "task_id": "ClassEval_0",
+      "class_name": "AccessGatewayFilter",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 205.2,
+      "gen_cost_usd": 0.93634,
+      "gen_session_count": 18,
+      "gen_iterations": 1,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 8,
+        "tests_passed": 8,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 205.2,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 3,
+        "method_total": 4,
+        "method_results": {
+          "AccessGatewayFilterTestFilter": {
+            "passed": false,
+            "error": "=======================================================\nFAIL: test_filter_7 (_sol.AccessGatewayFilterTestFilter.test_filter_7)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AccessGatewayFilterTestFilter>\", line 51, in test_filter_7\nAssertionError: True is not None\n\n======================================================================\nFAIL: test_filter_8 (_sol.AccessGatewayFilterTestFilter.test_filter_8)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AccessGatewayFilterTestFilter>\", line 60, in test_filter_8\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nFAILED (failures=2)\n",
+            "tests_run": 8,
+            "failures": 2,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestIsStartWith": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestGetJwtUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTest": {
+            "passed": true,
+            "error": "",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    }
+  ]
+}

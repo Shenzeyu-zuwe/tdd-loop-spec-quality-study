@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_24",
+  "class_name": "ComplexCalculator",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 17.0,
+  "gen_cost_usd": 0.0296595,
+  "gen_session_id": "272f08c0-62fe-402f-87fd-2e5fdc281a29",
+  "wall_time_s": 17.0,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "ComplexCalculatorTestAdd": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ComplexCalculatorTestSubtract": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ComplexCalculatorTestMultiply": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ComplexCalculatorTestDivide": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

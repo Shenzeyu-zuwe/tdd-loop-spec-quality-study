@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_27",
+  "class_name": "CurrencyConverter",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 20.3,
+  "gen_cost_usd": 0.029821249999999997,
+  "gen_session_id": "a8a7dbcf-aac4-4889-8d89-dd5e7774104b",
+  "wall_time_s": 20.3,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 4,
+    "method_results": {
+      "CurrencyConverterTestConvert": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_convert_6 (_sol.CurrencyConverterTestConvert.test_convert_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 29, in test_convert_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\baseline\\ClassEval_27\\solution.py\", line 31, in convert\n    amount_in_usd = amount / self.rates[from_currency]\n                             ~~~~~~~~~~^^^^^^^^^^^^^^^\nKeyError: '???'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 1
+      },
+      "CurrencyConverterTestGetSupportedCurrencies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CurrencyConverterTestAddCurrencyRate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CurrencyConverterTestUpdateCurrencyRate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

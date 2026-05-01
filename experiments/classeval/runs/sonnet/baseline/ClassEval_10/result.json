@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_10",
+  "class_name": "BinaryDataProcessor",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.8,
+  "gen_cost_usd": 0.0358148,
+  "gen_session_id": "bbe26a6a-55b3-4cc7-b2ae-d78a18488534",
+  "wall_time_s": 6.8,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "BinaryDataProcessorTestCleanNonBinaryChars": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestCalculateBinaryInfo": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToAscii": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToUtf8": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

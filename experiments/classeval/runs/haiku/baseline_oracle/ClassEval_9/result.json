@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_9",
+  "class_name": "BigNumCalculator",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 10.3,
+  "gen_cost_usd": 0.022474499999999998,
+  "gen_session_id": "7c2656c6-8074-4807-a593-58eb4564a745",
+  "wall_time_s": 10.3,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "BigNumCalculatorTestAdd": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BigNumCalculatorTestSubtract": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BigNumCalculatorTestMultiply": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_8",
+  "class_name": "BankAccount",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 37.9,
+  "gen_cost_usd": 0.02792125,
+  "gen_session_id": "9349f457-851d-4f4a-b3d0-4df7a7b95758",
+  "wall_time_s": 38.0,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "BankAccountTestDeposit": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BankAccountTestWithdraw": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BankAccountTestViewBalance": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BankAccountTestTransfer": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_15",
+  "class_name": "BoyerMooreSearch",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 7.0,
+  "gen_cost_usd": 0.03592755,
+  "gen_session_id": "8b604ed7-cc57-48ad-ad80-1632f5037b4d",
+  "wall_time_s": 7.0,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "BoyerMooreSearchTestMatchInPattern": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestMismatchInText": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestBadCharacterHeuristic": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

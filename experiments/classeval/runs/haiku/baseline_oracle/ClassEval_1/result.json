@@ -1,0 +1,56 @@
+{
+  "task_id": "ClassEval_1",
+  "class_name": "AreaCalculator",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 16.7,
+  "gen_cost_usd": 0.0292735,
+  "gen_session_id": "0e194d8f-bec9-4b8f-9837-b45f9ab6b113",
+  "wall_time_s": 16.7,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "AreaCalculatorTestCalculateCircleArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateSphereArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateCylinderArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateSectorArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateAnnulusArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

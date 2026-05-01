@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_26",
+  "class_name": "CSVProcessor",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 7.8,
+  "gen_cost_usd": 0.037543549999999995,
+  "gen_session_id": "648f9a39-2375-4e95-8e0a-543091a61d07",
+  "wall_time_s": 7.8,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 3,
+    "method_results": {
+      "CSVProcessorTestReadCSV": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CSVProcessorTestWriteCSV": {
+        "passed": false,
+        "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.043s\n\nFAILED (errors=5)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 5
+      },
+      "CSVProcessorTestProcessCSVData": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

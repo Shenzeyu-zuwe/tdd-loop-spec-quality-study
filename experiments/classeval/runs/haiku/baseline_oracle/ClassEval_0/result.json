@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_0",
+  "class_name": "AccessGatewayFilter",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 68.4,
+  "gen_cost_usd": 0.07403075,
+  "gen_session_id": "c950cb62-9af1-4600-b54e-edd504962510",
+  "wall_time_s": 68.4,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "AccessGatewayFilterTestFilter": {
+        "passed": true,
+        "error": "",
+        "tests_run": 8,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTestIsStartWith": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTestGetJwtUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTest": {
+        "passed": true,
+        "error": "",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

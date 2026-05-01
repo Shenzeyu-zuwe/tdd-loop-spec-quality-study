@@ -1,0 +1,30 @@
+class AssessmentSystem:
+    def __init__(self):
+        self.students = {}
+
+    def add_student(self, name, grade, major):
+        self.students[name] = {'name': name, 'grade': grade, 'major': major, 'courses': {}}
+
+    def add_course_score(self, name, course, score):
+        if name in self.students:
+            self.students[name]['courses'][course] = score
+
+    def get_gpa(self, name):
+        if name not in self.students or not self.students[name]['courses']:
+            return None
+        courses = self.students[name]['courses']
+        return sum(courses.values()) / len(courses)
+
+    def get_all_students_with_fail_course(self):
+        return [name for name, info in self.students.items()
+                if any(score < 60 for score in info['courses'].values())]
+
+    def get_course_average(self, course):
+        scores = [info['courses'][course] for info in self.students.values()
+                  if course in info['courses']]
+        return sum(scores) / len(scores) if scores else None
+
+    def get_top_student(self):
+        gpas = {name: self.get_gpa(name) for name in self.students}
+        gpas = {k: v for k, v in gpas.items() if v is not None}
+        return max(gpas, key=gpas.get) if gpas else None

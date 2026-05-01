@@ -1,0 +1,56 @@
+{
+  "task_id": "ClassEval_3",
+  "class_name": "ArrangementCalculator",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.9,
+  "gen_cost_usd": 0.04473855,
+  "gen_session_id": "348ad989-2806-441f-b441-3c58014b9662",
+  "wall_time_s": 6.9,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "ArrangementCalculatorTestCount": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestCountAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestSelect": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestSelectAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestFactorial": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "ClassEval_6",
+  "class_name": "AvgPartition",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 16.7,
+  "gen_cost_usd": 0.026886999999999998,
+  "gen_session_id": "3a3d318d-23c0-426a-a9ce-048a6823ebd5",
+  "wall_time_s": 16.7,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "AvgPartitionTestSetNum": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AvgPartitionTestGet": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

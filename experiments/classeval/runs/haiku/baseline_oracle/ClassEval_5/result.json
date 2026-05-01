@@ -1,0 +1,35 @@
+{
+  "task_id": "ClassEval_5",
+  "class_name": "AutomaticGuitarSimulator",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 17.4,
+  "gen_cost_usd": 0.02821475,
+  "gen_session_id": "24bbba3e-ac12-4c2c-ad78-04102ee263e0",
+  "wall_time_s": 17.4,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "AutomaticGuitarSimulatorTestInterpret": {
+        "passed": true,
+        "error": "",
+        "tests_run": 9,
+        "failures": 0,
+        "errors": 0
+      },
+      "AutomaticGuitarSimulatorTestDisplay": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

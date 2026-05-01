@@ -1,0 +1,22 @@
+from collections import Counter
+
+class DataStatistics:
+    """
+    This is a class for performing data statistics, supporting to calculate the mean, median, and mode of a given data set.
+    """
+
+    def mean(self, data):
+        return round(sum(data) / len(data), 2)
+
+    def median(self, data):
+        sorted_data = sorted(data)
+        n = len(sorted_data)
+        mid = n // 2
+        if n % 2 == 0:
+            return round((sorted_data[mid - 1] + sorted_data[mid]) / 2, 2)
+        return round(sorted_data[mid], 2)
+
+    def mode(self, data):
+        counts = Counter(data)
+        max_count = max(counts.values())
+        return sorted(k for k, v in counts.items() if v == max_count)

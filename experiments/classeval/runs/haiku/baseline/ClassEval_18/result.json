@@ -1,0 +1,70 @@
+{
+  "task_id": "ClassEval_18",
+  "class_name": "CamelCaseMap",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 34.5,
+  "gen_cost_usd": 0.0458905,
+  "gen_session_id": "286bcbaf-5961-4c00-941f-df08aa78f359",
+  "wall_time_s": 34.5,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 6,
+    "method_total": 7,
+    "method_results": {
+      "CamelCaseMapTestGetitem": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestSetitem": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestDelitem": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestIter": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestLen": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestConvertKey": {
+        "passed": false,
+        "error": "=============\nERROR: test_convert_key_6 (_sol.CamelCaseMapTestConvertKey.test_convert_key_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestConvertKey>\", line 24, in test_convert_key_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\baseline\\ClassEval_18\\solution.py\", line 88, in _convert_key\n    return self._to_camel_case(key)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\baseline\\ClassEval_18\\solution.py\", line 100, in _to_camel_case\n    parts = key.split('_')\n            ^^^^^^^^^\nAttributeError: 'int' object has no attribute 'split'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 1
+      },
+      "CamelCaseMapTestToCamelCase": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

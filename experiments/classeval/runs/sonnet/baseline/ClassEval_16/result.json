@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_16",
+  "class_name": "Calculator",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 10.2,
+  "gen_cost_usd": 0.04076830000000001,
+  "gen_session_id": "9f24b350-a536-4597-8bd8-da30391a6e2a",
+  "wall_time_s": 10.2,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "CalculatorTestCalculate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 8,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalculatorTestPrecedence": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalculatorTestApplyOperator": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

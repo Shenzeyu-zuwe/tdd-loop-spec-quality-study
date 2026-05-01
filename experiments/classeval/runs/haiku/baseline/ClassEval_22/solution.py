@@ -1,0 +1,53 @@
+class ClassRegistrationSystem:
+    def __init__(self):
+        self.students = []
+        self.students_registration_classes = {}
+
+    def register_student(self, student):
+        for existing_student in self.students:
+            if existing_student["name"] == student["name"]:
+                return 0
+        self.students.append(student)
+        if student["name"] not in self.students_registration_classes:
+            self.students_registration_classes[student["name"]] = []
+        return 1
+
+    def register_class(self, student_name, class_name):
+        if student_name not in self.students_registration_classes:
+            self.students_registration_classes[student_name] = []
+        if class_name not in self.students_registration_classes[student_name]:
+            self.students_registration_classes[student_name].append(class_name)
+        return self.students_registration_classes[student_name]
+
+    def get_students_by_major(self, major):
+        result = []
+        for student in self.students:
+            if student["major"] == major:
+                result.append(student["name"])
+        return result
+
+    def get_all_major(self):
+        majors = []
+        for student in self.students:
+            if student["major"] not in majors:
+                majors.append(student["major"])
+        return majors
+
+    def get_most_popular_class_in_major(self, major):
+        students_in_major = self.get_students_by_major(major)
+        
+        class_count = {}
+        for student_name in students_in_major:
+            if student_name in self.students_registration_classes:
+                for class_name in self.students_registration_classes[student_name]:
+                    class_count[class_name] = class_count.get(class_name, 0) + 1
+        
+        if not class_count:
+            return None
+        
+        max_count = max(class_count.values())
+        most_popular = None
+        for class_name in class_count:
+            if class_count[class_name] == max_count:
+                most_popular = class_name
+        return most_popular

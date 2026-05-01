@@ -1,0 +1,42 @@
+import csv
+
+class CSVProcessor:
+    """
+    This is a class for processing CSV files, including readring and writing CSV data, as well as processing specific operations and saving as a new CSV file.
+    """
+
+    def __init__(self):
+        pass
+
+    def read_csv(self, file_name):
+        try:
+            with open(file_name, 'r', newline='') as f:
+                reader = csv.reader(f)
+                rows = list(reader)
+            if not rows:
+                return [], []
+            return rows[0], rows[1:]
+        except Exception:
+            return [], []
+
+    def write_csv(self, data, file_name):
+        try:
+            with open(file_name, 'w', newline='') as f:
+                writer = csv.writer(f)
+                writer.writerows(data)
+            return 1
+        except Exception:
+            return 0
+
+    def process_csv_data(self, N, save_file_name):
+        try:
+            title, data = self.read_csv(save_file_name)
+            new_data = [[row[N].upper()] for row in data if len(row) > N]
+            dot_index = save_file_name.rfind('.')
+            if dot_index != -1:
+                new_file_name = save_file_name[:dot_index] + '_process' + save_file_name[dot_index:]
+            else:
+                new_file_name = save_file_name + '_process'
+            return self.write_csv([title] + new_data, new_file_name)
+        except Exception:
+            return 0

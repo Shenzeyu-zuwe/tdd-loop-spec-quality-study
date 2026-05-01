@@ -1,0 +1,2955 @@
+{
+  "configs": [
+    "baseline_oracle"
+  ],
+  "models": [
+    "sonnet",
+    "haiku"
+  ],
+  "tasks": [
+    "ClassEval_0",
+    "ClassEval_1",
+    "ClassEval_2",
+    "ClassEval_3",
+    "ClassEval_4",
+    "ClassEval_5",
+    "ClassEval_6",
+    "ClassEval_7",
+    "ClassEval_8",
+    "ClassEval_9",
+    "ClassEval_10",
+    "ClassEval_11",
+    "ClassEval_12",
+    "ClassEval_13",
+    "ClassEval_14",
+    "ClassEval_15",
+    "ClassEval_16",
+    "ClassEval_17",
+    "ClassEval_18",
+    "ClassEval_19",
+    "ClassEval_20",
+    "ClassEval_21",
+    "ClassEval_22",
+    "ClassEval_23",
+    "ClassEval_24",
+    "ClassEval_25",
+    "ClassEval_26",
+    "ClassEval_27",
+    "ClassEval_28",
+    "ClassEval_29"
+  ],
+  "results": [
+    {
+      "task_id": "ClassEval_0",
+      "class_name": "AccessGatewayFilter",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 54.5,
+      "gen_cost_usd": 0.09722204999999999,
+      "gen_session_id": "7dd3e656-933b-4ba7-bec5-b958769aecda",
+      "wall_time_s": 54.5,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "AccessGatewayFilterTestFilter": {
+            "passed": true,
+            "error": "",
+            "tests_run": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestIsStartWith": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestGetJwtUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTest": {
+            "passed": true,
+            "error": "",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_1",
+      "class_name": "AreaCalculator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 5.4,
+      "gen_cost_usd": 0.0422223,
+      "gen_session_id": "1f459a46-3484-437b-b38e-787e1b437edd",
+      "wall_time_s": 5.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "AreaCalculatorTestCalculateCircleArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateSphereArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateCylinderArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateSectorArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateAnnulusArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_2",
+      "class_name": "ArgumentParser",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 8.7,
+      "gen_cost_usd": 0.04880455000000001,
+      "gen_session_id": "8d706434-7262-4aab-af0c-58f6ed830530",
+      "wall_time_s": 8.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ArgumentParserTestParseArguments": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestGetArgument": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestAddArgument": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestConvertType": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_3",
+      "class_name": "ArrangementCalculator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.9,
+      "gen_cost_usd": 0.04473855,
+      "gen_session_id": "348ad989-2806-441f-b441-3c58014b9662",
+      "wall_time_s": 6.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "ArrangementCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestCountAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestFactorial": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_4",
+      "class_name": "AssessmentSystem",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 11.2,
+      "gen_cost_usd": 0.061396549999999994,
+      "gen_session_id": "05a30754-5f0c-4703-9763-829b3cd2b103",
+      "wall_time_s": 11.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 6,
+        "method_total": 6,
+        "method_results": {
+          "AssessmentSystemTestAddStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestAddCourseScore": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetGPA": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetCourseAverage": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetTopStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_5",
+      "class_name": "AutomaticGuitarSimulator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.0,
+      "gen_cost_usd": 0.039666049999999994,
+      "gen_session_id": "b2030f44-bed1-4b38-a329-867e83701f4b",
+      "wall_time_s": 6.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "AutomaticGuitarSimulatorTestInterpret": {
+            "passed": true,
+            "error": "",
+            "tests_run": 9,
+            "failures": 0,
+            "errors": 0
+          },
+          "AutomaticGuitarSimulatorTestDisplay": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_6",
+      "class_name": "AvgPartition",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 5.9,
+      "gen_cost_usd": 0.0351508,
+      "gen_session_id": "72edf80c-414b-47ec-9a70-870830df022d",
+      "wall_time_s": 5.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "AvgPartitionTestSetNum": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AvgPartitionTestGet": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_7",
+      "class_name": "BalancedBrackets",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.3,
+      "gen_cost_usd": 0.0367113,
+      "gen_session_id": "3ff7b461-7a1e-4172-a7e1-58b65f2cb791",
+      "wall_time_s": 6.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "BalancedBracketsTestClearExpr": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BalancedBracketsTestCheckBalancedBrackets": {
+            "passed": true,
+            "error": "",
+            "tests_run": 7,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_8",
+      "class_name": "BankAccount",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 5.9,
+      "gen_cost_usd": 0.0393178,
+      "gen_session_id": "4ef552ce-3275-4969-bbd7-c422dc599f31",
+      "wall_time_s": 5.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BankAccountTestDeposit": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestWithdraw": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestViewBalance": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestTransfer": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_9",
+      "class_name": "BigNumCalculator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.1,
+      "gen_cost_usd": 0.0369383,
+      "gen_session_id": "6a7ee8a2-0231-4369-a70f-5003415151ac",
+      "wall_time_s": 6.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BigNumCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BigNumCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BigNumCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_10",
+      "class_name": "BinaryDataProcessor",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.7,
+      "gen_cost_usd": 0.042834800000000006,
+      "gen_session_id": "3a24f67b-5066-4ed4-a00b-cbb5b1217d62",
+      "wall_time_s": 6.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BinaryDataProcessorTestCleanNonBinaryChars": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestCalculateBinaryInfo": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestConvertToAscii": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestConvertToUtf8": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_11",
+      "class_name": "BitStatusUtil",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.3,
+      "gen_cost_usd": 0.038578799999999996,
+      "gen_session_id": "8a7fffb9-5176-431e-bc37-eea301f9d70d",
+      "wall_time_s": 6.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BitStatusUtilTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestHas": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestRemove": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestCheck": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_12",
+      "class_name": "BlackjackGame",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 10.0,
+      "gen_cost_usd": 0.046509800000000004,
+      "gen_session_id": "41f32697-a27f-4741-8a47-b99630ea013a",
+      "wall_time_s": 10.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BlackjackGameTestCreateDeck": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BlackjackGameTestCalculateHandValue": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "BlackjackGameTestCheckWinner": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_13",
+      "class_name": "BookManagement",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.9,
+      "gen_cost_usd": 0.04085655,
+      "gen_session_id": "fd1bfaaa-7556-4378-9d8d-fe2a5ce4f465",
+      "wall_time_s": 6.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BookManagementTestAddBook": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestRemoveBook": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestViewInventory": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestViewBookQuantity": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_14",
+      "class_name": "BookManagementDB",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.8,
+      "gen_cost_usd": 0.0446668,
+      "gen_session_id": "bd38cfce-cc79-4211-862f-635b6be31d81",
+      "wall_time_s": 7.8,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 6,
+        "method_results": {
+          "BookManagementDBTestCreateTable": {
+            "passed": false,
+            "error": "BookManagementDBTestCreateTable.test_create_table_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_create_table_2 (_sol.BookManagementDBTestCreateTable.test_create_table_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.005s\n\nFAILED (errors=2)\n",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestAddBook": {
+            "passed": false,
+            "error": "========================\nERROR: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 25, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nFAIL: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 16, in test_add_book\nAssertionError: unexpectedly None\n\n----------------------------------------------------------------------\nRan 1 test in 0.008s\n\nFAILED (failures=1, errors=1)\n",
+            "tests_run": 1,
+            "failures": 1,
+            "errors": 1
+          },
+          "BookManagementDBTestRemoveBook": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_remove_book (_sol.BookManagementDBTestRemoveBook.test_remove_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestRemoveBook>\", line 22, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=1)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 1
+          },
+          "BookManagementDBTestBorrowBook": {
+            "passed": false,
+            "error": "test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 16, in test_borrow_book\nTypeError: 'NoneType' object is not subscriptable\n\n======================================================================\nERROR: test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 22, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=2)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestReturnBook": {
+            "passed": false,
+            "error": "test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 17, in test_return_book\nTypeError: 'NoneType' object is not subscriptable\n\n======================================================================\nERROR: test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 23, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=2)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestSearchBooks": {
+            "passed": false,
+            "error": "RROR: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nFAIL: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 16, in test_search_books\nAssertionError: 27 != 3\n\n----------------------------------------------------------------------\nRan 1 test in 0.017s\n\nFAILED (failures=1, errors=1)\n",
+            "tests_run": 1,
+            "failures": 1,
+            "errors": 1
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_15",
+      "class_name": "BoyerMooreSearch",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.9,
+      "gen_cost_usd": 0.0419723,
+      "gen_session_id": "e47d4ef5-526b-4350-a79e-1f321331d68a",
+      "wall_time_s": 7.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BoyerMooreSearchTestMatchInPattern": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BoyerMooreSearchTestMismatchInText": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BoyerMooreSearchTestBadCharacterHeuristic": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_16",
+      "class_name": "Calculator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 8.4,
+      "gen_cost_usd": 0.045762550000000006,
+      "gen_session_id": "f11a3a12-8f92-40b5-bb8d-511036b88f7c",
+      "wall_time_s": 8.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CalculatorTestCalculate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalculatorTestPrecedence": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalculatorTestApplyOperator": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_17",
+      "class_name": "CalendarUtil",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 140.5,
+      "gen_cost_usd": 0.21582055,
+      "gen_session_id": "4c3afda7-1200-4da2-8604-170c3ea1848a",
+      "wall_time_s": 140.5,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 6,
+        "method_total": 6,
+        "method_results": {
+          "CalendarTestAddEvent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestRemoveEvent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetEvents": {
+            "passed": true,
+            "error": "",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestIsAvailable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetAvailableSlots": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetUpcomingEvents": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_18",
+      "class_name": "CamelCaseMap",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.1,
+      "gen_cost_usd": 0.04891105,
+      "gen_session_id": "c447cd7f-15fe-4508-b371-7ca96a789659",
+      "wall_time_s": 6.1,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 4,
+        "method_total": 7,
+        "method_results": {
+          "CamelCaseMapTestGetitem": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_getitem_5 (_sol.CamelCaseMapTestGetitem.test_getitem_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestGetitem>\", line 25, in test_getitem_5\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\baseline_oracle\\ClassEval_18\\solution.py\", line 6, in __getitem__\n    return self._data[self._convert_key(key)]\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'firstname'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (errors=1)\n",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 1
+          },
+          "CamelCaseMapTestSetitem": {
+            "passed": false,
+            "error": "======================================================================\nFAIL: test_setitem_4 (_sol.CamelCaseMapTestSetitem.test_setitem_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestSetitem>\", line 24, in test_setitem_4\nAssertionError: 'John' != 'newname'\n- John\n+ newname\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=1)\n",
+            "tests_run": 5,
+            "failures": 1,
+            "errors": 0
+          },
+          "CamelCaseMapTestDelitem": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_delitem_4 (_sol.CamelCaseMapTestDelitem.test_delitem_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestDelitem>\", line 24, in test_delitem_4\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\baseline_oracle\\ClassEval_18\\solution.py\", line 12, in __delitem__\n    del self._data[self._convert_key(key)]\n        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'firstname'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (errors=1)\n",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 1
+          },
+          "CamelCaseMapTestIter": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestLen": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestConvertKey": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestToCamelCase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_19",
+      "class_name": "ChandrasekharSieve",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 5.9,
+      "gen_cost_usd": 0.03671805,
+      "gen_session_id": "5ed25ee7-12f4-4c4e-a3c4-afa6fa3f4140",
+      "wall_time_s": 5.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "ChandrasekharSieveTestGeneratePrimes": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChandrasekharSieveTestGetPrimes": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_20",
+      "class_name": "Chat",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.1,
+      "gen_cost_usd": 0.04317255,
+      "gen_session_id": "a86d475a-0d87-4f48-8d38-387018186402",
+      "wall_time_s": 6.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ChatTestAddUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestRemoveUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestSendMessage": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestGetMessages": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_21",
+      "class_name": "Classroom",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.4,
+      "gen_cost_usd": 0.0488693,
+      "gen_session_id": "77ac73fd-c203-4b03-8d81-71d9c2eb7ce1",
+      "wall_time_s": 7.4,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 3,
+        "method_total": 4,
+        "method_results": {
+          "ClassroomTestAddCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestRemoveCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestIsFreeAt": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestCheckCourseConflict": {
+            "passed": false,
+            "error": "======================================================================\nFAIL: test_check_course_conflict_3 (_sol.ClassroomTestCheckCourseConflict.test_check_course_conflict_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestCheckCourseConflict>\", line 26, in test_check_course_conflict_3\nAssertionError: True is not false\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (failures=1)\n",
+            "tests_run": 6,
+            "failures": 1,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_22",
+      "class_name": "ClassRegistrationSystem",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.3,
+      "gen_cost_usd": 0.04759455,
+      "gen_session_id": "ede0c4a7-b0ba-4671-a6f8-96d6c5d02a91",
+      "wall_time_s": 7.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "ClassRegistrationSystemTestRegisterStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestRegisterClass": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestGetStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 4,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestGetMajor": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestPopularClass": {
+            "passed": true,
+            "error": "",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 8.4,
+      "gen_cost_usd": 0.04592455,
+      "gen_session_id": "3c05cb2d-fcb3-40de-ae31-458da67d4e16",
+      "wall_time_s": 8.4,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 4,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": false,
+            "error": "======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: 9223372036854775807 != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=1)\n",
+            "tests_run": 5,
+            "failures": 1,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 9.9,
+      "gen_cost_usd": 0.0386783,
+      "gen_session_id": "3228de41-1db6-4fbe-88ad-128ee8cf5fe2",
+      "wall_time_s": 9.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.3,
+      "gen_cost_usd": 0.0446848,
+      "gen_session_id": "cd776744-f470-4055-8cbf-ead74abcd1c0",
+      "wall_time_s": 6.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": false,
+            "error": "-------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 23, in test_load_cookies_4\nAssertionError: {} != {'key1': 'value1', 'key2': 'value2'}\n- {}\n+ {'key1': 'value1', 'key2': 'value2'}\n\n======================================================================\nFAIL: test_load_cookies_5 (_sol.CookiesUtilTestLoadCookies.test_load_cookies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 31, in test_load_cookies_5\nAssertionError: {} != {'key1': 'value1', 'key2': 'value2'}\n- {}\n+ {'key1': 'value1', 'key2': 'value2'}\n\n----------------------------------------------------------------------\nRan 6 tests in 0.009s\n\nFAILED (failures=5)\n",
+            "tests_run": 6,
+            "failures": 5,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.5,
+      "gen_cost_usd": 0.047709299999999996,
+      "gen_session_id": "591d92d9-a28b-44dc-a594-5501c62c44dd",
+      "wall_time_s": 7.5,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.025s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.7,
+      "gen_cost_usd": 0.042899549999999995,
+      "gen_session_id": "71f58c30-5a68-4bb3-9d08-32cb12d26f53",
+      "wall_time_s": 6.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 9.1,
+      "gen_cost_usd": 0.05613855,
+      "gen_session_id": "fedd1e1d-6869-4144-a94b-2265aff71770",
+      "wall_time_s": 9.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "baseline_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 5.4,
+      "gen_cost_usd": 0.03729805,
+      "gen_session_id": "7fc65554-90b2-4099-8822-025f32bf8634",
+      "wall_time_s": 5.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_0",
+      "class_name": "AccessGatewayFilter",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 68.4,
+      "gen_cost_usd": 0.07403075,
+      "gen_session_id": "c950cb62-9af1-4600-b54e-edd504962510",
+      "wall_time_s": 68.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "AccessGatewayFilterTestFilter": {
+            "passed": true,
+            "error": "",
+            "tests_run": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestIsStartWith": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestGetJwtUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTest": {
+            "passed": true,
+            "error": "",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_1",
+      "class_name": "AreaCalculator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 16.7,
+      "gen_cost_usd": 0.0292735,
+      "gen_session_id": "0e194d8f-bec9-4b8f-9837-b45f9ab6b113",
+      "wall_time_s": 16.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "AreaCalculatorTestCalculateCircleArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateSphereArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateCylinderArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateSectorArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateAnnulusArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_2",
+      "class_name": "ArgumentParser",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 80.6,
+      "gen_cost_usd": 0.06662825,
+      "gen_session_id": "fd5af597-5405-4c37-a9aa-2b0a4364a022",
+      "wall_time_s": 80.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ArgumentParserTestParseArguments": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestGetArgument": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestAddArgument": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestConvertType": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_3",
+      "class_name": "ArrangementCalculator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 22.0,
+      "gen_cost_usd": 0.03355225,
+      "gen_session_id": "c0ea79a0-2a8f-4e77-ad25-39bd8b5a2aee",
+      "wall_time_s": 22.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "ArrangementCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestCountAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestFactorial": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_4",
+      "class_name": "AssessmentSystem",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 23.7,
+      "gen_cost_usd": 0.04170025,
+      "gen_session_id": "103dd072-7b29-48a5-9256-a9675fe29b0c",
+      "wall_time_s": 23.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 6,
+        "method_total": 6,
+        "method_results": {
+          "AssessmentSystemTestAddStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestAddCourseScore": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetGPA": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetCourseAverage": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetTopStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_5",
+      "class_name": "AutomaticGuitarSimulator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 17.4,
+      "gen_cost_usd": 0.02821475,
+      "gen_session_id": "24bbba3e-ac12-4c2c-ad78-04102ee263e0",
+      "wall_time_s": 17.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "AutomaticGuitarSimulatorTestInterpret": {
+            "passed": true,
+            "error": "",
+            "tests_run": 9,
+            "failures": 0,
+            "errors": 0
+          },
+          "AutomaticGuitarSimulatorTestDisplay": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_6",
+      "class_name": "AvgPartition",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 16.7,
+      "gen_cost_usd": 0.026886999999999998,
+      "gen_session_id": "3a3d318d-23c0-426a-a9ce-048a6823ebd5",
+      "wall_time_s": 16.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "AvgPartitionTestSetNum": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AvgPartitionTestGet": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_7",
+      "class_name": "BalancedBrackets",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 40.9,
+      "gen_cost_usd": 0.047497500000000005,
+      "gen_session_id": "b8571a24-48cb-4429-9765-d21158a5437e",
+      "wall_time_s": 40.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "BalancedBracketsTestClearExpr": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BalancedBracketsTestCheckBalancedBrackets": {
+            "passed": true,
+            "error": "",
+            "tests_run": 7,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_8",
+      "class_name": "BankAccount",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 13.9,
+      "gen_cost_usd": 0.026384000000000005,
+      "gen_session_id": "87cc5774-51d6-4f09-babd-5cb3b165dfb7",
+      "wall_time_s": 13.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BankAccountTestDeposit": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestWithdraw": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestViewBalance": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestTransfer": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_9",
+      "class_name": "BigNumCalculator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 10.3,
+      "gen_cost_usd": 0.022474499999999998,
+      "gen_session_id": "7c2656c6-8074-4807-a593-58eb4564a745",
+      "wall_time_s": 10.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BigNumCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BigNumCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BigNumCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_10",
+      "class_name": "BinaryDataProcessor",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 29.5,
+      "gen_cost_usd": 0.040910999999999996,
+      "gen_session_id": "e5847f29-92fb-44d8-9d2b-9e38d17e6fc0",
+      "wall_time_s": 29.5,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BinaryDataProcessorTestCleanNonBinaryChars": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestCalculateBinaryInfo": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestConvertToAscii": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestConvertToUtf8": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_11",
+      "class_name": "BitStatusUtil",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 19.7,
+      "gen_cost_usd": 0.030709999999999998,
+      "gen_session_id": "cc9fbe9f-0a56-4256-aad7-f011d9ff9bb3",
+      "wall_time_s": 19.8,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BitStatusUtilTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestHas": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestRemove": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestCheck": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_12",
+      "class_name": "BlackjackGame",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 34.0,
+      "gen_cost_usd": 0.043830999999999995,
+      "gen_session_id": "b714a4f5-a5f4-43aa-8c1b-8da23abed79a",
+      "wall_time_s": 34.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BlackjackGameTestCreateDeck": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BlackjackGameTestCalculateHandValue": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "BlackjackGameTestCheckWinner": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_13",
+      "class_name": "BookManagement",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 16.2,
+      "gen_cost_usd": 0.028435250000000002,
+      "gen_session_id": "69195ef8-10d4-43f8-9473-c49108e9bec7",
+      "wall_time_s": 16.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BookManagementTestAddBook": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestRemoveBook": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestViewInventory": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestViewBookQuantity": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_14",
+      "class_name": "BookManagementDB",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 16.8,
+      "gen_cost_usd": 0.029308,
+      "gen_session_id": "b4260153-4e46-4d0d-92f0-46ee6640b8fd",
+      "wall_time_s": 16.8,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 6,
+        "method_results": {
+          "BookManagementDBTestCreateTable": {
+            "passed": false,
+            "error": "BookManagementDBTestCreateTable.test_create_table_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_create_table_2 (_sol.BookManagementDBTestCreateTable.test_create_table_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.005s\n\nFAILED (errors=2)\n",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestAddBook": {
+            "passed": false,
+            "error": "========================\nERROR: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 25, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nFAIL: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 16, in test_add_book\nAssertionError: unexpectedly None\n\n----------------------------------------------------------------------\nRan 1 test in 0.010s\n\nFAILED (failures=1, errors=1)\n",
+            "tests_run": 1,
+            "failures": 1,
+            "errors": 1
+          },
+          "BookManagementDBTestRemoveBook": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_remove_book (_sol.BookManagementDBTestRemoveBook.test_remove_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestRemoveBook>\", line 22, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.010s\n\nFAILED (errors=1)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 1
+          },
+          "BookManagementDBTestBorrowBook": {
+            "passed": false,
+            "error": "test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 16, in test_borrow_book\nTypeError: 'NoneType' object is not subscriptable\n\n======================================================================\nERROR: test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 22, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=2)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestReturnBook": {
+            "passed": false,
+            "error": "test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 17, in test_return_book\nTypeError: 'NoneType' object is not subscriptable\n\n======================================================================\nERROR: test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 23, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=2)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestSearchBooks": {
+            "passed": false,
+            "error": "RROR: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nFAIL: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 16, in test_search_books\nAssertionError: 34 != 3\n\n----------------------------------------------------------------------\nRan 1 test in 0.018s\n\nFAILED (failures=1, errors=1)\n",
+            "tests_run": 1,
+            "failures": 1,
+            "errors": 1
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_15",
+      "class_name": "BoyerMooreSearch",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 45.6,
+      "gen_cost_usd": 0.057163500000000006,
+      "gen_session_id": "d1179921-b97e-48b9-83bb-59fe80347dd4",
+      "wall_time_s": 45.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BoyerMooreSearchTestMatchInPattern": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BoyerMooreSearchTestMismatchInText": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BoyerMooreSearchTestBadCharacterHeuristic": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_16",
+      "class_name": "Calculator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 59.3,
+      "gen_cost_usd": 0.06720125,
+      "gen_session_id": "eb401db3-00e1-4690-b610-cd0941478207",
+      "wall_time_s": 59.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CalculatorTestCalculate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalculatorTestPrecedence": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalculatorTestApplyOperator": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_17",
+      "class_name": "CalendarUtil",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 65.9,
+      "gen_cost_usd": 0.08269925000000002,
+      "gen_session_id": "d994d447-0ab8-45ac-bcf0-c65c69fc679a",
+      "wall_time_s": 65.9,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 5,
+        "method_total": 6,
+        "method_results": {
+          "CalendarTestAddEvent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestRemoveEvent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetEvents": {
+            "passed": true,
+            "error": "",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestIsAvailable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetAvailableSlots": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetUpcomingEvents": {
+            "passed": false,
+            "error": "---------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 33, in test_get_upcoming_events_5\nAssertionError: Lists differ: [] != [{'date': datetime.datetime(2024, 1, 2, 0,[129 chars] 2'}]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\n{'date': datetime.datetime(2024, 1, 2, 0, 0), 'start_time': datetime.datetime(2024, 1, 2, 1, 0), 'end_time': datetime.datetime(2024, 1, 2, 2, 0), 'description': 'New Year 2'}\n\n- []\n+ [{'date': datetime.datetime(2024, 1, 2, 0, 0),\n+   'description': 'New Year 2',\n+   'end_time': datetime.datetime(2024, 1, 2, 2, 0),\n+   'start_time': datetime.datetime(2024, 1, 2, 1, 0)}]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=1)\n",
+            "tests_run": 5,
+            "failures": 1,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_18",
+      "class_name": "CamelCaseMap",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 66.6,
+      "gen_cost_usd": 0.07773475,
+      "gen_session_id": "ee2b78b6-9cae-4dc6-965e-c5e62b64d859",
+      "wall_time_s": 66.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 7,
+        "method_total": 7,
+        "method_results": {
+          "CamelCaseMapTestGetitem": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestSetitem": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestDelitem": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestIter": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestLen": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestConvertKey": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestToCamelCase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_19",
+      "class_name": "ChandrasekharSieve",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 12.2,
+      "gen_cost_usd": 0.02132175,
+      "gen_session_id": "53e207a6-aaee-4c54-93b8-e357d5c5b95c",
+      "wall_time_s": 12.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "ChandrasekharSieveTestGeneratePrimes": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChandrasekharSieveTestGetPrimes": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_20",
+      "class_name": "Chat",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 23.2,
+      "gen_cost_usd": 0.03542125,
+      "gen_session_id": "7154945a-947d-4cf5-abec-b80fe253911d",
+      "wall_time_s": 23.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ChatTestAddUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestRemoveUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestSendMessage": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestGetMessages": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_21",
+      "class_name": "Classroom",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 69.7,
+      "gen_cost_usd": 0.0763455,
+      "gen_session_id": "faae56f3-2b65-420c-a714-ff35e0079697",
+      "wall_time_s": 69.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ClassroomTestAddCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestRemoveCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestIsFreeAt": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestCheckCourseConflict": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_22",
+      "class_name": "ClassRegistrationSystem",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 23.3,
+      "gen_cost_usd": 0.036688250000000006,
+      "gen_session_id": "354ca1f1-97a0-4048-b415-a0630f5328e0",
+      "wall_time_s": 23.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "ClassRegistrationSystemTestRegisterStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestRegisterClass": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestGetStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 4,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestGetMajor": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestPopularClass": {
+            "passed": true,
+            "error": "",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 42.6,
+      "gen_cost_usd": 0.053173250000000005,
+      "gen_session_id": "10b53b21-d349-4872-b86d-2a79ca28142a",
+      "wall_time_s": 42.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 17.0,
+      "gen_cost_usd": 0.0296595,
+      "gen_session_id": "272f08c0-62fe-402f-87fd-2e5fdc281a29",
+      "wall_time_s": 17.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 45.1,
+      "gen_cost_usd": 0.051256,
+      "gen_session_id": "1df0ca51-2b9c-406f-b9ea-257844e45065",
+      "wall_time_s": 45.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 37.0,
+      "gen_cost_usd": 0.045435500000000004,
+      "gen_session_id": "cfed4f34-0f04-4745-96b4-28ea4253c55d",
+      "wall_time_s": 37.0,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 17.3,
+      "gen_cost_usd": 0.028938250000000002,
+      "gen_session_id": "982fcff9-46c7-4764-8e6b-72c013ebfc6c",
+      "wall_time_s": 17.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 36.7,
+      "gen_cost_usd": 0.053367250000000005,
+      "gen_session_id": "ce0428f0-cb86-43e6-b5cb-1a4873ae9e11",
+      "wall_time_s": 36.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "baseline_oracle",
+      "model": "haiku",
+      "gen_status": "ok",
+      "gen_duration_s": 17.2,
+      "gen_cost_usd": 0.02895675,
+      "gen_session_id": "5f0b6b15-74c4-4daf-ac84-a04f90f00ce7",
+      "wall_time_s": 17.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    }
+  ]
+}

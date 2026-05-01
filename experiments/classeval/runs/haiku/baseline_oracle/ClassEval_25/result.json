@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_25",
+  "class_name": "CookiesUtil",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 45.1,
+  "gen_cost_usd": 0.051256,
+  "gen_session_id": "1df0ca51-2b9c-406f-b9ea-257844e45065",
+  "wall_time_s": 45.1,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "CookiesUtilTestGetCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestLoadCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestSaveCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

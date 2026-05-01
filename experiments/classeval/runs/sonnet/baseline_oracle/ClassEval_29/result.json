@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_29",
+  "class_name": "DataStatistics",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 5.4,
+  "gen_cost_usd": 0.03729805,
+  "gen_session_id": "7fc65554-90b2-4099-8822-025f32bf8634",
+  "wall_time_s": 5.4,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "DataStatisticsTestMean": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DataStatisticsTestMedian": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DataStatisticsTestMode": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,63 @@
+{
+  "task_id": "ClassEval_4",
+  "class_name": "AssessmentSystem",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.8,
+  "gen_cost_usd": 0.038115800000000005,
+  "gen_session_id": "10766aa1-f0d0-4720-bde4-31fa1fd04356",
+  "wall_time_s": 6.8,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 5,
+    "method_total": 6,
+    "method_results": {
+      "AssessmentSystemTestAddStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestAddCourseScore": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetGPA": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetCourseAverage": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_get_course_average_2 (_sol.AssessmentSystemTestGetCourseAverage.test_get_course_average_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetCourseAverage>\", line 20, in test_get_course_average_2\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\baseline\\ClassEval_4\\solution.py\", line 25, in get_course_average\n    return sum(scores) / len(scores) if scores else None\n           ^^^^^^^^^^^\nTypeError: unsupported operand type(s) for +: 'int' and 'NoneType'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 1
+      },
+      "AssessmentSystemTestGetTopStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

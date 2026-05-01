@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_16",
+  "class_name": "Calculator",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 67.1,
+  "gen_cost_usd": 0.058362300000000006,
+  "gen_session_id": "c2ad6ba7-557b-478c-bd02-6821630ce50a",
+  "wall_time_s": 67.1,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "CalculatorTestCalculate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 8,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalculatorTestPrecedence": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalculatorTestApplyOperator": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

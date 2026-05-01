@@ -1,0 +1,756 @@
+{
+  "configs": [
+    "tdd_loop_oracle"
+  ],
+  "models": [
+    "sonnet"
+  ],
+  "tasks": [
+    "ClassEval_18",
+    "ClassEval_19",
+    "ClassEval_20",
+    "ClassEval_21",
+    "ClassEval_22",
+    "ClassEval_23",
+    "ClassEval_24",
+    "ClassEval_25",
+    "ClassEval_26",
+    "ClassEval_27",
+    "ClassEval_28",
+    "ClassEval_29"
+  ],
+  "results": [
+    {
+      "task_id": "ClassEval_18",
+      "class_name": "CamelCaseMap",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 494.9,
+      "gen_cost_usd": 1.503772,
+      "gen_session_count": 39,
+      "gen_iterations": 2,
+      "fl_summary": {
+        "total_features": 7,
+        "passed": 7,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 7,
+        "tests_passed": 7,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 494.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 7,
+        "method_total": 7,
+        "method_results": {
+          "CamelCaseMapTestGetitem": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestSetitem": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestDelitem": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestIter": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestLen": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestConvertKey": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CamelCaseMapTestToCamelCase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_19",
+      "class_name": "ChandrasekharSieve",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 182.5,
+      "gen_cost_usd": 0.613597,
+      "gen_session_count": 14,
+      "gen_iterations": 2,
+      "fl_summary": {
+        "total_features": 2,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 2,
+        "tests_passed": 2,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 182.5,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "ChandrasekharSieveTestGeneratePrimes": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChandrasekharSieveTestGetPrimes": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_20",
+      "class_name": "Chat",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 398.8,
+      "gen_cost_usd": 1.249583,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 398.8,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ChatTestAddUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestRemoveUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestSendMessage": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ChatTestGetMessages": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_21",
+      "class_name": "Classroom",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 453.1,
+      "gen_cost_usd": 1.507326,
+      "gen_session_count": 30,
+      "gen_iterations": 5,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 453.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ClassroomTestAddCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestRemoveCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestIsFreeAt": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestCheckCourseConflict": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_22",
+      "class_name": "ClassRegistrationSystem",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 486.0,
+      "gen_cost_usd": 1.658125,
+      "gen_session_count": 35,
+      "gen_iterations": 5,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 5,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 5,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 486.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "ClassRegistrationSystemTestRegisterStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestRegisterClass": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestGetStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 4,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestGetMajor": {
+            "passed": true,
+            "error": "",
+            "tests_run": 3,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassRegistrationSystemTestPopularClass": {
+            "passed": true,
+            "error": "",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 441.5,
+      "gen_cost_usd": 1.429353,
+      "gen_session_count": 33,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 5,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 5,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 441.5,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 320.3,
+      "gen_cost_usd": 1.193146,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 320.3,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 340.6,
+      "gen_cost_usd": 0.931097,
+      "gen_session_count": 19,
+      "gen_iterations": 2,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 340.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 1432.3,
+      "gen_cost_usd": 1.514109,
+      "gen_session_count": 26,
+      "gen_iterations": 8,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 2,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 1
+      },
+      "wall_time_s": 1432.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "  Progress: [████████████████████░░░░░░░░░░] 66% (2/3 passed, 0 failed, 0 pending, 1 skipped)\n2026-04-26 12:09:30,853 [WARNING] No actionable features remaining\n2026-04-26 12:09:30,854 [WARNING] \nMax iterations reached (15), 23m52s\n2026-04-26 12:09:30,856 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_26\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 420.1,
+      "gen_cost_usd": 1.252699,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 420.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 468.4,
+      "gen_cost_usd": 1.453625,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 468.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 305.4,
+      "gen_cost_usd": 0.89328,
+      "gen_session_count": 21,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 305.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "task_id": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 47.9,
+  "gen_cost_usd": 0.05880875,
+  "gen_session_id": "8cbccee7-85f2-4d4a-bdd5-58a470ec4b98",
+  "wall_time_s": 47.9,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 4,
+    "method_total": 6,
+    "method_results": {
+      "CalendarTestAddEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestRemoveEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestIsAvailable": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetAvailableSlots": {
+        "passed": false,
+        "error": "L: test_get_available_slots_4 (_sol.CalendarTestGetAvailableSlots.test_get_available_slots_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 25, in test_get_available_slots_4\nAssertionError: 1 != 24\n\n======================================================================\nFAIL: test_get_available_slots_5 (_sol.CalendarTestGetAvailableSlots.test_get_available_slots_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 31, in test_get_available_slots_5\nAssertionError: 1 != 24\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=4)\n",
+        "tests_run": 5,
+        "failures": 4,
+        "errors": 0
+      },
+      "CalendarTestGetUpcomingEvents": {
+        "passed": false,
+        "error": "_sol.CalendarTestGetUpcomingEvents.test_get_upcoming_events_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 33, in test_get_upcoming_events_5\nAssertionError: Lists differ: [{'da[21 chars]e(2023, 1, 1, 0, 0), 'start_time': datetime.da[98 chars]ar'}] != [{'da[21 chars]e(2024, 1, 2, 0, 0), 'start_time': datetime.da[99 chars] 2'}]\n\nFirst differing element 0:\n{'dat[20 chars]e(2023, 1, 1, 0, 0), 'start_time': datetime.da[97 chars]ear'}\n{'dat[20 chars]e(2024, 1, 2, 0, 0), 'start_time': datetime.da[98 chars]r 2'}\n\nDiff is 695 characters long. Set self.maxDiff to None to see it.\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

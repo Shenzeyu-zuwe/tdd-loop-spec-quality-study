@@ -1,0 +1,762 @@
+{
+  "configs": [
+    "baseline",
+    "tdd_loop"
+  ],
+  "models": [
+    "sonnet"
+  ],
+  "tasks": [
+    "ClassEval_23",
+    "ClassEval_24",
+    "ClassEval_25",
+    "ClassEval_26",
+    "ClassEval_27",
+    "ClassEval_28",
+    "ClassEval_29"
+  ],
+  "results": [
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.4,
+      "gen_cost_usd": 0.03847655,
+      "gen_session_id": "d6e93797-3b61-4248-be5b-6a8f019c9007",
+      "wall_time_s": 7.4,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 4,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": false,
+            "error": "=================\nFAIL: test_count_all_3 (_sol.CombinationCalculatorTestCountAll.test_count_all_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 9, in test_count_all_3\nAssertionError: inf != False\n\n======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: 9223372036854775807 != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=3)\n",
+            "tests_run": 5,
+            "failures": 3,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 442.4,
+      "gen_cost_usd": 1.276986,
+      "gen_session_count": 33,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 5,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 5,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 442.4,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 4,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": false,
+            "error": "=================\nFAIL: test_count_all_3 (_sol.CombinationCalculatorTestCountAll.test_count_all_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 9, in test_count_all_3\nAssertionError: inf != False\n\n======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: 9223372036854775807 != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=2)\n",
+            "tests_run": 5,
+            "failures": 2,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 6.7,
+      "gen_cost_usd": 0.0333313,
+      "gen_session_id": "7eb4f3a0-5f38-468f-886b-f6486b3de6fa",
+      "wall_time_s": 6.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 317.1,
+      "gen_cost_usd": 1.038393,
+      "gen_session_count": 28,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 317.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 5.6,
+      "gen_cost_usd": 0.03370155,
+      "gen_session_id": "65c4a63e-4ddc-4e67-9e91-5d5bef750948",
+      "wall_time_s": 5.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 325.7,
+      "gen_cost_usd": 0.92847,
+      "gen_session_count": 21,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 325.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.8,
+      "gen_cost_usd": 0.037543549999999995,
+      "gen_session_id": "648f9a39-2375-4e95-8e0a-543091a61d07",
+      "wall_time_s": 7.8,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.043s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 691.4,
+      "gen_cost_usd": 1.745541,
+      "gen_session_count": 35,
+      "gen_iterations": 8,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 2
+      },
+      "wall_time_s": 691.4,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.008s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "[INFO]   Progress: [██████████████████░░░░░░░░░░░░] 60% (3/5 passed, 0 failed, 0 pending, 2 skipped)\n2026-04-25 16:04:17,543 [WARNING] No actionable features remaining\n2026-04-25 16:04:17,543 [WARNING] \nMax iterations reached (15), 11m31s\n2026-04-25 16:04:17,546 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_26\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.2,
+      "gen_cost_usd": 0.03572255,
+      "gen_session_id": "84a463dc-d775-4558-abcf-d8eb76c933b9",
+      "wall_time_s": 7.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 453.7,
+      "gen_cost_usd": 1.36663,
+      "gen_session_count": 32,
+      "gen_iterations": 6,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 453.7,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_convert_6 (_sol.CurrencyConverterTestConvert.test_convert_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 29, in test_convert_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_27\\solution.py\", line 33, in convert\n    return round(amount / self.rates[from_currency] * self.rates[to_currency], 2)\n                          ~~~~~~~~~~^^^^^^^^^^^^^^^\nKeyError: '???'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 1
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": false,
+            "error": "rrencies>\", line 20, in test_get_supported_currencies_4\nAssertionError: \"['USD','EUR','GBP','JPY','CAD','AUD','CNY']\" != ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CNY']\n\n======================================================================\nFAIL: test_get_supported_currencies_5 (_sol.CurrencyConverterTestGetSupportedCurrencies.test_get_supported_currencies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestGetSupportedCurrencies>\", line 25, in test_get_supported_currencies_5\nAssertionError: \"['USD','EUR','GBP','JPY','CAD','AUD','CNY']\" != ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CNY']\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 7.2,
+      "gen_cost_usd": 0.03758205,
+      "gen_session_id": "c1668501-e75d-471f-a10d-99633a4b08e9",
+      "wall_time_s": 7.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 933.6,
+      "gen_cost_usd": 2.250533,
+      "gen_session_count": 36,
+      "gen_iterations": 14,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 2,
+        "tests_failed": 1,
+        "tests_pending": 0,
+        "tests_skipped": 1
+      },
+      "wall_time_s": 933.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "[INFO]   Progress: [███████████████▓▓▓▓▓▓▓░░░░░░░·] 50% (2/4 passed, 1 failed, 0 pending, 1 skipped)\n2026-04-25 16:27:43,530 [WARNING] No actionable features remaining\n2026-04-25 16:27:43,530 [WARNING] \nMax iterations reached (15), 15m33s\n2026-04-25 16:27:43,533 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_28\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "baseline",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 8.2,
+      "gen_cost_usd": 0.03340005,
+      "gen_session_id": "c700b19f-10ff-441d-9f98-3432f6601150",
+      "wall_time_s": 8.2,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "tdd_loop",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 310.6,
+      "gen_cost_usd": 0.921403,
+      "gen_session_count": 23,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 310.6,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 1,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": false,
+            "error": "sertionError: '4.17' != 4.17\n\n======================================================================\nFAIL: test_mean_4 (_sol.DataStatisticsTestMean.test_mean_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMean>\", line 20, in test_mean_4\nAssertionError: '4.71' != 4.71\n\n======================================================================\nFAIL: test_mean_5 (_sol.DataStatisticsTestMean.test_mean_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMean>\", line 25, in test_mean_5\nAssertionError: '5.25' != 5.25\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": false,
+            "error": "4.50' != 4.5\n\n======================================================================\nFAIL: test_median_4 (_sol.DataStatisticsTestMedian.test_median_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMedian>\", line 20, in test_median_4\nAssertionError: '5.00' != 5\n\n======================================================================\nFAIL: test_median_5 (_sol.DataStatisticsTestMedian.test_median_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMedian>\", line 25, in test_median_5\nAssertionError: '5.50' != 5.5\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    }
+  ]
+}

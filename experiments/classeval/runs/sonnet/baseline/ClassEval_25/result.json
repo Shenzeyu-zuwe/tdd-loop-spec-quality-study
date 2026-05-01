@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_25",
+  "class_name": "CookiesUtil",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 5.6,
+  "gen_cost_usd": 0.03370155,
+  "gen_session_id": "65c4a63e-4ddc-4e67-9e91-5d5bef750948",
+  "wall_time_s": 5.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "CookiesUtilTestGetCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestLoadCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestSaveCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

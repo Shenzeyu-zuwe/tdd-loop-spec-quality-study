@@ -1,0 +1,35 @@
+{
+  "task_id": "ClassEval_19",
+  "class_name": "ChandrasekharSieve",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 12.2,
+  "gen_cost_usd": 0.02132175,
+  "gen_session_id": "53e207a6-aaee-4c54-93b8-e357d5c5b95c",
+  "wall_time_s": 12.2,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "ChandrasekharSieveTestGeneratePrimes": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ChandrasekharSieveTestGetPrimes": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

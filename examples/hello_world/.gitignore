@@ -1,0 +1,4 @@
+.tdd_loop_temp/
+.tdd_loop_orchestrator.lock
+__pycache__/
+*.pyc

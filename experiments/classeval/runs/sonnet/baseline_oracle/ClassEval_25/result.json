@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_25",
+  "class_name": "CookiesUtil",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.3,
+  "gen_cost_usd": 0.0446848,
+  "gen_session_id": "cd776744-f470-4055-8cbf-ead74abcd1c0",
+  "wall_time_s": 6.3,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 3,
+    "method_results": {
+      "CookiesUtilTestGetCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestLoadCookies": {
+        "passed": false,
+        "error": "-------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 23, in test_load_cookies_4\nAssertionError: {} != {'key1': 'value1', 'key2': 'value2'}\n- {}\n+ {'key1': 'value1', 'key2': 'value2'}\n\n======================================================================\nFAIL: test_load_cookies_5 (_sol.CookiesUtilTestLoadCookies.test_load_cookies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 31, in test_load_cookies_5\nAssertionError: {} != {'key1': 'value1', 'key2': 'value2'}\n- {}\n+ {'key1': 'value1', 'key2': 'value2'}\n\n----------------------------------------------------------------------\nRan 6 tests in 0.009s\n\nFAILED (failures=5)\n",
+        "tests_run": 6,
+        "failures": 5,
+        "errors": 0
+      },
+      "CookiesUtilTestSaveCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,1822 @@
+{
+  "configs": [
+    "tdd_loop_oracle"
+  ],
+  "models": [
+    "sonnet"
+  ],
+  "tasks": [
+    "ClassEval_0",
+    "ClassEval_1",
+    "ClassEval_2",
+    "ClassEval_3",
+    "ClassEval_4",
+    "ClassEval_5",
+    "ClassEval_6",
+    "ClassEval_7",
+    "ClassEval_8",
+    "ClassEval_9",
+    "ClassEval_10",
+    "ClassEval_11",
+    "ClassEval_12",
+    "ClassEval_13",
+    "ClassEval_14",
+    "ClassEval_15",
+    "ClassEval_16",
+    "ClassEval_17",
+    "ClassEval_18",
+    "ClassEval_19",
+    "ClassEval_20",
+    "ClassEval_21",
+    "ClassEval_22",
+    "ClassEval_23",
+    "ClassEval_24",
+    "ClassEval_25",
+    "ClassEval_26",
+    "ClassEval_27",
+    "ClassEval_28",
+    "ClassEval_29"
+  ],
+  "results": [
+    {
+      "task_id": "ClassEval_0",
+      "class_name": "AccessGatewayFilter",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 351.7,
+      "gen_cost_usd": 0.937666,
+      "gen_session_count": 10,
+      "gen_iterations": 1,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 351.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "AccessGatewayFilterTestFilter": {
+            "passed": true,
+            "error": "",
+            "tests_run": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestIsStartWith": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTestGetJwtUser": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AccessGatewayFilterTest": {
+            "passed": true,
+            "error": "",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_1",
+      "class_name": "AreaCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 478.6,
+      "gen_cost_usd": 1.538349,
+      "gen_session_count": 20,
+      "gen_iterations": 5,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 5,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 5,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 478.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "AreaCalculatorTestCalculateCircleArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateSphereArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateCylinderArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateSectorArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AreaCalculatorTestCalculateAnnulusArea": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_2",
+      "class_name": "ArgumentParser",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 269.7,
+      "gen_cost_usd": 0.861976,
+      "gen_session_count": 10,
+      "gen_iterations": 1,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 269.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "ArgumentParserTestParseArguments": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestGetArgument": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestAddArgument": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArgumentParserTestConvertType": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_3",
+      "class_name": "ArrangementCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 412.7,
+      "gen_cost_usd": 1.431914,
+      "gen_session_count": 18,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 5,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 5,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 412.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 5,
+        "method_total": 5,
+        "method_results": {
+          "ArrangementCalculatorTestCount": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestCountAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestSelect": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestSelectAll": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "ArrangementCalculatorTestFactorial": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_4",
+      "class_name": "AssessmentSystem",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 652.1,
+      "gen_cost_usd": 2.12988,
+      "gen_session_count": 24,
+      "gen_iterations": 6,
+      "fl_summary": {
+        "total_features": 6,
+        "passed": 6,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 6,
+        "tests_passed": 6,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 652.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 6,
+        "method_total": 6,
+        "method_results": {
+          "AssessmentSystemTestAddStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestAddCourseScore": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetGPA": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetCourseAverage": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AssessmentSystemTestGetTopStudent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_5",
+      "class_name": "AutomaticGuitarSimulator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 208.8,
+      "gen_cost_usd": 0.64055,
+      "gen_session_count": 8,
+      "gen_iterations": 2,
+      "fl_summary": {
+        "total_features": 2,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 2,
+        "tests_passed": 2,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 208.8,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "AutomaticGuitarSimulatorTestInterpret": {
+            "passed": true,
+            "error": "",
+            "tests_run": 9,
+            "failures": 0,
+            "errors": 0
+          },
+          "AutomaticGuitarSimulatorTestDisplay": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_6",
+      "class_name": "AvgPartition",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 179.9,
+      "gen_cost_usd": 0.590209,
+      "gen_session_count": 8,
+      "gen_iterations": 2,
+      "fl_summary": {
+        "total_features": 2,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 2,
+        "tests_passed": 2,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 179.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "AvgPartitionTestSetNum": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "AvgPartitionTestGet": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_7",
+      "class_name": "BalancedBrackets",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 183.0,
+      "gen_cost_usd": 0.601408,
+      "gen_session_count": 8,
+      "gen_iterations": 2,
+      "fl_summary": {
+        "total_features": 2,
+        "passed": 2,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 2,
+        "tests_passed": 2,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 183.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 2,
+        "method_total": 2,
+        "method_results": {
+          "BalancedBracketsTestClearExpr": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BalancedBracketsTestCheckBalancedBrackets": {
+            "passed": true,
+            "error": "",
+            "tests_run": 7,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_8",
+      "class_name": "BankAccount",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 399.7,
+      "gen_cost_usd": 1.1901,
+      "gen_session_count": 16,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 399.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BankAccountTestDeposit": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestWithdraw": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestViewBalance": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BankAccountTestTransfer": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_9",
+      "class_name": "BigNumCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 266.9,
+      "gen_cost_usd": 0.898323,
+      "gen_session_count": 12,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 266.9,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BigNumCalculatorTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BigNumCalculatorTestSubtract": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BigNumCalculatorTestMultiply": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_10",
+      "class_name": "BinaryDataProcessor",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 397.4,
+      "gen_cost_usd": 1.240816,
+      "gen_session_count": 16,
+      "gen_iterations": 4,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 397.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BinaryDataProcessorTestCleanNonBinaryChars": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestCalculateBinaryInfo": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestConvertToAscii": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BinaryDataProcessorTestConvertToUtf8": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_11",
+      "class_name": "BitStatusUtil",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 328.7,
+      "gen_cost_usd": 1.049303,
+      "gen_session_count": 14,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 328.7,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BitStatusUtilTestAdd": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestHas": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestRemove": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BitStatusUtilTestCheck": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_12",
+      "class_name": "BlackjackGame",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 335.4,
+      "gen_cost_usd": 1.014253,
+      "gen_session_count": 12,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 335.4,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BlackjackGameTestCreateDeck": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BlackjackGameTestCalculateHandValue": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "BlackjackGameTestCheckWinner": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_13",
+      "class_name": "BookManagement",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 351.6,
+      "gen_cost_usd": 1.075771,
+      "gen_session_count": 14,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 4,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 4,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 351.6,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 4,
+        "method_total": 4,
+        "method_results": {
+          "BookManagementTestAddBook": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestRemoveBook": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestViewInventory": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BookManagementTestViewBookQuantity": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_14",
+      "class_name": "BookManagementDB",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "timeout",
+      "gen_duration_s": 6729.7,
+      "gen_cost_usd": 2.312477,
+      "gen_session_count": 28,
+      "gen_iterations": 8,
+      "fl_summary": {
+        "total_features": 6,
+        "passed": 6,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 6,
+        "tests_passed": 6,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 6729.7,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 6,
+        "method_results": {
+          "BookManagementDBTestCreateTable": {
+            "passed": false,
+            "error": "BookManagementDBTestCreateTable.test_create_table_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_create_table_2 (_sol.BookManagementDBTestCreateTable.test_create_table_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.004s\n\nFAILED (errors=2)\n",
+            "tests_run": 2,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestAddBook": {
+            "passed": false,
+            "error": "========================\nERROR: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 25, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nFAIL: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 16, in test_add_book\nAssertionError: unexpectedly None\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (failures=1, errors=1)\n",
+            "tests_run": 1,
+            "failures": 1,
+            "errors": 1
+          },
+          "BookManagementDBTestRemoveBook": {
+            "passed": false,
+            "error": "======================================================================\nERROR: test_remove_book (_sol.BookManagementDBTestRemoveBook.test_remove_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestRemoveBook>\", line 22, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=1)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 1
+          },
+          "BookManagementDBTestBorrowBook": {
+            "passed": false,
+            "error": "test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 16, in test_borrow_book\nTypeError: 'NoneType' object is not subscriptable\n\n======================================================================\nERROR: test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 22, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=2)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestReturnBook": {
+            "passed": false,
+            "error": "test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 17, in test_return_book\nTypeError: 'NoneType' object is not subscriptable\n\n======================================================================\nERROR: test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 23, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nFAILED (errors=2)\n",
+            "tests_run": 1,
+            "failures": 0,
+            "errors": 2
+          },
+          "BookManagementDBTestSearchBooks": {
+            "passed": false,
+            "error": "RROR: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nFAIL: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 16, in test_search_books\nAssertionError: 20 != 3\n\n----------------------------------------------------------------------\nRan 1 test in 0.022s\n\nFAILED (failures=1, errors=1)\n",
+            "tests_run": 1,
+            "failures": 1,
+            "errors": 1
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "timeout"
+    },
+    {
+      "task_id": "ClassEval_15",
+      "class_name": "BoyerMooreSearch",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 311.1,
+      "gen_cost_usd": 1.005131,
+      "gen_session_count": 12,
+      "gen_iterations": 3,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 311.1,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "BoyerMooreSearchTestMatchInPattern": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BoyerMooreSearchTestMismatchInText": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "BoyerMooreSearchTestBadCharacterHeuristic": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_16",
+      "class_name": "Calculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "ok",
+      "gen_duration_s": 216.0,
+      "gen_cost_usd": 0.654678,
+      "gen_session_count": 8,
+      "gen_iterations": 1,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 3,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 3,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 0
+      },
+      "wall_time_s": 216.0,
+      "eval": {
+        "ok": true,
+        "class_passed": true,
+        "method_pass_count": 3,
+        "method_total": 3,
+        "method_results": {
+          "CalculatorTestCalculate": {
+            "passed": true,
+            "error": "",
+            "tests_run": 8,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalculatorTestPrecedence": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalculatorTestApplyOperator": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": ""
+    },
+    {
+      "task_id": "ClassEval_17",
+      "class_name": "CalendarUtil",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 354.7,
+      "gen_cost_usd": 0.593876,
+      "gen_session_count": 19,
+      "gen_iterations": 12,
+      "fl_summary": {
+        "total_features": 6,
+        "passed": 1,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 6,
+        "tests_passed": 1,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 5
+      },
+      "wall_time_s": 354.7,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 2,
+        "method_total": 6,
+        "method_results": {
+          "CalendarTestAddEvent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestRemoveEvent": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "CalendarTestGetEvents": {
+            "passed": false,
+            "error": "============================\nFAIL: test_get_events (_sol.CalendarTestGetEvents.test_get_events)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetEvents>\", line 6, in test_get_events\nAssertionError: None != [{'date': datetime.datetime(2023, 1, 1, 0[128 chars]ar'}]\n\n======================================================================\nFAIL: test_get_events_2 (_sol.CalendarTestGetEvents.test_get_events_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetEvents>\", line 14, in test_get_events_2\nAssertionError: None != []\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (failures=2)\n",
+            "tests_run": 2,
+            "failures": 2,
+            "errors": 0
+          },
+          "CalendarTestIsAvailable": {
+            "passed": false,
+            "error": "===================================================\nFAIL: test_is_available_4 (_sol.CalendarTestIsAvailable.test_is_available_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestIsAvailable>\", line 24, in test_is_available_4\nAssertionError: None != False\n\n======================================================================\nFAIL: test_is_available_5 (_sol.CalendarTestIsAvailable.test_is_available_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestIsAvailable>\", line 30, in test_is_available_5\nAssertionError: None != True\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CalendarTestGetAvailableSlots": {
+            "passed": false,
+            "error": "---------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 31, in test_get_available_slots_5\nTypeError: object of type 'NoneType' has no len()\n\n======================================================================\nFAIL: test_get_available_slots (_sol.CalendarTestGetAvailableSlots.test_get_available_slots)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 6, in test_get_available_slots\nAssertionError: None != [(datetime.datetime(2023, 1, 1, 23, 0), datetime.datetime(2023, 1, 2, 0, 0))]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=1, errors=4)\n",
+            "tests_run": 5,
+            "failures": 1,
+            "errors": 4
+          },
+          "CalendarTestGetUpcomingEvents": {
+            "passed": false,
+            "error": "ents.test_get_upcoming_events_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 24, in test_get_upcoming_events_4\nAssertionError: None != []\n\n======================================================================\nFAIL: test_get_upcoming_events_5 (_sol.CalendarTestGetUpcomingEvents.test_get_upcoming_events_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 33, in test_get_upcoming_events_5\nAssertionError: None != [{'date': datetime.datetime(2024, 1, 2, 0[130 chars] 2'}]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "   Progress: [█████░░░░░░░░░░░░░░░░░░░░░░░░░] 16% (1/6 passed, 0 failed, 0 pending, 5 skipped)\n2026-04-26 00:16:04,179 [WARNING] No actionable features remaining\n2026-04-26 00:16:04,179 [WARNING] \nMax iterations reached (15), 5m54s\n2026-04-26 00:16:04,182 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_17\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_18",
+      "class_name": "CamelCaseMap",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 218.8,
+      "gen_cost_usd": 0,
+      "gen_session_count": 21,
+      "gen_iterations": 15,
+      "fl_summary": {
+        "total_features": 7,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 7,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 7
+      },
+      "wall_time_s": 218.8,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 7,
+        "method_results": {
+          "CamelCaseMapTestGetitem": {
+            "passed": false,
+            "error": " != 30\n\n======================================================================\nFAIL: test_getitem_4 (_sol.CamelCaseMapTestGetitem.test_getitem_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestGetitem>\", line 20, in test_getitem_4\nAssertionError: None != 'John'\n\n======================================================================\nFAIL: test_getitem_5 (_sol.CamelCaseMapTestGetitem.test_getitem_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestGetitem>\", line 25, in test_getitem_5\nAssertionError: None != 'John'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CamelCaseMapTestSetitem": {
+            "passed": false,
+            "error": "ewname'\n\n======================================================================\nFAIL: test_setitem_4 (_sol.CamelCaseMapTestSetitem.test_setitem_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestSetitem>\", line 24, in test_setitem_4\nAssertionError: None != 'newname'\n\n======================================================================\nFAIL: test_setitem_5 (_sol.CamelCaseMapTestSetitem.test_setitem_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestSetitem>\", line 30, in test_setitem_5\nAssertionError: None != ''\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CamelCaseMapTestDelitem": {
+            "passed": false,
+            "error": "=========================================\nERROR: test_delitem_5 (_sol.CamelCaseMapTestDelitem.test_delitem_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestDelitem>\", line 31, in test_delitem_5\nTypeError: argument of type 'CamelCaseMap' is not iterable\n\n======================================================================\nFAIL: test_delitem_1 (_sol.CamelCaseMapTestDelitem.test_delitem_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestDelitem>\", line 7, in test_delitem_1\nAssertionError: None != 'Doe'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=1, errors=4)\n",
+            "tests_run": 5,
+            "failures": 1,
+            "errors": 4
+          },
+          "CamelCaseMapTestIter": {
+            "passed": false,
+            "error": "iterable\n\n======================================================================\nERROR: test_iter_4 (_sol.CamelCaseMapTestIter.test_iter_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestIter>\", line 45, in test_iter_4\nTypeError: 'NoneType' object is not iterable\n\n======================================================================\nERROR: test_iter_5 (_sol.CamelCaseMapTestIter.test_iter_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestIter>\", line 55, in test_iter_5\nTypeError: 'NoneType' object is not iterable\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (errors=5)\n",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 5
+          },
+          "CamelCaseMapTestLen": {
+            "passed": false,
+            "error": "tLen>\", line 15, in test_len_3\nAssertionError: None != 1\n\n======================================================================\nFAIL: test_len_4 (_sol.CamelCaseMapTestLen.test_len_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestLen>\", line 22, in test_len_4\nAssertionError: None != 3\n\n======================================================================\nFAIL: test_len_5 (_sol.CamelCaseMapTestLen.test_len_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestLen>\", line 26, in test_len_5\nAssertionError: None != 0\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CamelCaseMapTestConvertKey": {
+            "passed": false,
+            "error": "==========================================\nFAIL: test_convert_key_5 (_sol.CamelCaseMapTestConvertKey.test_convert_key_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestConvertKey>\", line 20, in test_convert_key_5\nAssertionError: None != 'eeeFff'\n\n======================================================================\nFAIL: test_convert_key_6 (_sol.CamelCaseMapTestConvertKey.test_convert_key_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestConvertKey>\", line 24, in test_convert_key_6\nAssertionError: None != 1234\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (failures=6)\n",
+            "tests_run": 6,
+            "failures": 6,
+            "errors": 0
+          },
+          "CamelCaseMapTestToCamelCase": {
+            "passed": false,
+            "error": "======================\nFAIL: test_to_camel_case_4 (_sol.CamelCaseMapTestToCamelCase.test_to_camel_case_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestToCamelCase>\", line 12, in test_to_camel_case_4\nAssertionError: None != 'cccDdd'\n\n======================================================================\nFAIL: test_to_camel_case_5 (_sol.CamelCaseMapTestToCamelCase.test_to_camel_case_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestToCamelCase>\", line 15, in test_to_camel_case_5\nAssertionError: None != 'eeeFff'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/7 passed, 0 failed, 0 pending, 7 skipped)\n2026-04-26 00:19:43,819 [WARNING] No actionable features remaining\n2026-04-26 00:19:43,819 [WARNING] \nMax iterations reached (15), 3m38s\n2026-04-26 00:19:43,822 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_18\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_19",
+      "class_name": "ChandrasekharSieve",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 171.9,
+      "gen_cost_usd": 0,
+      "gen_session_count": 6,
+      "gen_iterations": 5,
+      "fl_summary": {
+        "total_features": 2,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 2,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 2
+      },
+      "wall_time_s": 171.9,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 2,
+        "method_results": {
+          "ChandrasekharSieveTestGeneratePrimes": {
+            "passed": false,
+            "error": "mes_4 (_sol.ChandrasekharSieveTestGeneratePrimes.test_generate_primes_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChandrasekharSieveTestGeneratePrimes>\", line 20, in test_generate_primes_4\nAssertionError: None != [2, 3, 5, 7]\n\n======================================================================\nFAIL: test_generate_primes_5 (_sol.ChandrasekharSieveTestGeneratePrimes.test_generate_primes_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChandrasekharSieveTestGeneratePrimes>\", line 25, in test_generate_primes_5\nAssertionError: None != []\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ChandrasekharSieveTestGetPrimes": {
+            "passed": false,
+            "error": "==========================\nFAIL: test_get_primes_4 (_sol.ChandrasekharSieveTestGetPrimes.test_get_primes_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChandrasekharSieveTestGetPrimes>\", line 24, in test_get_primes_4\nAssertionError: None != [2, 3, 5, 7]\n\n======================================================================\nFAIL: test_get_primes_5 (_sol.ChandrasekharSieveTestGetPrimes.test_get_primes_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChandrasekharSieveTestGetPrimes>\", line 29, in test_get_primes_5\nAssertionError: None != []\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/2 passed, 0 failed, 0 pending, 2 skipped)\n2026-04-26 00:22:36,321 [WARNING] No actionable features remaining\n2026-04-26 00:22:36,321 [WARNING] \nMax iterations reached (15), 2m51s\n2026-04-26 00:22:36,323 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_19\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_20",
+      "class_name": "Chat",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 191.8,
+      "gen_cost_usd": 0,
+      "gen_session_count": 12,
+      "gen_iterations": 9,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 4
+      },
+      "wall_time_s": 191.8,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 4,
+        "method_results": {
+          "ChatTestAddUser": {
+            "passed": false,
+            "error": "_user_3\nAssertionError: None != True\n\n======================================================================\nFAIL: test_add_user_4 (_sol.ChatTestAddUser.test_add_user_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestAddUser>\", line 21, in test_add_user_4\nAssertionError: None != True\n\n======================================================================\nFAIL: test_add_user_5 (_sol.ChatTestAddUser.test_add_user_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestAddUser>\", line 26, in test_add_user_5\nAssertionError: None != True\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ChatTestRemoveUser": {
+            "passed": false,
+            "error": " True\n\n======================================================================\nFAIL: test_remove_user_4 (_sol.ChatTestRemoveUser.test_remove_user_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestRemoveUser>\", line 21, in test_remove_user_4\nAssertionError: None != True\n\n======================================================================\nFAIL: test_remove_user_5 (_sol.ChatTestRemoveUser.test_remove_user_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestRemoveUser>\", line 28, in test_remove_user_5\nAssertionError: None != False\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ChatTestSendMessage": {
+            "passed": false,
+            "error": "==================================================================\nFAIL: test_send_message_4 (_sol.ChatTestSendMessage.test_send_message_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestSendMessage>\", line 24, in test_send_message_4\nAssertionError: None != False\n\n======================================================================\nFAIL: test_send_message_5 (_sol.ChatTestSendMessage.test_send_message_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestSendMessage>\", line 30, in test_send_message_5\nAssertionError: None != False\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ChatTestGetMessages": {
+            "passed": false,
+            "error": "\n\n======================================================================\nFAIL: test_get_messages_4 (_sol.ChatTestGetMessages.test_get_messages_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestGetMessages>\", line 22, in test_get_messages_4\nAssertionError: None != []\n\n======================================================================\nFAIL: test_get_messages_5 (_sol.ChatTestGetMessages.test_get_messages_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestGetMessages>\", line 28, in test_get_messages_5\nAssertionError: None != []\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 passed, 0 failed, 0 pending, 4 skipped)\n2026-04-26 00:25:48,925 [WARNING] No actionable features remaining\n2026-04-26 00:25:48,925 [WARNING] \nMax iterations reached (15), 3m11s\n2026-04-26 00:25:48,927 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_20\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_21",
+      "class_name": "Classroom",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 191.7,
+      "gen_cost_usd": 0,
+      "gen_session_count": 12,
+      "gen_iterations": 9,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 4
+      },
+      "wall_time_s": 191.7,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 1,
+        "method_total": 4,
+        "method_results": {
+          "ClassroomTestAddCourse": {
+            "passed": false,
+            "error": "dd_course_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestAddCourse>\", line 30, in test_add_course_5\nAssertionError: {'name': 'P.E.', 'start_time': '15:00', 'end_time': '16:00'} not found in []\n\n======================================================================\nFAIL: test_add_course_6 (_sol.ClassroomTestAddCourse.test_add_course_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestAddCourse>\", line 37, in test_add_course_6\nAssertionError: {'name': 'math', 'start_time': '09:00', 'end_time': '10:00'} not found in []\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (failures=6)\n",
+            "tests_run": 6,
+            "failures": 6,
+            "errors": 0
+          },
+          "ClassroomTestRemoveCourse": {
+            "passed": true,
+            "error": "",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 0
+          },
+          "ClassroomTestIsFreeAt": {
+            "passed": false,
+            "error": "================================================================\nFAIL: test_is_free_at_3 (_sol.ClassroomTestIsFreeAt.test_is_free_at_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestIsFreeAt>\", line 24, in test_is_free_at_3\nAssertionError: None is not true\n\n======================================================================\nFAIL: test_is_free_at_4 (_sol.ClassroomTestIsFreeAt.test_is_free_at_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestIsFreeAt>\", line 32, in test_is_free_at_4\nAssertionError: None is not true\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=3)\n",
+            "tests_run": 5,
+            "failures": 3,
+            "errors": 0
+          },
+          "ClassroomTestCheckCourseConflict": {
+            "passed": false,
+            "error": "ssroomTestCheckCourseConflict.test_check_course_conflict_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestCheckCourseConflict>\", line 8, in test_check_course_conflict_1\nAssertionError: None is not true\n\n======================================================================\nFAIL: test_check_course_conflict_5 (_sol.ClassroomTestCheckCourseConflict.test_check_course_conflict_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassroomTestCheckCourseConflict>\", line 42, in test_check_course_conflict_5\nAssertionError: None is not true\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (failures=2)\n",
+            "tests_run": 6,
+            "failures": 2,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 passed, 0 failed, 0 pending, 4 skipped)\n2026-04-26 00:29:01,175 [WARNING] No actionable features remaining\n2026-04-26 00:29:01,175 [WARNING] \nMax iterations reached (15), 3m11s\n2026-04-26 00:29:01,177 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_21\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_22",
+      "class_name": "ClassRegistrationSystem",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 199.3,
+      "gen_cost_usd": 0,
+      "gen_session_count": 15,
+      "gen_iterations": 11,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 5
+      },
+      "wall_time_s": 199.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 5,
+        "method_results": {},
+        "class_load_error": "solution exec failed: Traceback (most recent call last):\n  File \"C:\\Users\\JIANGM~1\\AppData\\Local\\Temp\\tmpbzlb7c0g_ceval.py\", line 26, in <module>\n    spec.loader.exec_module(mod)\n  File \"<frozen importlib._bootstrap_external>\", line 991, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1129, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1059, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_22\\solution.py\", line 68\n    \"\"\"\n    ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 68)\n"
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/5 passed, 0 failed, 0 pending, 5 skipped)\n2026-04-26 00:32:21,390 [WARNING] No actionable features remaining\n2026-04-26 00:32:21,390 [WARNING] \nMax iterations reached (15), 3m19s\n2026-04-26 00:32:21,393 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_22\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_23",
+      "class_name": "CombinationCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 204.1,
+      "gen_cost_usd": 0,
+      "gen_session_count": 15,
+      "gen_iterations": 11,
+      "fl_summary": {
+        "total_features": 5,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 5,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 5
+      },
+      "wall_time_s": 204.1,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 5,
+        "method_results": {
+          "CombinationCalculatorTestCount": {
+            "passed": false,
+            "error": "\n======================================================================\nFAIL: test_count_4 (_sol.CombinationCalculatorTestCount.test_count_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCount>\", line 11, in test_count_4\nAssertionError: None != 1\n\n======================================================================\nFAIL: test_count_5 (_sol.CombinationCalculatorTestCount.test_count_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCount>\", line 14, in test_count_5\nAssertionError: None != 20\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CombinationCalculatorTestCountAll": {
+            "passed": false,
+            "error": "==================================\nFAIL: test_count_all_4 (_sol.CombinationCalculatorTestCountAll.test_count_all_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 12, in test_count_all_4\nAssertionError: None != 0\n\n======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: None != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect": {
+            "passed": false,
+            "error": "=============================================================\nFAIL: test_select_4 (_sol.CombinationCalculatorTestSelect.test_select_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestSelect>\", line 16, in test_select_4\nAssertionError: None != 1\n\n======================================================================\nFAIL: test_select_5 (_sol.CombinationCalculatorTestSelect.test_select_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestSelect>\", line 20, in test_select_5\nAssertionError: None != 20\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelectAll": {
+            "passed": false,
+            "error": "===================\nFAIL: test_select_all_4 (_sol.CombinationCalculatorTestSelectAll.test_select_all_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestSelectAll>\", line 16, in test_select_all_4\nAssertionError: None != []\n\n======================================================================\nFAIL: test_select_all_5 (_sol.CombinationCalculatorTestSelectAll.test_select_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestSelectAll>\", line 20, in test_select_all_5\nAssertionError: None != [['B']]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CombinationCalculatorTestSelect2": {
+            "passed": false,
+            "error": "ionCalculatorTestSelect2>\", line 24, in test_select2_4\nAssertionError: Lists differ: [] != [[]]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\n[]\n\n- []\n+ [[]]\n\n======================================================================\nFAIL: test_select2_5 (_sol.CombinationCalculatorTestSelect2.test_select2_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestSelect2>\", line 30, in test_select2_5\nAssertionError: Lists differ: [] != [['A', 'B', 'C', 'D']]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\n['A', 'B', 'C', 'D']\n\n- []\n+ [['A', 'B', 'C', 'D']]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/5 passed, 0 failed, 0 pending, 5 skipped)\n2026-04-26 00:35:46,327 [WARNING] No actionable features remaining\n2026-04-26 00:35:46,327 [WARNING] \nMax iterations reached (15), 3m23s\n2026-04-26 00:35:46,329 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_23\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_24",
+      "class_name": "ComplexCalculator",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 190.2,
+      "gen_cost_usd": 0,
+      "gen_session_count": 12,
+      "gen_iterations": 9,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 4
+      },
+      "wall_time_s": 190.2,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 4,
+        "method_results": {
+          "ComplexCalculatorTestAdd": {
+            "passed": false,
+            "error": "ssertionError: None != (4-6j)\n\n======================================================================\nFAIL: test_add_4 (_sol.ComplexCalculatorTestAdd.test_add_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestAdd>\", line 16, in test_add_4\nAssertionError: None != (-4+6j)\n\n======================================================================\nFAIL: test_add_5 (_sol.ComplexCalculatorTestAdd.test_add_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestAdd>\", line 20, in test_add_5\nAssertionError: None != 0j\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ComplexCalculatorTestSubtract": {
+            "passed": false,
+            "error": "====================================================\nFAIL: test_subtract_4 (_sol.ComplexCalculatorTestSubtract.test_subtract_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestSubtract>\", line 16, in test_subtract_4\nAssertionError: None != (2-2j)\n\n======================================================================\nFAIL: test_subtract_5 (_sol.ComplexCalculatorTestSubtract.test_subtract_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestSubtract>\", line 20, in test_subtract_5\nAssertionError: None != 0j\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ComplexCalculatorTestMultiply": {
+            "passed": false,
+            "error": "==============================================\nFAIL: test_multiply_4 (_sol.ComplexCalculatorTestMultiply.test_multiply_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestMultiply>\", line 16, in test_multiply_4\nAssertionError: None != (-5-10j)\n\n======================================================================\nFAIL: test_multiply_5 (_sol.ComplexCalculatorTestMultiply.test_multiply_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestMultiply>\", line 20, in test_multiply_5\nAssertionError: None != (3-4j)\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "ComplexCalculatorTestDivide": {
+            "passed": false,
+            "error": "=============================================================\nFAIL: test_divide_4 (_sol.ComplexCalculatorTestDivide.test_divide_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestDivide>\", line 16, in test_divide_4\nAssertionError: None != (0.44-0.08j)\n\n======================================================================\nFAIL: test_divide_5 (_sol.ComplexCalculatorTestDivide.test_divide_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ComplexCalculatorTestDivide>\", line 20, in test_divide_5\nAssertionError: None != (-1+0j)\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "O]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 passed, 0 failed, 0 pending, 4 skipped)\n2026-04-26 00:38:57,119 [WARNING] No actionable features remaining\n2026-04-26 00:38:57,119 [WARNING] \nMax iterations reached (15), 3m9s\n2026-04-26 00:38:57,120 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_24\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_25",
+      "class_name": "CookiesUtil",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 182.7,
+      "gen_cost_usd": 0,
+      "gen_session_count": 9,
+      "gen_iterations": 7,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 3
+      },
+      "wall_time_s": 182.7,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 3,
+        "method_results": {
+          "CookiesUtilTestGetCookies": {
+            "passed": false,
+            "error": "t_cookies_4 (_sol.CookiesUtilTestGetCookies.test_get_cookies_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestGetCookies>\", line 31, in test_get_cookies_4\nAssertionError: None != {'key1': 'value1', 'key2': 'value2'}\n\n======================================================================\nFAIL: test_get_cookies_5 (_sol.CookiesUtilTestGetCookies.test_get_cookies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestGetCookies>\", line 41, in test_get_cookies_5\nAssertionError: None != {'key1': 'value1', 'key2': 'value2'}\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CookiesUtilTestLoadCookies": {
+            "passed": false,
+            "error": "==========\nFAIL: test_load_cookies_5 (_sol.CookiesUtilTestLoadCookies.test_load_cookies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 31, in test_load_cookies_5\nAssertionError: None != {'key1': 'value1', 'key2': 'value2'}\n\n======================================================================\nFAIL: test_load_cookies_6 (_sol.CookiesUtilTestLoadCookies.test_load_cookies_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestLoadCookies>\", line 35, in test_load_cookies_6\nAssertionError: None != {}\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (failures=6)\n",
+            "tests_run": 6,
+            "failures": 6,
+            "errors": 0
+          },
+          "CookiesUtilTestSaveCookies": {
+            "passed": false,
+            "error": "================================\nFAIL: test_save_cookies_4 (_sol.CookiesUtilTestSaveCookies.test_save_cookies_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestSaveCookies>\", line 25, in test_save_cookies_4\nAssertionError: None is not true\n\n======================================================================\nFAIL: test_save_cookies_5 (_sol.CookiesUtilTestSaveCookies.test_save_cookies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CookiesUtilTestSaveCookies>\", line 33, in test_save_cookies_5\nAssertionError: None is not true\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "tests_run": 6,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "O]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/3 passed, 0 failed, 0 pending, 3 skipped)\n2026-04-26 00:42:00,414 [WARNING] No actionable features remaining\n2026-04-26 00:42:00,414 [WARNING] \nMax iterations reached (15), 3m2s\n2026-04-26 00:42:00,415 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_25\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_26",
+      "class_name": "CSVProcessor",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 182.4,
+      "gen_cost_usd": 0,
+      "gen_session_count": 9,
+      "gen_iterations": 7,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 3
+      },
+      "wall_time_s": 182.4,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 3,
+        "method_results": {
+          "CSVProcessorTestReadCSV": {
+            "passed": false,
+            "error": "==========================\nERROR: test_read_csv_4 (_sol.CSVProcessorTestReadCSV.test_read_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestReadCSV>\", line 49, in test_read_csv_4\nTypeError: cannot unpack non-iterable NoneType object\n\n======================================================================\nERROR: test_read_csv_5 (_sol.CSVProcessorTestReadCSV.test_read_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestReadCSV>\", line 62, in test_read_csv_5\nTypeError: cannot unpack non-iterable NoneType object\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nFAILED (errors=5)\n",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 5
+          },
+          "CSVProcessorTestWriteCSV": {
+            "passed": false,
+            "error": "\n\n======================================================================\nFAIL: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 69, in test_write_csv_5\nAssertionError: 1 != None\n\n======================================================================\nFAIL: test_write_csv_6 (_sol.CSVProcessorTestWriteCSV.test_write_csv_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 82, in test_write_csv_6\nAssertionError: 0 != None\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (failures=6)\n",
+            "tests_run": 6,
+            "failures": 6,
+            "errors": 0
+          },
+          "CSVProcessorTestProcessCSVData": {
+            "passed": false,
+            "error": "======\nFAIL: test_process_csv_data_4 (_sol.CSVProcessorTestProcessCSVData.test_process_csv_data_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestProcessCSVData>\", line 42, in test_process_csv_data_4\nAssertionError: 1 != None\n\n======================================================================\nFAIL: test_process_csv_data_5 (_sol.CSVProcessorTestProcessCSVData.test_process_csv_data_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestProcessCSVData>\", line 52, in test_process_csv_data_5\nAssertionError: 1 != None\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "O]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/3 passed, 0 failed, 0 pending, 3 skipped)\n2026-04-26 00:45:03,469 [WARNING] No actionable features remaining\n2026-04-26 00:45:03,469 [WARNING] \nMax iterations reached (15), 3m2s\n2026-04-26 00:45:03,471 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_26\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_27",
+      "class_name": "CurrencyConverter",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 193.3,
+      "gen_cost_usd": 0,
+      "gen_session_count": 12,
+      "gen_iterations": 9,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 4
+      },
+      "wall_time_s": 193.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 4,
+        "method_results": {
+          "CurrencyConverterTestConvert": {
+            "passed": false,
+            "error": "=======================================================\nFAIL: test_convert_1 (_sol.CurrencyConverterTestConvert.test_convert_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 5, in test_convert_1\nAssertionError: None != 10.0\n\n======================================================================\nFAIL: test_convert_2 (_sol.CurrencyConverterTestConvert.test_convert_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 10, in test_convert_2\nAssertionError: None != 64\n\n----------------------------------------------------------------------\nRan 6 tests in 0.002s\n\nFAILED (failures=2, errors=3)\n",
+            "tests_run": 6,
+            "failures": 2,
+            "errors": 3
+          },
+          "CurrencyConverterTestGetSupportedCurrencies": {
+            "passed": false,
+            "error": "--\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestGetSupportedCurrencies>\", line 20, in test_get_supported_currencies_4\nAssertionError: None != ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CNY']\n\n======================================================================\nFAIL: test_get_supported_currencies_5 (_sol.CurrencyConverterTestGetSupportedCurrencies.test_get_supported_currencies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestGetSupportedCurrencies>\", line 25, in test_get_supported_currencies_5\nAssertionError: None != ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CNY']\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "CurrencyConverterTestAddCurrencyRate": {
+            "passed": false,
+            "error": "OR: test_add_currency_rate_4 (_sol.CurrencyConverterTestAddCurrencyRate.test_add_currency_rate_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestAddCurrencyRate>\", line 20, in test_add_currency_rate_4\nKeyError: 'ccc'\n\n======================================================================\nERROR: test_add_currency_rate_5 (_sol.CurrencyConverterTestAddCurrencyRate.test_add_currency_rate_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestAddCurrencyRate>\", line 25, in test_add_currency_rate_5\nKeyError: 'ddd'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (errors=5)\n",
+            "tests_run": 6,
+            "failures": 0,
+            "errors": 5
+          },
+          "CurrencyConverterTestUpdateCurrencyRate": {
+            "passed": false,
+            "error": "erTestUpdateCurrencyRate.test_update_currency_rate_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestUpdateCurrencyRate>\", line 20, in test_update_currency_rate_4\nAssertionError: 6.4 != 3.0\n\n======================================================================\nFAIL: test_update_currency_rate_5 (_sol.CurrencyConverterTestUpdateCurrencyRate.test_update_currency_rate_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestUpdateCurrencyRate>\", line 25, in test_update_currency_rate_5\nAssertionError: 6.4 != 4.0\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 6,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 passed, 0 failed, 0 pending, 4 skipped)\n2026-04-26 00:48:17,520 [WARNING] No actionable features remaining\n2026-04-26 00:48:17,520 [WARNING] \nMax iterations reached (15), 3m13s\n2026-04-26 00:48:17,522 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_27\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_28",
+      "class_name": "DatabaseProcessor",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 194.3,
+      "gen_cost_usd": 0,
+      "gen_session_count": 12,
+      "gen_iterations": 9,
+      "fl_summary": {
+        "total_features": 4,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 4,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 4
+      },
+      "wall_time_s": 194.3,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 4,
+        "method_results": {
+          "DatabaseProcessorTestCreateTable": {
+            "passed": false,
+            "error": "======================================================================\nFAIL: test_create_table_1 (_sol.DatabaseProcessorTestCreateTable.test_create_table_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestCreateTable>\", line 23, in test_create_table_1\nAssertionError: unexpectedly None\n\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nFAILED (failures=1)\n",
+            "tests_run": 5,
+            "failures": 1,
+            "errors": 0
+          },
+          "DatabaseProcessorTestInsertIntoDatabase": {
+            "passed": false,
+            "error": "e_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestInsertIntoDatabase>\", line 74, in test_insert_into_database_4\nsqlite3.OperationalError: no such table: test_table\n\n======================================================================\nERROR: test_insert_into_database_5 (_sol.DatabaseProcessorTestInsertIntoDatabase.test_insert_into_database_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestInsertIntoDatabase>\", line 91, in test_insert_into_database_5\nsqlite3.OperationalError: no such table: test_table\n\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nFAILED (errors=5)\n",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 5
+          },
+          "DatabaseProcessorTestSearchDatabase": {
+            "passed": false,
+            "error": "ase_1 (_sol.DatabaseProcessorTestSearchDatabase.test_search_database_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestSearchDatabase>\", line 23, in test_search_database_1\nAssertionError: unexpectedly None\n\n======================================================================\nFAIL: test_search_database_2 (_sol.DatabaseProcessorTestSearchDatabase.test_search_database_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestSearchDatabase>\", line 37, in test_search_database_2\nAssertionError: unexpectedly None\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nFAILED (failures=2)\n",
+            "tests_run": 5,
+            "failures": 2,
+            "errors": 0
+          },
+          "DatabaseProcessorTestDeteleFromDatabase": {
+            "passed": false,
+            "error": "_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestDeteleFromDatabase>\", line 86, in test_delete_from_database_4\nsqlite3.OperationalError: no such table: test_table\n\n======================================================================\nERROR: test_delete_from_database_5 (_sol.DatabaseProcessorTestDeteleFromDatabase.test_delete_from_database_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DatabaseProcessorTestDeteleFromDatabase>\", line 106, in test_delete_from_database_5\nsqlite3.OperationalError: no such table: test_table\n\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nFAILED (errors=5)\n",
+            "tests_run": 5,
+            "failures": 0,
+            "errors": 5
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/4 passed, 0 failed, 0 pending, 4 skipped)\n2026-04-26 00:51:32,431 [WARNING] No actionable features remaining\n2026-04-26 00:51:32,431 [WARNING] \nMax iterations reached (15), 3m14s\n2026-04-26 00:51:32,433 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_28\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    },
+    {
+      "task_id": "ClassEval_29",
+      "class_name": "DataStatistics",
+      "config": "tdd_loop_oracle",
+      "model": "sonnet",
+      "gen_status": "error",
+      "gen_duration_s": 180.1,
+      "gen_cost_usd": 0,
+      "gen_session_count": 9,
+      "gen_iterations": 7,
+      "fl_summary": {
+        "total_features": 3,
+        "passed": 0,
+        "failed": 0,
+        "pending": 0,
+        "total_tests": 3,
+        "tests_passed": 0,
+        "tests_failed": 0,
+        "tests_pending": 0,
+        "tests_skipped": 3
+      },
+      "wall_time_s": 180.1,
+      "eval": {
+        "ok": false,
+        "class_passed": false,
+        "method_pass_count": 0,
+        "method_total": 3,
+        "method_results": {
+          "DataStatisticsTestMean": {
+            "passed": false,
+            "error": "n_3\nAssertionError: None != 4.17\n\n======================================================================\nFAIL: test_mean_4 (_sol.DataStatisticsTestMean.test_mean_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMean>\", line 20, in test_mean_4\nAssertionError: None != 4.71\n\n======================================================================\nFAIL: test_mean_5 (_sol.DataStatisticsTestMean.test_mean_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMean>\", line 25, in test_mean_5\nAssertionError: None != 5.25\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "DataStatisticsTestMedian": {
+            "passed": false,
+            "error": "ror: None != 4.5\n\n======================================================================\nFAIL: test_median_4 (_sol.DataStatisticsTestMedian.test_median_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMedian>\", line 20, in test_median_4\nAssertionError: None != 5\n\n======================================================================\nFAIL: test_median_5 (_sol.DataStatisticsTestMedian.test_median_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMedian>\", line 25, in test_median_5\nAssertionError: None != 5.5\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          },
+          "DataStatisticsTestMode": {
+            "passed": false,
+            "error": "\nAssertionError: None != [2, 3, 4]\n\n======================================================================\nFAIL: test_mode_4 (_sol.DataStatisticsTestMode.test_mode_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMode>\", line 20, in test_mode_4\nAssertionError: None != [4]\n\n======================================================================\nFAIL: test_mode_5 (_sol.DataStatisticsTestMode.test_mode_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<DataStatisticsTestMode>\", line 25, in test_mode_5\nAssertionError: None != [4]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+            "tests_run": 5,
+            "failures": 5,
+            "errors": 0
+          }
+        },
+        "class_load_error": ""
+      },
+      "error": "]   Progress: [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0% (0/3 passed, 0 failed, 0 pending, 3 skipped)\n2026-04-26 00:54:34,201 [WARNING] No actionable features remaining\n2026-04-26 00:54:34,201 [WARNING] \nMax iterations reached (15), 2m59s\n2026-04-26 00:54:34,203 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_29\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+    }
+  ]
+}

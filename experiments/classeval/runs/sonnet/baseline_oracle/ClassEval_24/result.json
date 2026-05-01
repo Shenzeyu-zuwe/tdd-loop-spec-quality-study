@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_24",
+  "class_name": "ComplexCalculator",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 9.9,
+  "gen_cost_usd": 0.0386783,
+  "gen_session_id": "3228de41-1db6-4fbe-88ad-128ee8cf5fe2",
+  "wall_time_s": 9.9,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "ComplexCalculatorTestAdd": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ComplexCalculatorTestSubtract": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ComplexCalculatorTestMultiply": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ComplexCalculatorTestDivide": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

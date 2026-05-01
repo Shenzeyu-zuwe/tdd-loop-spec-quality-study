@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_10",
+  "class_name": "BinaryDataProcessor",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 26.5,
+  "gen_cost_usd": 0.036491,
+  "gen_session_id": "006af057-a07e-488b-97f4-35d14e39d580",
+  "wall_time_s": 26.5,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 4,
+    "method_results": {
+      "BinaryDataProcessorTestCleanNonBinaryChars": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestCalculateBinaryInfo": {
+        "passed": false,
+        "error": "=============================\nFAIL: test_calculate_binary_info_5 (_sol.BinaryDataProcessorTestCalculateBinaryInfo.test_calculate_binary_info_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestCalculateBinaryInfo>\", line 20, in test_calculate_binary_info_5\nAssertionError: {'Zeroes': 0.438, 'Ones': 0.562, 'Bit length': 16} != {'Bit length': 16, 'Ones': 0.5625, 'Zeroes': 0.4375}\n- {'Bit length': 16, 'Ones': 0.562, 'Zeroes': 0.438}\n?                                                 ^\n\n+ {'Bit length': 16, 'Ones': 0.5625, 'Zeroes': 0.4375}\n?                                 +                ^^\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=3)\n",
+        "tests_run": 5,
+        "failures": 3,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToAscii": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToUtf8": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

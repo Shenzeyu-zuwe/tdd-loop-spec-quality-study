@@ -1,0 +1,56 @@
+{
+  "task_id": "ClassEval_22",
+  "class_name": "ClassRegistrationSystem",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 23.3,
+  "gen_cost_usd": 0.036688250000000006,
+  "gen_session_id": "354ca1f1-97a0-4048-b415-a0630f5328e0",
+  "wall_time_s": 23.3,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "ClassRegistrationSystemTestRegisterStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestRegisterClass": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestGetStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 4,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestGetMajor": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestPopularClass": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,70 @@
+{
+  "task_id": "ClassEval_18",
+  "class_name": "CamelCaseMap",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.1,
+  "gen_cost_usd": 0.04891105,
+  "gen_session_id": "c447cd7f-15fe-4508-b371-7ca96a789659",
+  "wall_time_s": 6.1,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 4,
+    "method_total": 7,
+    "method_results": {
+      "CamelCaseMapTestGetitem": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_getitem_5 (_sol.CamelCaseMapTestGetitem.test_getitem_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestGetitem>\", line 25, in test_getitem_5\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\baseline_oracle\\ClassEval_18\\solution.py\", line 6, in __getitem__\n    return self._data[self._convert_key(key)]\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'firstname'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 1
+      },
+      "CamelCaseMapTestSetitem": {
+        "passed": false,
+        "error": "======================================================================\nFAIL: test_setitem_4 (_sol.CamelCaseMapTestSetitem.test_setitem_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestSetitem>\", line 24, in test_setitem_4\nAssertionError: 'John' != 'newname'\n- John\n+ newname\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=1)\n",
+        "tests_run": 5,
+        "failures": 1,
+        "errors": 0
+      },
+      "CamelCaseMapTestDelitem": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_delitem_4 (_sol.CamelCaseMapTestDelitem.test_delitem_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CamelCaseMapTestDelitem>\", line 24, in test_delitem_4\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\baseline_oracle\\ClassEval_18\\solution.py\", line 12, in __delitem__\n    del self._data[self._convert_key(key)]\n        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'firstname'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 1
+      },
+      "CamelCaseMapTestIter": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestLen": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestConvertKey": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestToCamelCase": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

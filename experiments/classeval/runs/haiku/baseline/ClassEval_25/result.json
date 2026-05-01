@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_25",
+  "class_name": "CookiesUtil",
+  "config": "baseline",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 10.6,
+  "gen_cost_usd": 0.020915250000000003,
+  "gen_session_id": "17136976-699b-41bd-a54a-b12ef6327bf3",
+  "wall_time_s": 10.7,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "CookiesUtilTestGetCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestLoadCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CookiesUtilTestSaveCookies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

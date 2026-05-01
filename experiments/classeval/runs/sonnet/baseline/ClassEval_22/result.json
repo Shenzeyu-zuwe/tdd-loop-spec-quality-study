@@ -1,0 +1,56 @@
+{
+  "task_id": "ClassEval_22",
+  "class_name": "ClassRegistrationSystem",
+  "config": "baseline",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 9.6,
+  "gen_cost_usd": 0.03801805,
+  "gen_session_id": "7d142c21-b444-47fa-b3b2-6b944beb0e2a",
+  "wall_time_s": 9.6,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 4,
+    "method_total": 5,
+    "method_results": {
+      "ClassRegistrationSystemTestRegisterStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestRegisterClass": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestGetStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 4,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestGetMajor": {
+        "passed": false,
+        "error": "mputer Science']\n+ ['Computer Science', 'Mathematics']\n\n======================================================================\nFAIL: test_get_all_major3 (_sol.ClassRegistrationSystemTestGetMajor.test_get_all_major3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestGetMajor>\", line 32, in test_get_all_major3\nAssertionError: Lists differ: ['Physics', 'Mathematics', 'Computer Science'] != ['Computer Science', 'Mathematics', 'Physics']\n\nFirst differing element 0:\n'Physics'\n'Computer Science'\n\n- ['Physics', 'Mathematics', 'Computer Science']\n+ ['Computer Science', 'Mathematics', 'Physics']\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nFAILED (failures=2)\n",
+        "tests_run": 3,
+        "failures": 2,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestPopularClass": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

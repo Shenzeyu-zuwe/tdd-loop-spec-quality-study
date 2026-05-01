@@ -1,0 +1,63 @@
+{
+  "task_id": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 65.9,
+  "gen_cost_usd": 0.08269925000000002,
+  "gen_session_id": "d994d447-0ab8-45ac-bcf0-c65c69fc679a",
+  "wall_time_s": 65.9,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 5,
+    "method_total": 6,
+    "method_results": {
+      "CalendarTestAddEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestRemoveEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestIsAvailable": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetAvailableSlots": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetUpcomingEvents": {
+        "passed": false,
+        "error": "---------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 33, in test_get_upcoming_events_5\nAssertionError: Lists differ: [] != [{'date': datetime.datetime(2024, 1, 2, 0,[129 chars] 2'}]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\n{'date': datetime.datetime(2024, 1, 2, 0, 0), 'start_time': datetime.datetime(2024, 1, 2, 1, 0), 'end_time': datetime.datetime(2024, 1, 2, 2, 0), 'description': 'New Year 2'}\n\n- []\n+ [{'date': datetime.datetime(2024, 1, 2, 0, 0),\n+   'description': 'New Year 2',\n+   'end_time': datetime.datetime(2024, 1, 2, 2, 0),\n+   'start_time': datetime.datetime(2024, 1, 2, 1, 0)}]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=1)\n",
+        "tests_run": 5,
+        "failures": 1,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

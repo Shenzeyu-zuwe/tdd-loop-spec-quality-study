@@ -1,0 +1,70 @@
+{
+  "task_id": "ClassEval_18",
+  "class_name": "CamelCaseMap",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 66.6,
+  "gen_cost_usd": 0.07773475,
+  "gen_session_id": "ee2b78b6-9cae-4dc6-965e-c5e62b64d859",
+  "wall_time_s": 66.7,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 7,
+    "method_total": 7,
+    "method_results": {
+      "CamelCaseMapTestGetitem": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestSetitem": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestDelitem": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestIter": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestLen": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestConvertKey": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CamelCaseMapTestToCamelCase": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

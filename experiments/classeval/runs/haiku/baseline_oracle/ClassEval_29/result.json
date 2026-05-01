@@ -1,0 +1,42 @@
+{
+  "task_id": "ClassEval_29",
+  "class_name": "DataStatistics",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 17.2,
+  "gen_cost_usd": 0.02895675,
+  "gen_session_id": "5f0b6b15-74c4-4daf-ac84-a04f90f00ce7",
+  "wall_time_s": 17.2,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "DataStatisticsTestMean": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DataStatisticsTestMedian": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DataStatisticsTestMode": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

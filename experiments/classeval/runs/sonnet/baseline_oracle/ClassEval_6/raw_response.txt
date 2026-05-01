@@ -1,0 +1,15 @@
+```python
+class AvgPartition:
+    def __init__(self, lst, limit):
+        self.lst = lst
+        self.limit = limit
+
+    def setNum(self):
+        return (len(self.lst) // self.limit, len(self.lst) % self.limit)
+
+    def get(self, index):
+        size, remainder = self.setNum()
+        start = index * size + min(index, remainder)
+        end = start + size + (1 if index < remainder else 0)
+        return self.lst[start:end]
+```

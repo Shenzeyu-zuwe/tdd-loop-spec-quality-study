@@ -1,0 +1,49 @@
+{
+  "task_id": "ClassEval_11",
+  "class_name": "BitStatusUtil",
+  "config": "baseline_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 19.7,
+  "gen_cost_usd": 0.030709999999999998,
+  "gen_session_id": "cc9fbe9f-0a56-4256-aad7-f011d9ff9bb3",
+  "wall_time_s": 19.8,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "BitStatusUtilTestAdd": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BitStatusUtilTestHas": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BitStatusUtilTestRemove": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BitStatusUtilTestCheck": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

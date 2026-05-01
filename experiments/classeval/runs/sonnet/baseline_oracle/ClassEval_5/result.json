@@ -1,0 +1,35 @@
+{
+  "task_id": "ClassEval_5",
+  "class_name": "AutomaticGuitarSimulator",
+  "config": "baseline_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 6.0,
+  "gen_cost_usd": 0.039666049999999994,
+  "gen_session_id": "b2030f44-bed1-4b38-a329-867e83701f4b",
+  "wall_time_s": 6.0,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "AutomaticGuitarSimulatorTestInterpret": {
+        "passed": true,
+        "error": "",
+        "tests_run": 9,
+        "failures": 0,
+        "errors": 0
+      },
+      "AutomaticGuitarSimulatorTestDisplay": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}
