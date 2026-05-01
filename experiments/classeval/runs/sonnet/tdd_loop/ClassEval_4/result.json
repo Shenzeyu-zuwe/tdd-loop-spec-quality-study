@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_4",
+  "class_name": "AssessmentSystem",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "timeout",
+  "gen_duration_s": 34307.2,
+  "gen_cost_usd": 2.524251,
+  "gen_session_count": 33,
+  "gen_iterations": 13,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 1
+  },
+  "wall_time_s": 34307.2,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 4,
+    "method_total": 6,
+    "method_results": {
+      "AssessmentSystemTestAddStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestAddCourseScore": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetGPA": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetCourseAverage": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_get_course_average_2 (_sol.AssessmentSystemTestGetCourseAverage.test_get_course_average_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetCourseAverage>\", line 20, in test_get_course_average_2\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_4\\solution.py\", line 76, in get_course_average\n    return sum(scores) / len(scores) if scores else None\n           ^^^^^^^^^^^\nTypeError: unsupported operand type(s) for +: 'int' and 'NoneType'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nFAILED (errors=1)\n",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 1
+      },
+      "AssessmentSystemTestGetTopStudent": {
+        "passed": false,
+        "error": "opStudent.test_get_top_student_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetTopStudent>\", line 36, in test_get_top_student_4\nAssertionError: \"'Bob'\" != 'Bob'\n- 'Bob'\n? -   -\n+ Bob\n\n\n======================================================================\nFAIL: test_get_top_student_5 (_sol.AssessmentSystemTestGetTopStudent.test_get_top_student_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetTopStudent>\", line 49, in test_get_top_student_5\nAssertionError: \"'Bob'\" != 'Bob'\n- 'Bob'\n? -   -\n+ Bob\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=4)\n",
+        "tests_run": 5,
+        "failures": 4,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "timeout"
+}

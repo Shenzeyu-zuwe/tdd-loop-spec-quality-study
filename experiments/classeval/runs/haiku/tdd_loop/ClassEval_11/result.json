@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_11",
+  "class_name": "BitStatusUtil",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 984.3,
+  "gen_cost_usd": 1.281234,
+  "gen_session_count": 25,
+  "gen_iterations": 6,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 984.3,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 4,
+    "method_results": {
+      "BitStatusUtilTestAdd": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BitStatusUtilTestHas": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BitStatusUtilTestRemove": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BitStatusUtilTestCheck": {
+        "passed": false,
+        "error": "=================================\nERROR: test_check_5 (_sol.BitStatusUtilTestCheck.test_check_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_11\\solution.py\", line 67, in check\n    raise ValueError(f\"{arg} not even\")\nValueError: 3 not even\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<BitStatusUtilTestCheck>\", line 24, in test_check_5\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_11\\solution.py\", line 70, in check\n    sys.exit(1)\nSystemExit: 1\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nFAILED (errors=4)\n",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 4
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

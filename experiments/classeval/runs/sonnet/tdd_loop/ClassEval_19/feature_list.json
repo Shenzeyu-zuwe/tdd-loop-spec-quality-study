@@ -1,0 +1,49 @@
+{
+  "change_name": "ClassEval_19",
+  "class_name": "ChandrasekharSieve",
+  "class_description": "    \"\"\"\n    This is a class that uses the Chandrasekhar's Sieve method to find all prime numbers within the range\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `generate_primes(self)` on class `ChandrasekharSieve` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `ChandrasekharSieve.generate_primes`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import ChandrasekharSieve\ncs = ChandrasekharSieve(20)\nprint(cs.generate_primes())\n```\n\nExpected stdout:\n```\n[2, 3, 5, 7, 11, 13, 17, 19]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced exactly `[2, 3, 5, 7, 11, 13, 17, 19]`, matching the expected stdout byte-for-byte after stripping trailing whitespace.",
+          "last_run": "2026-04-25T12:22:14.336784"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `get_primes(self)` on class `ChandrasekharSieve` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `ChandrasekharSieve.get_primes`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import ChandrasekharSieve\ncs = ChandrasekharSieve(20)\nprint(cs.get_primes())\n```\n\nExpected stdout:\n```\n[2, 3, 5, 7, 11, 13, 17, 19]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced exactly `[2, 3, 5, 7, 11, 13, 17, 19]`, matching the expected stdout byte-for-byte after stripping trailing whitespace.",
+          "last_run": "2026-04-25T12:23:07.977268"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 2,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 2,
+    "tests_passed": 2,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

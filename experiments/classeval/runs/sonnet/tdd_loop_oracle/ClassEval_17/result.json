@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "config": "tdd_loop_oracle",
+  "model": "sonnet",
+  "gen_status": "error",
+  "gen_duration_s": 354.7,
+  "gen_cost_usd": 0.593876,
+  "gen_session_count": 19,
+  "gen_iterations": 12,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 1,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 1,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 5
+  },
+  "wall_time_s": 354.7,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 6,
+    "method_results": {
+      "CalendarTestAddEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestRemoveEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetEvents": {
+        "passed": false,
+        "error": "============================\nFAIL: test_get_events (_sol.CalendarTestGetEvents.test_get_events)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetEvents>\", line 6, in test_get_events\nAssertionError: None != [{'date': datetime.datetime(2023, 1, 1, 0[128 chars]ar'}]\n\n======================================================================\nFAIL: test_get_events_2 (_sol.CalendarTestGetEvents.test_get_events_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetEvents>\", line 14, in test_get_events_2\nAssertionError: None != []\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (failures=2)\n",
+        "tests_run": 2,
+        "failures": 2,
+        "errors": 0
+      },
+      "CalendarTestIsAvailable": {
+        "passed": false,
+        "error": "===================================================\nFAIL: test_is_available_4 (_sol.CalendarTestIsAvailable.test_is_available_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestIsAvailable>\", line 24, in test_is_available_4\nAssertionError: None != False\n\n======================================================================\nFAIL: test_is_available_5 (_sol.CalendarTestIsAvailable.test_is_available_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestIsAvailable>\", line 30, in test_is_available_5\nAssertionError: None != True\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      },
+      "CalendarTestGetAvailableSlots": {
+        "passed": false,
+        "error": "---------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 31, in test_get_available_slots_5\nTypeError: object of type 'NoneType' has no len()\n\n======================================================================\nFAIL: test_get_available_slots (_sol.CalendarTestGetAvailableSlots.test_get_available_slots)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 6, in test_get_available_slots\nAssertionError: None != [(datetime.datetime(2023, 1, 1, 23, 0), datetime.datetime(2023, 1, 2, 0, 0))]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=1, errors=4)\n",
+        "tests_run": 5,
+        "failures": 1,
+        "errors": 4
+      },
+      "CalendarTestGetUpcomingEvents": {
+        "passed": false,
+        "error": "ents.test_get_upcoming_events_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 24, in test_get_upcoming_events_4\nAssertionError: None != []\n\n======================================================================\nFAIL: test_get_upcoming_events_5 (_sol.CalendarTestGetUpcomingEvents.test_get_upcoming_events_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetUpcomingEvents>\", line 33, in test_get_upcoming_events_5\nAssertionError: None != [{'date': datetime.datetime(2024, 1, 2, 0[130 chars] 2'}]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "   Progress: [█████░░░░░░░░░░░░░░░░░░░░░░░░░] 16% (1/6 passed, 0 failed, 0 pending, 5 skipped)\n2026-04-26 00:16:04,179 [WARNING] No actionable features remaining\n2026-04-26 00:16:04,179 [WARNING] \nMax iterations reached (15), 5m54s\n2026-04-26 00:16:04,182 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop_oracle\\ClassEval_17\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

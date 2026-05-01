@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_4",
+  "class_name": "AssessmentSystem",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "error",
+  "gen_duration_s": 1669.4,
+  "gen_cost_usd": 2.227357,
+  "gen_session_count": 37,
+  "gen_iterations": 15,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 4,
+    "tests_failed": 2,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 1669.4,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 4,
+    "method_total": 6,
+    "method_results": {
+      "AssessmentSystemTestAddStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestAddCourseScore": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetGPA": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetCourseAverage": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_get_course_average_2 (_sol.AssessmentSystemTestGetCourseAverage.test_get_course_average_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetCourseAverage>\", line 20, in test_get_course_average_2\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_4\\solution.py\", line 96, in get_course_average\n    return sum(scores) / len(scores)\n           ^^^^^^^^^^^\nTypeError: unsupported operand type(s) for +: 'int' and 'NoneType'\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 1
+      },
+      "AssessmentSystemTestGetTopStudent": {
+        "passed": false,
+        "error": "opStudent.test_get_top_student_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetTopStudent>\", line 36, in test_get_top_student_4\nAssertionError: \"'Bob'\" != 'Bob'\n- 'Bob'\n? -   -\n+ Bob\n\n\n======================================================================\nFAIL: test_get_top_student_5 (_sol.AssessmentSystemTestGetTopStudent.test_get_top_student_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<AssessmentSystemTestGetTopStudent>\", line 49, in test_get_top_student_5\nAssertionError: \"'Bob'\" != 'Bob'\n- 'Bob'\n? -   -\n+ Bob\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "14 [INFO]   Progress: [████████████████████▓▓▓▓▓▓▓▓▓▓] 66% (4/6 passed, 2 failed, 0 pending, 0 skipped)\n2026-04-25 18:20:15,514 [WARNING] No actionable features remaining\n2026-04-25 18:20:15,514 [WARNING] \nMax iterations reached (15), 27m49s\n2026-04-25 18:20:15,517 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_4\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

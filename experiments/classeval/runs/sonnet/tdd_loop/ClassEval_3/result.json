@@ -1,0 +1,68 @@
+{
+  "task_id": "ClassEval_3",
+  "class_name": "ArrangementCalculator",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 339.3,
+  "gen_cost_usd": 1.281203,
+  "gen_session_count": 18,
+  "gen_iterations": 4,
+  "fl_summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 339.3,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "ArrangementCalculatorTestCount": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestCountAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestSelect": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestSelectAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArrangementCalculatorTestFactorial": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

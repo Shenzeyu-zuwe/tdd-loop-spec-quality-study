@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_24",
+  "class_name": "ComplexCalculator",
+  "class_description": "    \"\"\"\n    This is a class that implements addition, subtraction, multiplication, and division operations for complex numbers.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add(c1, c2)` on class `ComplexCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `ComplexCalculator.add`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_add.py`) in the project root and execute `python _oracle_add.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\n\nclass ComplexCalculatorTestAdd(unittest.TestCase):\n    def test_add(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.add(1+2j, 3+4j), (4+6j))\n\n    def test_add_2(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.add(-1 - 2j, -3 - 4j), (-4 - 6j))\n\n    def test_add_3(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.add(1-2j, 3-4j), (4-6j))\n\n    def test_add_4(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.add(-1+2j, -3+4j), (-4+6j))\n\n    def test_add_5(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.add(1+2j, -1-2j), (0+0j))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ComplexCalculatorTestAdd)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for ComplexCalculator.add passed with exit code 0 and unittest reported OK. The method correctly adds complex numbers across positive, negative, and mixed cases.",
+          "last_run": "2026-04-26T11:35:38.290564"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `subtract(c1, c2)` on class `ComplexCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `ComplexCalculator.subtract`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_subtract.py`) in the project root and execute `python _oracle_subtract.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\n\nclass ComplexCalculatorTestSubtract(unittest.TestCase):\n    def test_subtract(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.subtract(1+2j, 3+4j), (-2-2j))\n\n    def test_subtract_2(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.subtract(-1-2j, -3-4j), (2+2j))\n\n    def test_subtract_3(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.subtract(1-2j, 3-4j), (-2+2j))\n\n    def test_subtract_4(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.subtract(-1+2j, -3+4j), (2-2j))\n\n    def test_subtract_5(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.subtract(1+2j, 1+2j), (0+0j))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ComplexCalculatorTestSubtract)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 subtract tests passed with exit code 0 and unittest reported OK. The ComplexCalculator.subtract method correctly handles all complex number subtraction cases.",
+          "last_run": "2026-04-26T11:36:30.204357"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `multiply(c1, c2)` on class `ComplexCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `ComplexCalculator.multiply`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_multiply.py`) in the project root and execute `python _oracle_multiply.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\n\nclass ComplexCalculatorTestMultiply(unittest.TestCase):\n    def test_multiply(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.multiply(1+2j, 3+4j), (-5+10j))\n\n    def test_multiply_2(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.multiply(-1-2j, -3-4j), (-5+10j))\n\n    def test_multiply_3(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.multiply(1-2j, 3-4j), (-5-10j))\n\n    def test_multiply_4(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.multiply(-1+2j, -3+4j), (-5-10j))\n\n    def test_multiply_5(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.multiply(1+2j, -1-2j), (3-4j))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ComplexCalculatorTestMultiply)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 multiply tests passed with exit code 0 and unittest reported OK. The ComplexCalculator.multiply method correctly handles all complex number multiplication cases including positive, negative, and mixed signs.",
+          "last_run": "2026-04-26T11:37:26.010694"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `divide(c1, c2)` on class `ComplexCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `ComplexCalculator.divide`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_divide.py`) in the project root and execute `python _oracle_divide.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\n\nclass ComplexCalculatorTestDivide(unittest.TestCase):\n    def test_divide(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.divide(1+2j, 3+4j), (0.44+0.08j))\n\n    def test_divide_2(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.divide(-1-2j, -3-4j), (0.44+0.08j))\n\n    def test_divide_3(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.divide(1-2j, 3-4j), (0.44-0.08j))\n\n    def test_divide_4(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.divide(-1+2j, -3+4j), (0.44-0.08j))\n\n    def test_divide_5(self):\n        complexCalculator = ComplexCalculator()\n        self.assertEqual(complexCalculator.divide(1+2j, -1-2j), (-1+0j))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ComplexCalculatorTestDivide)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 divide tests passed with exit code 0 and unittest reported OK. The ComplexCalculator.divide method correctly handles all complex number division cases.",
+          "last_run": "2026-04-26T11:38:26.556018"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

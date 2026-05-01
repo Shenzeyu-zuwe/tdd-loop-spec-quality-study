@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_13",
+  "class_name": "BookManagement",
+  "class_description": "    \"\"\"\n    This is a class as managing books system, which supports to add and remove books from the inventory dict, view the inventory, and check the quantity of a specific book.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add_book(self, title, quantity=1)` on class `BookManagement` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `BookManagement.add_book`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_add_book.py`) in the project root and execute `python _oracle_add_book.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BookManagement\n\nclass BookManagementTestAddBook(unittest.TestCase):\n    def test_add_book_1(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\")\n        self.assertEqual({\"book1\": 1}, bookManagement.inventory)\n\n    def test_add_book_2(self):\n        bookManagement = BookManagement()\n        self.assertEqual({}, bookManagement.inventory)\n\n    def test_add_book_3(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\")\n        bookManagement.add_book(\"book1\", 2)\n        self.assertEqual({\"book1\": 3}, bookManagement.inventory)\n\n    def test_add_book_4(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        self.assertEqual({\"book1\": 2}, bookManagement.inventory)\n\n    def test_add_book_5(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        bookManagement.add_book(\"book1\")\n        self.assertEqual({\"book1\": 3}, bookManagement.inventory)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BookManagementTestAddBook)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for BookManagement.add_book passed with exit code 0 and unittest reported OK. The method correctly handles adding new books with default quantity 1, adding existing books (accumulating quantities), and adding with explicit quantities.",
+          "last_run": "2026-04-25T22:04:36.454410"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `remove_book(self, title, quantity)` on class `BookManagement` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `BookManagement.remove_book`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_remove_book.py`) in the project root and execute `python _oracle_remove_book.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BookManagement\n\nclass BookManagementTestRemoveBook(unittest.TestCase):\n    def setUp(self) -> None:\n        self.bookManagement = BookManagement()\n        self.bookManagement.add_book(\"book1\", 2)\n        self.bookManagement.add_book(\"book2\")\n\n    # remove all this title books\n    def test_remove_book_1(self):\n        self.bookManagement.remove_book(\"book1\", 2)\n        self.assertEqual(self.bookManagement.inventory, {\"book2\": 1})\n\n    # remove part\n    def test_remove_book_2(self):\n        self.bookManagement.remove_book(\"book1\", 1)\n        self.assertEqual(self.bookManagement.inventory, {\"book1\": 1, \"book2\": 1})\n\n    # remove the title that doesn't exist\n    def test_remove_book_3(self):\n        with self.assertRaises(Exception):\n            self.bookManagement.remove_book(\"book3\", 1)\n\n    # invalid quantity\n    def test_remove_book_4(self):\n        with self.assertRaises(Exception):\n            self.bookManagement.remove_book(\"book2\", 2)\n\n    def test_remove_book_5(self):\n        with self.assertRaises(Exception):\n            self.bookManagement.remove_book(\"book2\", 5)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BookManagementTestRemoveBook)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for `BookManagement.remove_book` passed (process exited 0, unittest reported OK). Tests verified removing all copies, removing partial quantity, and raising exceptions for non-existent titles and invalid quantities.",
+          "last_run": "2026-04-25T22:05:51.483046"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `view_inventory(self)` on class `BookManagement` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `BookManagement.view_inventory`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_view_inventory.py`) in the project root and execute `python _oracle_view_inventory.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BookManagement\n\nclass BookManagementTestViewInventory(unittest.TestCase):\n    def test_view_inventory_1(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        bookManagement.add_book(\"book2\")\n        expected = {\"book1\": 2, \"book2\": 1}\n        self.assertEqual(expected, bookManagement.inventory)\n\n    def test_view_inventory_2(self):\n        bookManagement = BookManagement()\n        expected = {}\n        self.assertEqual(expected, bookManagement.inventory)\n\n    def test_view_inventory_3(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        bookManagement.add_book(\"book2\")\n        expected = {\"book1\": 2, \"book2\": 1}\n        self.assertEqual(expected, bookManagement.inventory)\n\n    def test_view_inventory_4(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        bookManagement.add_book(\"book2\")\n        bookManagement.remove_book(\"book1\", 2)\n        expected = {\"book2\": 1}\n        self.assertEqual(expected, bookManagement.inventory)\n\n    def test_view_inventory_5(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        bookManagement.add_book(\"book2\", 1)\n        bookManagement.remove_book(\"book1\", 2)\n        bookManagement.remove_book(\"book2\",1)\n        expected = {}\n        self.assertEqual(expected, bookManagement.inventory)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BookManagementTestViewInventory)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed with exit code 0 and unittest reported OK. The BookManagement class correctly handles add_book, remove_book, and inventory state across all test cases.",
+          "last_run": "2026-04-25T22:06:19.797916"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `view_book_quantity(self, title)` on class `BookManagement` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `BookManagement.view_book_quantity`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_view_book_quantity.py`) in the project root and execute `python _oracle_view_book_quantity.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BookManagement\n\nclass BookManagementTestViewBookQuantity(unittest.TestCase):\n    def test_view_book_quantity_1(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        self.assertEqual(2, bookManagement.view_book_quantity(\"book1\"))\n\n    def test_view_book_quantity_2(self):\n        bookManagement = BookManagement()\n        self.assertEqual(0, bookManagement.view_book_quantity(\"book1\"))\n\n    def test_view_book_quantity_3(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        self.assertEqual(2, bookManagement.view_book_quantity(\"book1\"))\n\n    def test_view_book_quantity_4(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 2)\n        bookManagement.remove_book(\"book1\", 2)\n        self.assertEqual(0, bookManagement.view_book_quantity(\"book1\"))\n\n    def test_view_book_quantity_5(self):\n        bookManagement = BookManagement()\n        bookManagement.add_book(\"book1\", 3)\n        bookManagement.remove_book(\"book1\", 2)\n        self.assertEqual(1, bookManagement.view_book_quantity(\"book1\"))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BookManagementTestViewBookQuantity)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed with exit code 0 and unittest reporting OK. The view_book_quantity method correctly returns the quantity for existing books and 0 for non-existent ones.",
+          "last_run": "2026-04-25T22:07:30.877953"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

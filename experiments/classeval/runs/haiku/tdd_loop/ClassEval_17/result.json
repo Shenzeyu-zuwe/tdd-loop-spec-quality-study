@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 785.6,
+  "gen_cost_usd": 1.210829,
+  "gen_session_count": 24,
+  "gen_iterations": 6,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 6,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 785.6,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 6,
+    "method_results": {
+      "CalendarTestAddEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestRemoveEvent": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_remove_event_6 (_sol.CalendarTestRemoveEvent.test_remove_event_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestRemoveEvent>\", line 61, in test_remove_event_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_17\\solution.py\", line 37, in remove_event\n    self.events.remove(event)\nValueError: list.remove(x): x not in list\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 1
+      },
+      "CalendarTestGetEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestIsAvailable": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetAvailableSlots": {
+        "passed": false,
+        "error": "L: test_get_available_slots_4 (_sol.CalendarTestGetAvailableSlots.test_get_available_slots_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 25, in test_get_available_slots_4\nAssertionError: 1 != 24\n\n======================================================================\nFAIL: test_get_available_slots_5 (_sol.CalendarTestGetAvailableSlots.test_get_available_slots_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalendarTestGetAvailableSlots>\", line 31, in test_get_available_slots_5\nAssertionError: 1 != 24\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=4)\n",
+        "tests_run": 5,
+        "failures": 4,
+        "errors": 0
+      },
+      "CalendarTestGetUpcomingEvents": {
+        "passed": false,
+        "error": "}\n\nFirst list contains 1 additional elements.\nFirst extra element 1:\n{'date': datetime.datetime(2024, 1, 2, 0, 0), 'start_time': datetime.datetime(2024, 1, 2, 1, 0), 'end_time': datetime.datetime(2024, 1, 2, 2, 0), 'description': 'New Year 2'}\n\n- [{'date': datetime.datetime(2023, 1, 1, 0, 0),\n-   'description': 'New Year',\n-   'end_time': datetime.datetime(2023, 1, 1, 23, 0),\n-   'start_time': datetime.datetime(2023, 1, 1, 0, 0)},\n-  {'date': datetime.datetime(2024, 1, 2, 0, 0),\n? ^\n\n+ [{'date': datetime.datetime(2024, 1, 2, 0, 0),\n? ^\n\n    'description': 'New Year 2',\n    'end_time': datetime.datetime(2024, 1, 2, 2, 0),\n    'start_time': datetime.datetime(2024, 1, 2, 1, 0)}]\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=4)\n",
+        "tests_run": 5,
+        "failures": 4,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "ClassEval_15",
+  "class_name": "BoyerMooreSearch",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 260.5,
+  "gen_cost_usd": 0.811525,
+  "gen_session_count": 12,
+  "gen_iterations": 3,
+  "fl_summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 260.5,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 3,
+    "method_results": {
+      "BoyerMooreSearchTestMatchInPattern": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestMismatchInText": {
+        "passed": false,
+        "error": "L: test_mismatch_in_text_3 (_sol.BoyerMooreSearchTestMismatchInText.test_mismatch_in_text_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BoyerMooreSearchTestMismatchInText>\", line 12, in test_mismatch_in_text_3\nAssertionError: 1 != 2\n\n======================================================================\nFAIL: test_mismatch_in_text_5 (_sol.BoyerMooreSearchTestMismatchInText.test_mismatch_in_text_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BoyerMooreSearchTestMismatchInText>\", line 20, in test_mismatch_in_text_5\nAssertionError: 2 != 5\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=2)\n",
+        "tests_run": 5,
+        "failures": 2,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestBadCharacterHeuristic": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

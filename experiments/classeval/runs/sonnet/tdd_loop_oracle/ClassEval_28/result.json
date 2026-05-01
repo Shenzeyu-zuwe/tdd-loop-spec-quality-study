@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_28",
+  "class_name": "DatabaseProcessor",
+  "config": "tdd_loop_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 468.4,
+  "gen_cost_usd": 1.453625,
+  "gen_session_count": 28,
+  "gen_iterations": 4,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 468.4,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "DatabaseProcessorTestCreateTable": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DatabaseProcessorTestInsertIntoDatabase": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DatabaseProcessorTestSearchDatabase": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "DatabaseProcessorTestDeteleFromDatabase": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

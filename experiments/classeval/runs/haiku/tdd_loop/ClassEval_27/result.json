@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_27",
+  "class_name": "CurrencyConverter",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 481.1,
+  "gen_cost_usd": 0.725375,
+  "gen_session_count": 30,
+  "gen_iterations": 5,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 481.1,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 4,
+    "method_results": {
+      "CurrencyConverterTestConvert": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_convert_6 (_sol.CurrencyConverterTestConvert.test_convert_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 29, in test_convert_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_27\\solution.py\", line 33, in convert\n    return amount * self.rates[to_currency] / self.rates[from_currency]\n                                              ~~~~~~~~~~^^^^^^^^^^^^^^^\nKeyError: '???'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 1
+      },
+      "CurrencyConverterTestGetSupportedCurrencies": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CurrencyConverterTestAddCurrencyRate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CurrencyConverterTestUpdateCurrencyRate": {
+        "passed": false,
+        "error": "======================================================================\nFAIL: test_update_currency_rate_6 (_sol.CurrencyConverterTestUpdateCurrencyRate.test_update_currency_rate_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestUpdateCurrencyRate>\", line 30, in test_update_currency_rate_6\nAssertionError: \"self.rates['???'] = 7.18\" is not false\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nFAILED (failures=1)\n",
+        "tests_run": 6,
+        "failures": 1,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

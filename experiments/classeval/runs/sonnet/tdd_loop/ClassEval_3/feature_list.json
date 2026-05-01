@@ -1,0 +1,94 @@
+{
+  "change_name": "ClassEval_3",
+  "class_name": "ArrangementCalculator",
+  "class_description": "    \"\"\"\n    The Arrangement class provides permutation calculations and selection operations for a given set of data elements.\n    \"\"\"\n",
+  "import_statement": "import itertools",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `count(n, m=None)` on class `ArrangementCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `ArrangementCalculator.count`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport itertools\nfrom solution import ArrangementCalculator\n\nprint(ArrangementCalculator.count(5, 3))\n```\n\nExpected stdout:\n```\n60\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced stdout '60', which matches the expected output exactly. ArrangementCalculator.count(5, 3) returns the correct permutation count.",
+          "last_run": "2026-04-25T00:40:58.620563"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `count_all(n)` on class `ArrangementCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `ArrangementCalculator.count_all`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport itertools\nfrom solution import ArrangementCalculator\n\nprint(ArrangementCalculator.count_all(4))\n```\n\nExpected stdout:\n```\n64\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced stdout '64', which matches the expected output exactly. ArrangementCalculator.count_all(4) returns the correct value.",
+          "last_run": "2026-04-25T00:41:54.278128"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `select(self, m=None)` on class `ArrangementCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `ArrangementCalculator.select`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport itertools\nfrom solution import ArrangementCalculator\nac = ArrangementCalculator([1, 2, 3, 4])\nprint(ac.select(2))\n```\n\nExpected stdout:\n```\n[[1, 2], [1, 3], [1, 4], [2, 1], [2, 3], [2, 4], [3, 1], [3, 2], [3, 4], [4, 1], [4, 2], [4, 3]]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced stdout exactly matching the expected output: `[[1, 2], [1, 3], [1, 4], [2, 1], [2, 3], [2, 4], [3, 1], [3, 2], [3, 4], [4, 1], [4, 2], [4, 3]]`.",
+          "last_run": "2026-04-25T00:42:45.313330"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `select_all(self)` on class `ArrangementCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "RUNTIME CHECK for `ArrangementCalculator.select_all`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport itertools\nfrom solution import ArrangementCalculator\nac = ArrangementCalculator([1, 2, 3])\nprint(ac.select_all())\n```\n\nExpected stdout:\n```\n[[1], [2], [3], [1, 2], [1, 3], [2, 1], [2, 3], [3, 1], [3, 2], [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced stdout that exactly matches the expected output: all 15 arrangements of [1,2,3] grouped by length 1 through 3.",
+          "last_run": "2026-04-25T00:43:41.633727"
+        }
+      ]
+    },
+    {
+      "id": "F-005",
+      "intent": "Method `factorial(n)` on class `ArrangementCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-005-01",
+          "intent": "RUNTIME CHECK for `ArrangementCalculator.factorial`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport itertools\nfrom solution import ArrangementCalculator\n\nprint(ArrangementCalculator.factorial(4))\n```\n\nExpected stdout:\n```\n24\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced stdout '24', which matches the expected output exactly. ArrangementCalculator.factorial(4) returns 24 at runtime.",
+          "last_run": "2026-04-25T00:44:00.322336"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

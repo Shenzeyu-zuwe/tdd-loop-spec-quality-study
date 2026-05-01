@@ -1,0 +1,86 @@
+{
+  "change_name": "ClassEval_26",
+  "class_name": "CSVProcessor",
+  "class_description": "    \"\"\"\n    This is a class for processing CSV files, including readring and writing CSV data, as well as processing specific operations and saving as a new CSV file.\n    \"\"\"\n",
+  "import_statement": "import csv",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `read_csv(self, file_name)` on class `CSVProcessor` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `CSVProcessor.read_csv`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\ncsvProcessor = CSVProcessor()\nprint(csvProcessor.read_csv('read_test.csv'))\n```\n\nExpected stdout:\n```\n(['a', 'b', 'c', 'd'], [['hElLo', 'YoU', 'ME', 'LoW']])\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced exactly `(['a', 'b', 'c', 'd'], [['hElLo', 'YoU', 'ME', 'LoW']])`, matching the expected stdout byte-for-byte after stripping trailing whitespace.",
+          "last_run": "2026-04-25T15:54:17.205468",
+          "fail_count": 1,
+          "last_reason_sig": "bb225c0010c2c7c5"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `write_csv(self, data, file_name)` on class `CSVProcessor` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `CSVProcessor.write_csv`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\ncsvProcessor = CSVProcessor()\nprint(csvProcessor.write_csv([['a', 'b', 'c', 'd'], ['1', '2', '3', '4']], 'write_test.csv'))\n```\n\nExpected stdout:\n```\n1\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced stdout `1`, which matches the expected output exactly.",
+          "last_run": "2026-04-25T15:55:24.438238",
+          "fail_count": 1,
+          "last_reason_sig": "169039bcc31f085a"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `process_csv_data(self, N, save_file_name)` on class `CSVProcessor` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "skipped",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `CSVProcessor.process_csv_data`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\ncsvProcessor = CSVProcessor()\nprint(csvProcessor.read_csv('read_test.csv'))\n```\n\nExpected stdout:\n```\n(['a', 'b', 'c', 'd'], [['hElLo', 'YoU', 'ME', 'LoW']])\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the prescribed script produced `(['a', 'b', 'c', 'd'], [['hElLo', 'YoU', 'ME', 'LoW']])` which matches the expected stdout byte-for-byte after stripping trailing whitespace. The fixture `read_test.csv` was created from the spec's known content to enable the runtime check.",
+          "last_run": "2026-04-25T16:04:17.540679"
+        },
+        {
+          "id": "T-003-02",
+          "intent": "RUNTIME CHECK for `CSVProcessor.process_csv_data`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\n\nprint(csvProcessor.process_csv_data(0, 'read_test.csv'))\n```\n\nExpected stdout:\n```\n1\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "skipped",
+          "reason": "Auto-skipped: 3 consecutive failures (threshold=3)",
+          "last_run": "2026-04-25T16:03:26.280269",
+          "fail_count": 3,
+          "last_reason_sig": "994acd8a0914abcc"
+        },
+        {
+          "id": "T-003-03",
+          "intent": "RUNTIME CHECK for `CSVProcessor.process_csv_data`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\n\nprint(csvProcessor.read_csv('read_test_process.csv'))\n```\n\nExpected stdout:\n```\n(['a', 'b', 'c', 'd'], [['HELLO']])\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "skipped",
+          "reason": "Auto-skipped: 3 consecutive failures (threshold=3)",
+          "last_run": "2026-04-25T16:02:12.932850",
+          "fail_count": 3,
+          "last_reason_sig": "e83492f594434a48"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 2
+  }
+}

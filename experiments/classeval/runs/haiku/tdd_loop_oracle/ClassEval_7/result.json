@@ -1,0 +1,47 @@
+{
+  "task_id": "ClassEval_7",
+  "class_name": "BalancedBrackets",
+  "config": "tdd_loop_oracle",
+  "model": "haiku",
+  "gen_status": "error",
+  "gen_duration_s": 171.1,
+  "gen_cost_usd": 0.2321,
+  "gen_session_count": 6,
+  "gen_iterations": 4,
+  "fl_summary": {
+    "total_features": 2,
+    "passed": 1,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 2,
+    "tests_passed": 1,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 1
+  },
+  "wall_time_s": 171.1,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 2,
+    "method_total": 2,
+    "method_results": {
+      "BalancedBracketsTestClearExpr": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BalancedBracketsTestCheckBalancedBrackets": {
+        "passed": true,
+        "error": "",
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "FO]   Progress: [███████████████░░░░░░░░░░░░░░░] 50% (1/2 passed, 0 failed, 0 pending, 1 skipped)\n2026-04-26 14:23:30,401 [WARNING] No actionable features remaining\n2026-04-26 14:23:30,401 [WARNING] \nMax iterations reached (15), 2m50s\n2026-04-26 14:23:30,403 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop_oracle\\ClassEval_7\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

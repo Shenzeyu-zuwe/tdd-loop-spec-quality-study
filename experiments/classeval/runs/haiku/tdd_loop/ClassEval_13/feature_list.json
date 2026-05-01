@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_13",
+  "class_name": "BookManagement",
+  "class_description": "    \"\"\"\n    This is a class as managing books system, which supports to add and remove books from the inventory dict, view the inventory, and check the quantity of a specific book.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add_book(self, title, quantity=1)` on class `BookManagement` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `BookManagement.add_book` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import BookManagement`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nAdd one or several books to inventory which is sorted by book title.\n        :param title: str, the book title\n        :param quantity: int, default value is 1.",
+          "status": "passed",
+          "reason": "Executed 5 runtime test cases covering add_book behavior: default quantity=1, custom quantities, title-based sorting, quantity accumulation for duplicate titles, and complex scenarios. All tests passed—inventory correctly adds books, maintains alphabetical sort order, and accumulates quantities when books are added multiple times.",
+          "last_run": "2026-04-25T19:54:58.029228"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `remove_book(self, title, quantity)` on class `BookManagement` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `BookManagement.remove_book` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import BookManagement`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nRemove one or several books from inventory which is sorted by book title.\n        Raise false while get invalid input.\n        :param title: str, the book title\n        :param quantity: int",
+          "status": "passed",
+          "reason": "Executed 8 comprehensive runtime tests verifying remove_book behavior: successful removal with partial/complete quantity, rejection of non-existent books, invalid quantities (zero/negative/float), and inventory sorting. All assertions passed.",
+          "last_run": "2026-04-25T19:56:56.575780"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `view_inventory(self)` on class `BookManagement` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `BookManagement.view_inventory`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import BookManagement\nbookManagement = BookManagement()\nbookManagement.add_book(\"book1\", 1)\nbookManagement.add_book(\"book2\", 1)\nprint(bookManagement.view_inventory())\n```\n\nExpected stdout:\n```\n{'book1': 1, 'book2': 1}\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "The view_inventory method correctly returns the inventory dictionary with expected contents. The script executed successfully and produced the exact expected output: {'book1': 1, 'book2': 1}.",
+          "last_run": "2026-04-25T19:57:18.770807"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `view_book_quantity(self, title)` on class `BookManagement` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "RUNTIME CHECK for `BookManagement.view_book_quantity`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import BookManagement\nbookManagement = BookManagement()\nbookManagement.add_book(\"book1\", 1)\nprint(bookManagement.view_book_quantity(\"book3\"))\n```\n\nExpected stdout:\n```\n0\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Runtime test executed successfully. The view_book_quantity method correctly returns 0 when querying a non-existent book title, matching the expected output exactly.",
+          "last_run": "2026-04-25T19:57:45.163436"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

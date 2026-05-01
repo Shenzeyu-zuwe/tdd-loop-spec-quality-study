@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_13",
+  "class_name": "BookManagement",
+  "config": "tdd_loop_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 351.6,
+  "gen_cost_usd": 1.075771,
+  "gen_session_count": 14,
+  "gen_iterations": 3,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 351.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "BookManagementTestAddBook": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BookManagementTestRemoveBook": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BookManagementTestViewInventory": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BookManagementTestViewBookQuantity": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

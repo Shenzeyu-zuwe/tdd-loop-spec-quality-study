@@ -1,0 +1,64 @@
+{
+  "change_name": "ClassEval_9",
+  "class_name": "BigNumCalculator",
+  "class_description": "    \"\"\"\n    This is a class that implements big number calculations, including adding, subtracting and multiplying.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add(num1, num2)` on class `BigNumCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `BigNumCalculator.add`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_add.py`) in the project root and execute `python _oracle_add.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BigNumCalculator\n\nclass BigNumCalculatorTestAdd(unittest.TestCase):\n    def test_add(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.add(\"12345678901234567890\", \"98765432109876543210\"), \"111111111011111111100\")\n\n    def test_add_2(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.add(\"123456789012345678922\", \"98765432109876543210\"), \"222222221122222222132\")\n\n    def test_add_3(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.add(\"123456789012345678934\", \"98765432109876543210\"), \"222222221122222222144\")\n\n    def test_add_4(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.add(\"123456789012345678946\", \"98765432109876543210\"), \"222222221122222222156\")\n\n    def test_add_5(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.add(\"123456789012345678958\", \"98765432109876543210\"), \"222222221122222222168\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BigNumCalculatorTestAdd)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for BigNumCalculator.add passed with exit code 0 and unittest reporting OK. No failures or errors.",
+          "last_run": "2026-04-25T21:42:16.498206"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `subtract(num1, num2)` on class `BigNumCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `BigNumCalculator.subtract`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_subtract.py`) in the project root and execute `python _oracle_subtract.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BigNumCalculator\n\nclass BigNumCalculatorTestSubtract(unittest.TestCase):\n    def test_subtract(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.subtract(\"12345678901234567890\", \"98765432109876543210\"), \"-86419753208641975320\")\n\n    def test_subtract_2(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.subtract(\"123456789012345678922\", \"98765432109876543210\"), \"24691356902469135712\")\n\n    def test_subtract_3(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.subtract(\"123456789012345678934\", \"98765432109876543\"), \"123358023580235802391\")\n\n    def test_subtract_4(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.subtract(\"12345678901234567\", \"98765432109876543210\"), \"-98753086430975308643\")\n\n    def test_subtract_5(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.subtract(\"923456789\", \"187654321\"), \"735802468\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BigNumCalculatorTestSubtract)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for BigNumCalculator.subtract passed with exit code 0 and unittest reported OK. No failures or errors.",
+          "last_run": "2026-04-25T21:43:18.855409"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `multiply(num1, num2)` on class `BigNumCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `BigNumCalculator.multiply`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_multiply.py`) in the project root and execute `python _oracle_multiply.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BigNumCalculator\n\nclass BigNumCalculatorTestMultiply(unittest.TestCase):\n    def test_multiply(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.multiply(\"12345678901234567890\", \"98765432109876543210\"), \"1219326311370217952237463801111263526900\")\n\n    def test_multiply_2(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.multiply(\"123456789012345678922\", \"98765432109876543210\"), \"12193263113702179524547477517529919219620\")\n\n    def test_multiply_3(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.multiply(\"123456789012345678934\", \"98765432109876543\"), \"12193263113702179499806737010255845162\")\n\n    def test_multiply_4(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.multiply(\"12345678901234567\", \"98765432109876543210\"), \"1219326311370217864336229223321140070\")\n\n    def test_multiply_5(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.multiply(\"923456789\", \"187654321\"), \"173290656712635269\")\n\n    def test_multiply_6(self):\n        bigNum = BigNumCalculator()\n        self.assertEqual(bigNum.multiply(\"000000001\", \"000000001\"), \"1\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BigNumCalculatorTestMultiply)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 6 multiply tests passed with exit code 0 and unittest reported OK. The BigNumCalculator.multiply method correctly handles large number multiplication including leading zeros.",
+          "last_run": "2026-04-25T21:44:25.283827"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

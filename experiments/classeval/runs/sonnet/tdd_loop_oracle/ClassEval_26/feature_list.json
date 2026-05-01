@@ -1,0 +1,66 @@
+{
+  "change_name": "ClassEval_26",
+  "class_name": "CSVProcessor",
+  "class_description": "    \"\"\"\n    This is a class for processing CSV files, including readring and writing CSV data, as well as processing specific operations and saving as a new CSV file.\n    \"\"\"\n",
+  "import_statement": "import csv",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `read_csv(self, file_name)` on class `CSVProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `CSVProcessor.read_csv`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_read_csv.py`) in the project root and execute `python _oracle_read_csv.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\n\nclass CSVProcessorTestReadCSV(unittest.TestCase):\n    def test_read_csv_1(self):\n        self.file = 'read_test.csv'\n\n        with open(self.file, 'w') as f:\n            f.write('a,b,c,d\\nhElLo,YoU,ME,LoW')\n\n        expected_title = ['a', 'b', 'c', 'd']\n        expected_data = [['hElLo', 'YoU', 'ME', 'LoW']]\n        csvProcessor = CSVProcessor()\n        title, data = csvProcessor.read_csv(self.file)\n        self.assertEqual(expected_data, data)\n        self.assertEqual(expected_title, title)\n\n    def test_read_csv_2(self):\n        self.file = 'read_test.csv'\n        with open(self.file, 'w') as f:\n            f.write('1234\\nhElLo,YoU,ME,LoW')\n\n        expected_title = ['1234']\n        expected_data = [['hElLo', 'YoU', 'ME', 'LoW']]\n        csvProcessor = CSVProcessor()\n        title, data = csvProcessor.read_csv(self.file)\n        self.assertEqual(expected_data, data)\n        self.assertEqual(expected_title, title)\n\n    def test_read_csv_3(self):\n        self.file = 'read_test.csv'\n\n        with open(self.file, 'w') as f:\n            f.write('title\\nhElLo,YoU,ME,LoW')\n\n        expected_title = ['title']\n        expected_data = [['hElLo', 'YoU', 'ME', 'LoW']]\n        csvProcessor = CSVProcessor()\n        title, data = csvProcessor.read_csv(self.file)\n        self.assertEqual(expected_data, data)\n        self.assertEqual(expected_title, title)\n\n    def test_read_csv_4(self):\n        self.file = 'read_test.csv'\n\n        with open(self.file, 'w') as f:\n            f.write('title4\\nhElLo,YoU,ME,LoW')\n\n        expected_title = ['title4']\n        expected_data = [['hElLo', 'YoU', 'ME', 'LoW']]\n        csvProcessor = CSVProcessor()\n        title, data = csvProcessor.read_csv(self.file)\n        self.assertEqual(expected_data, data)\n        self.assertEqual(expected_title, title)\n\n    def test_read_csv_5(self):\n        self.file = 'read_test.csv'\n\n        with open(self.file, 'w') as f:\n            f.write('title5\\nhElLo,YoU,ME,LoW')\n\n        expected_title = ['title5']\n        expected_data = [['hElLo', 'YoU', 'ME', 'LoW']]\n        csvProcessor = CSVProcessor()\n        title, data = csvProcessor.read_csv(self.file)\n        self.assertEqual(expected_data, data)\n        self.assertEqual(expected_title, title)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CSVProcessorTestReadCSV)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests passed with exit code 0 and unittest reported OK. The read_csv method correctly returns the first row as title and remaining rows as data.",
+          "last_run": "2026-04-26T11:47:02.848352"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `write_csv(self, data, file_name)` on class `CSVProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "skipped",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `CSVProcessor.write_csv`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_write_csv.py`) in the project root and execute `python _oracle_write_csv.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\n\nclass CSVProcessorTestWriteCSV(unittest.TestCase):\n    def test_write_csv_1(self):\n        self.file = 'read_test.csv'\n\n        file_path = self.file\n        csvProcessor = CSVProcessor()\n        data = [['a', 'b', 'c', 'd'], ['1', '2', '3', '4']]\n        # assert return value\n        self.assertEqual(1, csvProcessor.write_csv(data, file_path))\n\n        # read to test if write correctly\n        read_title, read_data = csvProcessor.read_csv(file_path)\n        self.assertEqual(read_title, data[0])\n        self.assertEqual(read_data[0], data[1])\n        os.remove(file_path)\n\n    def test_write_csv_2(self):\n        self.file = 'read_test.csv'\n\n        file_path = self.file\n        csvProcessor = CSVProcessor()\n        data = [['aa', 'bb', 'cc', 'dd'], ['1', '2', '3', '4']]\n        # assert return value\n        self.assertEqual(1, csvProcessor.write_csv(data, file_path))\n\n        # read to test if write correctly\n        read_title, read_data = csvProcessor.read_csv(file_path)\n        self.assertEqual(read_title, data[0])\n        self.assertEqual(read_data[0], data[1])\n        os.remove(file_path)\n\n    def test_write_csv_3(self):\n        self.file = 'read_test.csv'\n\n        file_path = self.file\n        csvProcessor = CSVProcessor()\n        data = [['a', 'b', 'c', 'd'], ['11', '22', '33', '44']]\n        # assert return value\n        self.assertEqual(1, csvProcessor.write_csv(data, file_path))\n\n        # read to test if write correctly\n        read_title, read_data = csvProcessor.read_csv(file_path)\n        self.assertEqual(read_title, data[0])\n        self.assertEqual(read_data[0], data[1])\n        os.remove(file_path)\n\n    def test_write_csv_4(self):\n        self.file = 'read_test.csv'\n\n        file_path = self.file\n        csvProcessor = CSVProcessor()\n        data = [['e', 'f', 'g', 'h'], ['1', '2', '3', '4']]\n        # assert return value\n        self.assertEqual(1, csvProcessor.write_csv(data, file_path))\n\n        # read to test if write correctly\n        read_title, read_data = csvProcessor.read_csv(file_path)\n        self.assertEqual(read_title, data[0])\n        self.assertEqual(read_data[0], data[1])\n        os.remove(file_path)\n\n    def test_write_csv_5(self):\n        self.file = 'read_test.csv'\n\n        file_path = self.file\n        csvProcessor = CSVProcessor()\n        data = [['a', 'b', 'c', 'd'], ['5', '6', '7', '8']]\n        # assert return value\n        self.assertEqual(1, csvProcessor.write_csv(data, file_path))\n\n        # read to test if write correctly\n        read_title, read_data = csvProcessor.read_csv(file_path)\n        self.assertEqual(read_title, data[0])\n        self.assertEqual(read_data[0], data[1])\n        os.remove(file_path)\n\n    def test_write_csv_6(self):\n        self.file = ''\n        file_path = self.file\n        csvProcessor = CSVProcessor()\n        # assert return value\n        self.assertEqual(0, csvProcessor.write_csv([], file_path))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CSVProcessorTestWriteCSV)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "skipped",
+          "reason": "Auto-skipped: 4 consecutive failures (threshold=3)",
+          "last_run": "2026-04-26T12:09:30.852298",
+          "fail_count": 4,
+          "last_reason_sig": "4c1763248e27d088"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `process_csv_data(self, N, save_file_name)` on class `CSVProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `CSVProcessor.process_csv_data`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_process_csv_data.py`) in the project root and execute `python _oracle_process_csv_data.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport csv\nfrom solution import CSVProcessor\n\nclass CSVProcessorTestProcessCSVData(unittest.TestCase):\n    def setUp(self) -> None:\n        self.file = 'read_test.csv'\n        self.file_process = 'read_test_process.csv'\n        with open(self.file, 'w') as f:\n            f.write('a,b,c,d\\nhElLo,YoU,ME,LoW,aBc')\n\n    def test_process_csv_data_1(self):\n        title = ['a', 'b', 'c', 'd']\n        data = ['HELLO']\n        csvProcessor = CSVProcessor()\n        self.assertEqual(1, csvProcessor.process_csv_data(0, self.file))\n\n        read_title, read_data = csvProcessor.read_csv(self.file_process)\n        self.assertEqual(read_title, title)\n        self.assertEqual(read_data[0], data)\n\n    def test_process_csv_data_2(self):\n        title = ['a', 'b', 'c', 'd']\n        data = ['YOU']\n        csvProcessor = CSVProcessor()\n        self.assertEqual(1, csvProcessor.process_csv_data(1, self.file))\n\n        read_title, read_data = csvProcessor.read_csv(self.file_process)\n        self.assertEqual(read_title, title)\n        self.assertEqual(read_data[0], data)\n\n    def test_process_csv_data_3(self):\n        title = ['a', 'b', 'c', 'd']\n        data = ['ME']\n        csvProcessor = CSVProcessor()\n        self.assertEqual(1, csvProcessor.process_csv_data(2, self.file))\n\n        read_title, read_data = csvProcessor.read_csv(self.file_process)\n        self.assertEqual(read_title, title)\n        self.assertEqual(read_data[0], data)\n\n    def test_process_csv_data_4(self):\n        title = ['a', 'b', 'c', 'd']\n        data = ['LOW']\n        csvProcessor = CSVProcessor()\n        self.assertEqual(1, csvProcessor.process_csv_data(3, self.file))\n\n        read_title, read_data = csvProcessor.read_csv(self.file_process)\n        self.assertEqual(read_title, title)\n        self.assertEqual(read_data[0], data)\n\n    def test_process_csv_data_5(self):\n        title = ['a', 'b', 'c', 'd']\n        data = ['ABC']\n        csvProcessor = CSVProcessor()\n        self.assertEqual(1, csvProcessor.process_csv_data(4, self.file))\n\n        read_title, read_data = csvProcessor.read_csv(self.file_process)\n        self.assertEqual(read_title, title)\n        self.assertEqual(read_data[0], data)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CSVProcessorTestProcessCSVData)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed with exit code 0 and unittest reported OK. process_csv_data correctly reads the Nth column, uppercases values, and writes to the _process suffixed file.",
+          "last_run": "2026-04-26T12:05:29.383899"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 2,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 1
+  }
+}

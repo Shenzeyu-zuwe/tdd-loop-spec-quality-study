@@ -1,0 +1,94 @@
+{
+  "change_name": "ClassEval_22",
+  "class_name": "ClassRegistrationSystem",
+  "class_description": "    \"\"\"\n    This is a class as a class registration system, allowing to register students, register them for classes, retrieve students by major, get a list of all majors, and determine the most popular class within a specific major.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `register_student(self, student)` on class `ClassRegistrationSystem` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `ClassRegistrationSystem.register_student`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_register_student.py`) in the project root and execute `python _oracle_register_student.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ClassRegistrationSystem\n\nclass ClassRegistrationSystemTestRegisterStudent(unittest.TestCase):\n\n    def setUp(self):\n        self.registration_system = ClassRegistrationSystem()\n\n    def test_register_student(self):\n        student1 = {\"name\": \"John\", \"major\": \"Computer Science\"}\n        self.assertEqual(self.registration_system.register_student(student1), 1)\n\n    def test_register_student2(self):\n        student1 = {\"name\": \"John\", \"major\": \"Computer Science\"}\n        self.registration_system.register_student(student1)\n        self.assertEqual(self.registration_system.register_student(student1), 0)\n\n    def test_register_student3(self):\n        student1 = {\"name\": \"John\", \"major\": \"Computer Science\"}\n        student2 = {\"name\": \"Alice\", \"major\": \"Mathematics\"}\n        self.assertEqual(self.registration_system.register_student(student1), 1)\n        self.assertEqual(self.registration_system.register_student(student2), 1)\n        self.assertEqual(self.registration_system.register_student(student2), 0)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ClassRegistrationSystemTestRegisterStudent)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 3 tests passed with exit code 0 and unittest reported OK. The register_student method correctly returns 1 for new students and 0 for duplicates.",
+          "last_run": "2026-04-26T11:20:37.128303"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `register_class(self, student_name, class_name)` on class `ClassRegistrationSystem` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `ClassRegistrationSystem.register_class`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_register_class.py`) in the project root and execute `python _oracle_register_class.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ClassRegistrationSystem\n\nclass ClassRegistrationSystemTestRegisterClass(unittest.TestCase):\n\n    def setUp(self):\n        self.registration_system = ClassRegistrationSystem()\n\n    def test_register_class(self):\n        self.assertEqual(self.registration_system.register_class(student_name=\"John\", class_name=\"CS101\"), [\"CS101\"])\n\n    def test_register_class2(self):\n        self.registration_system.register_class(student_name=\"John\", class_name=\"CS101\")\n        self.registration_system.register_class(student_name=\"John\", class_name=\"CS102\")\n        self.assertEqual(self.registration_system.register_class(student_name=\"John\", class_name=\"CS103\"), [\"CS101\", \"CS102\", \"CS103\"])\n\n    def test_register_class3(self):\n        self.registration_system.register_class(student_name=\"John\", class_name=\"CS101\")\n        self.registration_system.register_class(student_name=\"Tom\", class_name=\"CS102\")\n        self.assertEqual(self.registration_system.register_class(student_name=\"John\", class_name=\"CS103\"), [\"CS101\", \"CS103\"])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ClassRegistrationSystemTestRegisterClass)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 3 oracle tests passed with exit code 0 and unittest reported OK. The register_class method correctly adds classes to a student's registration list and returns the updated list.",
+          "last_run": "2026-04-26T11:21:36.783628"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `get_students_by_major(self, major)` on class `ClassRegistrationSystem` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `ClassRegistrationSystem.get_students_by_major`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_students_by_major.py`) in the project root and execute `python _oracle_get_students_by_major.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ClassRegistrationSystem\n\nclass ClassRegistrationSystemTestGetStudent(unittest.TestCase):\n\n    def setUp(self):\n        self.registration_system = ClassRegistrationSystem()\n\n    def test_get_students_by_major(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"}]\n\n        cs_students = self.registration_system.get_students_by_major(\"Computer Science\")\n\n        self.assertEqual(cs_students, [\"John\", \"Bob\"])\n\n    def test_get_students_by_major2(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"}]\n\n        cs_students = self.registration_system.get_students_by_major(\"Computer Science\")\n        math_students = self.registration_system.get_students_by_major(\"Mathematics\")\n\n        self.assertEqual(cs_students, [\"John\", \"Bob\"])\n        self.assertEqual(math_students, [])\n\n    def test_get_students_by_major3(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"},\n                                                {\"name\": \"Alice\", \"major\": \"Mathematics\"}]\n\n        cs_students = self.registration_system.get_students_by_major(\"Computer Science\")\n        math_students = self.registration_system.get_students_by_major(\"Mathematics\")\n\n        self.assertEqual(cs_students, [\"John\", \"Bob\"])\n        self.assertEqual(math_students, [\"Alice\"])\n\n    def test_get_students_by_major4(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Alice\", \"major\": \"Mathematics\"},\n                                             {\"name\": \"Tom\", \"major\": \"Mathematics\"},\n                                             {\"name\": \"Jerry\", \"major\": \"Mathematics\"}]\n\n        cs_students = self.registration_system.get_students_by_major(\"Computer Science\")\n        math_students = self.registration_system.get_students_by_major(\"Mathematics\")\n        self.assertEqual(cs_students, [\"John\", \"Bob\"])\n        self.assertEqual(math_students, [\"Alice\", \"Tom\", \"Jerry\"])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ClassRegistrationSystemTestGetStudent)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 4 oracle tests for `get_students_by_major` passed with exit code 0 and unittest reported OK. The method correctly filters students by major and returns their names.",
+          "last_run": "2026-04-26T11:22:49.975131"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `get_all_major(self)` on class `ClassRegistrationSystem` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `ClassRegistrationSystem.get_all_major`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_all_major.py`) in the project root and execute `python _oracle_get_all_major.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ClassRegistrationSystem\n\nclass ClassRegistrationSystemTestGetMajor(unittest.TestCase):\n\n    def setUp(self):\n        self.registration_system = ClassRegistrationSystem()\n\n    def test_get_all_major(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"}]\n\n        majors = self.registration_system.get_all_major()\n\n        self.assertEqual(majors, [\"Computer Science\"])\n\n    def test_get_all_major2(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Alice\", \"major\": \"Mathematics\"}]\n\n        majors = self.registration_system.get_all_major()\n\n        self.assertEqual(majors, [\"Computer Science\", \"Mathematics\"])\n\n    def test_get_all_major3(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Alice\", \"major\": \"Mathematics\"},\n                                             {\"name\": \"Tom\", \"major\": \"Mathematics\"},\n                                             {\"name\": \"Jerry\", \"major\": \"Physics\"}]\n\n        majors = self.registration_system.get_all_major()\n\n        self.assertEqual(majors, [\"Computer Science\", \"Mathematics\", \"Physics\"])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ClassRegistrationSystemTestGetMajor)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 3 oracle tests passed with exit code 0 and unittest reported OK. The get_all_major method correctly returns deduplicated majors in insertion order.",
+          "last_run": "2026-04-26T11:24:01.999126"
+        }
+      ]
+    },
+    {
+      "id": "F-005",
+      "intent": "Method `get_most_popular_class_in_major(self, major)` on class `ClassRegistrationSystem` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-005-01",
+          "intent": "ORACLE TEST RUN for `ClassRegistrationSystem.get_most_popular_class_in_major`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_most_popular_class_in_major.py`) in the project root and execute `python _oracle_get_most_popular_class_in_major.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ClassRegistrationSystem\n\nclass ClassRegistrationSystemTestPopularClass(unittest.TestCase):\n\n    def setUp(self):\n        self.registration_system = ClassRegistrationSystem()\n\n    def test_get_most_popular_class_in_major(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Bob\", \"major\": \"Computer Science\"},\n                                             {\"name\": \"Alice\", \"major\": \"Computer Science\"}]\n\n        self.registration_system.students_registration_classes = {\"John\": [\"Algorithms\", \"Data Structures\"],\n                                            \"Bob\": [\"Operating Systems\", \"Data Structures\", \"Algorithms\"],\n                                            \"Alice\": [\"Data Structures\", \"Operating Systems\", \"Calculus\"]}\n\n        cs_most_popular_class = self.registration_system.get_most_popular_class_in_major(\"Computer Science\")\n\n        self.assertEqual(cs_most_popular_class, \"Data Structures\")\n\n    def test_get_most_popular_class_in_major2(self):\n        self.registration_system.students = [{\"name\": \"John\", \"major\": \"Computer Science\"},\n                                                {\"name\": \"Bob\", \"major\": \"Computer Science\"},\n                                                {\"name\": \"Alice\", \"major\": \"Computer Science\"},\n                                                {\"name\": \"Tom\", \"major\": \"Mathematics\"},\n                                                {\"name\": \"Jerry\", \"major\": \"Mathematics\"}]\n\n        self.registration_system.students_registration_classes = {\"John\": [\"Algorithms\", \"Data Structures\"],\n                                                                  \"Bob\": [\"Data Structures\", \"Algorithms\",\n                                                                          \"Operating Systems\"],\n                                                                  \"Alice\": [\"Data Structures\", \"Operating Systems\",\n                                                                            \"Calculus\"],\n                                                                    \"Tom\": [\"Calculus\", \"Linear Algebra\"],\n                                                                    \"Jerry\": [\"Linear Algebra\", \"Statistics\"]}\n\n        cs_most_popular_class = self.registration_system.get_most_popular_class_in_major(\"Computer Science\")\n        math_most_popular_class = self.registration_system.get_most_popular_class_in_major(\"Mathematics\")\n        self.assertEqual(cs_most_popular_class, \"Data Structures\")\n        self.assertEqual(math_most_popular_class, \"Linear Algebra\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ClassRegistrationSystemTestPopularClass)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "Both oracle tests ran successfully with exit code 0 and unittest reported OK. The method correctly identifies 'Data Structures' as the most popular class in Computer Science and 'Linear Algebra' in Mathematics.",
+          "last_run": "2026-04-26T11:25:11.617485"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

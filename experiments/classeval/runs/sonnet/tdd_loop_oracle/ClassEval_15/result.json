@@ -1,0 +1,54 @@
+{
+  "task_id": "ClassEval_15",
+  "class_name": "BoyerMooreSearch",
+  "config": "tdd_loop_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 311.1,
+  "gen_cost_usd": 1.005131,
+  "gen_session_count": 12,
+  "gen_iterations": 3,
+  "fl_summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 311.1,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 3,
+    "method_total": 3,
+    "method_results": {
+      "BoyerMooreSearchTestMatchInPattern": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestMismatchInText": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BoyerMooreSearchTestBadCharacterHeuristic": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_10",
+  "class_name": "BinaryDataProcessor",
+  "class_description": "    \"\"\"\n    This is a class used to process binary data, which includes functions such as clearing non 0 or 1 characters, counting binary string information, and converting to corresponding strings based on different encoding methods.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `clean_non_binary_chars(self)` on class `BinaryDataProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `BinaryDataProcessor.clean_non_binary_chars`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_clean_non_binary_chars.py`) in the project root and execute `python _oracle_clean_non_binary_chars.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BinaryDataProcessor\n\nclass BinaryDataProcessorTestCleanNonBinaryChars(unittest.TestCase):\n    def test_clean_non_binary_chars(self):\n        bdp = BinaryDataProcessor(\"01101000daf3e4r01100101011011000110110001101111\")\n        self.assertEqual(bdp.binary_string, \"0110100001100101011011000110110001101111\")\n\n    def test_clean_non_binary_chars_2(self):\n        bdp = BinaryDataProcessor(\"01101000daf3e4r01100101011011addf0110001d1111\")\n        self.assertEqual(bdp.binary_string, \"011010000110010101101101100011111\")\n\n    def test_clean_non_binary_chars_3(self):\n        bdp = BinaryDataProcessor(\"0sd1000daf3e4r01100101011011addf0110001d1111\")\n        self.assertEqual(bdp.binary_string, \"010000110010101101101100011111\")\n\n    def test_clean_non_binary_chars_4(self):\n        bdp = BinaryDataProcessor(\"sdsdf\")\n        self.assertEqual(bdp.binary_string, \"\")\n\n    def test_clean_non_binary_chars_5(self):\n        bdp = BinaryDataProcessor(\"0\")\n        self.assertEqual(bdp.binary_string, \"0\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BinaryDataProcessorTestCleanNonBinaryChars)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests passed successfully. The clean_non_binary_chars method correctly removes all non-binary characters (anything other than '0' and '1') from the input string via the list comprehension filter at solution.py:24.",
+          "last_run": "2026-04-27T10:05:41.107712"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `calculate_binary_info(self)` on class `BinaryDataProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `BinaryDataProcessor.calculate_binary_info`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_calculate_binary_info.py`) in the project root and execute `python _oracle_calculate_binary_info.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BinaryDataProcessor\n\nclass BinaryDataProcessorTestCalculateBinaryInfo(unittest.TestCase):\n    def test_calculate_binary_info(self):\n        bdp = BinaryDataProcessor(\"0110100001100101011011000110110001101111\")\n        self.assertEqual(bdp.calculate_binary_info(), {'Zeroes': 0.475, 'Ones': 0.525, 'Bit length': 40})\n\n    def test_calculate_binary_info_2(self):\n        bdp = BinaryDataProcessor(\"0110100001100101011010011111\")\n        self.assertEqual(bdp.calculate_binary_info(), {'Bit length': 28, 'Ones': 0.5357142857142857, 'Zeroes': 0.4642857142857143})\n\n    def test_calculate_binary_info_3(self):\n        bdp = BinaryDataProcessor(\"01101001111100101011010011111\")\n        self.assertEqual(bdp.calculate_binary_info(), {'Bit length': 29, 'Ones': 0.6206896551724138, 'Zeroes': 0.3793103448275862})\n\n    def test_calculate_binary_info_4(self):\n        bdp = BinaryDataProcessor(\"011010011111001\")\n        self.assertEqual(bdp.calculate_binary_info(), {'Bit length': 15, 'Ones': 0.6, 'Zeroes': 0.4})\n\n    def test_calculate_binary_info_5(self):\n        bdp = BinaryDataProcessor(\"0110100111110010\")\n        self.assertEqual(bdp.calculate_binary_info(), {'Bit length': 16, 'Ones': 0.5625, 'Zeroes': 0.4375})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BinaryDataProcessorTestCalculateBinaryInfo)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases for BinaryDataProcessor.calculate_binary_info() executed successfully with exit code 0 and unittest reported OK.",
+          "last_run": "2026-04-27T10:07:18.499275"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `convert_to_ascii(self)` on class `BinaryDataProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `BinaryDataProcessor.convert_to_ascii`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_convert_to_ascii.py`) in the project root and execute `python _oracle_convert_to_ascii.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BinaryDataProcessor\n\nclass BinaryDataProcessorTestConvertToAscii(unittest.TestCase):\n    def test_convert_to_ascii(self):\n        bdp = BinaryDataProcessor(\"0110100001100101011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_ascii(), \"hello\")\n\n    def test_convert_to_ascii_2(self):\n        bdp = BinaryDataProcessor(\"0110100000100101011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_ascii(), \"h%llo\")\n\n    def test_convert_to_ascii_3(self):\n        bdp = BinaryDataProcessor(\"01101000011011010110001001101111\")\n        self.assertEqual(bdp.convert_to_ascii(), \"hmbo\")\n\n    def test_convert_to_ascii_4(self):\n        bdp = BinaryDataProcessor(\"01101000011001010110001001101111\")\n        self.assertEqual(bdp.convert_to_ascii(), \"hebo\")\n\n    def test_convert_to_ascii_5(self):\n        bdp = BinaryDataProcessor(\"0110100001100101011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_ascii(), \"hello\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BinaryDataProcessorTestConvertToAscii)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle unit tests for convert_to_ascii passed successfully. Exit code 0 with unittest reporting OK.",
+          "last_run": "2026-04-27T10:08:46.930064"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `convert_to_utf8(self)` on class `BinaryDataProcessor` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `BinaryDataProcessor.convert_to_utf8`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_convert_to_utf8.py`) in the project root and execute `python _oracle_convert_to_utf8.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BinaryDataProcessor\n\nclass BinaryDataProcessorTestConvertToUtf8(unittest.TestCase):\n    def test_convert_to_utf8(self):\n        bdp = BinaryDataProcessor(\"0110100001100101011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_utf8(), \"hello\")\n\n    def test_convert_to_utf8_2(self):\n        bdp = BinaryDataProcessor(\"0110100001100101011011000110110001101001\")\n        self.assertEqual(bdp.convert_to_utf8(), \"helli\")\n\n    def test_convert_to_utf8_3(self):\n        bdp = BinaryDataProcessor(\"0110000001100101011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_utf8(), \"`ello\")\n\n    def test_convert_to_utf8_4(self):\n        bdp = BinaryDataProcessor(\"0110101101100101011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_utf8(), \"kello\")\n\n    def test_convert_to_utf8_5(self):\n        bdp = BinaryDataProcessor(\"0110101101100100011011000110110001101111\")\n        self.assertEqual(bdp.convert_to_utf8(), \"kdllo\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BinaryDataProcessorTestConvertToUtf8)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases passed successfully. The convert_to_utf8() method correctly converts 8-bit binary chunks to their UTF-8 character equivalents.",
+          "last_run": "2026-04-27T10:10:03.027325"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

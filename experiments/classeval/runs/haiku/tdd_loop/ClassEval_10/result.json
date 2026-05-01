@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_10",
+  "class_name": "BinaryDataProcessor",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "error",
+  "gen_duration_s": 1367.9,
+  "gen_cost_usd": 1.696471,
+  "gen_session_count": 35,
+  "gen_iterations": 10,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 2,
+    "tests_failed": 2,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 1367.9,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 0,
+    "method_total": 4,
+    "method_results": {
+      "BinaryDataProcessorTestCleanNonBinaryChars": {
+        "passed": false,
+        "error": "n_binary_chars_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestCleanNonBinaryChars>\", line 16, in test_clean_non_binary_chars_4\nAssertionError: \"''\" != ''\n- ''\n\n\n======================================================================\nFAIL: test_clean_non_binary_chars_5 (_sol.BinaryDataProcessorTestCleanNonBinaryChars.test_clean_non_binary_chars_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestCleanNonBinaryChars>\", line 20, in test_clean_non_binary_chars_5\nAssertionError: \"'0'\" != '0'\n- '0'\n+ 0\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestCalculateBinaryInfo": {
+        "passed": false,
+        "error": "=============================\nFAIL: test_calculate_binary_info_5 (_sol.BinaryDataProcessorTestCalculateBinaryInfo.test_calculate_binary_info_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestCalculateBinaryInfo>\", line 20, in test_calculate_binary_info_5\nAssertionError: {'Zeroes': 0.438, 'Ones': 0.562, 'Bit length': 16} != {'Bit length': 16, 'Ones': 0.5625, 'Zeroes': 0.4375}\n- {'Bit length': 16, 'Ones': 0.562, 'Zeroes': 0.438}\n?                                                 ^\n\n+ {'Bit length': 16, 'Ones': 0.5625, 'Zeroes': 0.4375}\n?                                 +                ^^\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=3)\n",
+        "tests_run": 5,
+        "failures": 3,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToAscii": {
+        "passed": false,
+        "error": "4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestConvertToAscii>\", line 16, in test_convert_to_ascii_4\nAssertionError: \"'hebo'\" != 'hebo'\n- 'hebo'\n? -    -\n+ hebo\n\n\n======================================================================\nFAIL: test_convert_to_ascii_5 (_sol.BinaryDataProcessorTestConvertToAscii.test_convert_to_ascii_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestConvertToAscii>\", line 20, in test_convert_to_ascii_5\nAssertionError: \"'hello'\" != 'hello'\n- 'hello'\n? -     -\n+ hello\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToUtf8": {
+        "passed": false,
+        "error": "8_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestConvertToUtf8>\", line 16, in test_convert_to_utf8_4\nAssertionError: \"'kello'\" != 'kello'\n- 'kello'\n? -     -\n+ kello\n\n\n======================================================================\nFAIL: test_convert_to_utf8_5 (_sol.BinaryDataProcessorTestConvertToUtf8.test_convert_to_utf8_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BinaryDataProcessorTestConvertToUtf8>\", line 20, in test_convert_to_utf8_5\nAssertionError: \"'kdllo'\" != 'kdllo'\n- 'kdllo'\n? -     -\n+ kdllo\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "3 [INFO]   Progress: [███████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 50% (2/4 passed, 2 failed, 0 pending, 0 skipped)\n2026-04-25 19:16:26,143 [WARNING] No actionable features remaining\n2026-04-25 19:16:26,143 [WARNING] \nMax iterations reached (15), 22m47s\n2026-04-25 19:16:26,148 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_10\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

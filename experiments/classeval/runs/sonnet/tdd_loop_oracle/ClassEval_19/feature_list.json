@@ -1,0 +1,49 @@
+{
+  "change_name": "ClassEval_19",
+  "class_name": "ChandrasekharSieve",
+  "class_description": "    \"\"\"\n    This is a class that uses the Chandrasekhar's Sieve method to find all prime numbers within the range\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `generate_primes(self)` on class `ChandrasekharSieve` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `ChandrasekharSieve.generate_primes`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_generate_primes.py`) in the project root and execute `python _oracle_generate_primes.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ChandrasekharSieve\n\nclass ChandrasekharSieveTestGeneratePrimes(unittest.TestCase):\n    def test_generate_primes_1(self):\n        cs = ChandrasekharSieve(20)\n        res = cs.generate_primes()\n        self.assertEqual(res, [2, 3, 5, 7, 11, 13, 17, 19])\n\n    def test_generate_primes_2(self):\n        cs = ChandrasekharSieve(18)\n        res = cs.generate_primes()\n        self.assertEqual(res, [2, 3, 5, 7, 11, 13, 17])\n\n    def test_generate_primes_3(self):\n        cs = ChandrasekharSieve(15)\n        res = cs.generate_primes()\n        self.assertEqual(res, [2, 3, 5, 7, 11, 13])\n\n    def test_generate_primes_4(self):\n        cs = ChandrasekharSieve(10)\n        res = cs.generate_primes()\n        self.assertEqual(res, [2, 3, 5, 7])\n\n    def test_generate_primes_5(self):\n        cs = ChandrasekharSieve(1)\n        res = cs.generate_primes()\n        self.assertEqual(res, [])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ChandrasekharSieveTestGeneratePrimes)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed with exit code 0 and unittest reporting OK. The generate_primes method correctly returns primes up to the given limit for all test cases.",
+          "last_run": "2026-04-26T11:03:14.529667"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `get_primes(self)` on class `ChandrasekharSieve` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `ChandrasekharSieve.get_primes`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_primes.py`) in the project root and execute `python _oracle_get_primes.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ChandrasekharSieve\n\nclass ChandrasekharSieveTestGetPrimes(unittest.TestCase):\n    def test_get_primes_1(self):\n        cs = ChandrasekharSieve(20)\n        cs.generate_primes()\n        res = cs.get_primes()\n        self.assertEqual(res, [2, 3, 5, 7, 11, 13, 17, 19])\n\n    def test_get_primes_2(self):\n        cs = ChandrasekharSieve(18)\n        cs.generate_primes()\n        res = cs.get_primes()\n        self.assertEqual(res, [2, 3, 5, 7, 11, 13, 17])\n\n    def test_get_primes_3(self):\n        cs = ChandrasekharSieve(15)\n        cs.generate_primes()\n        res = cs.get_primes()\n        self.assertEqual(res, [2, 3, 5, 7, 11, 13])\n\n    def test_get_primes_4(self):\n        cs = ChandrasekharSieve(10)\n        cs.generate_primes()\n        res = cs.get_primes()\n        self.assertEqual(res, [2, 3, 5, 7])\n\n    def test_get_primes_5(self):\n        cs = ChandrasekharSieve(1)\n        res = cs.get_primes()\n        self.assertEqual(res, [])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ChandrasekharSieveTestGetPrimes)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed with exit code 0 and unittest reported OK. The get_primes method correctly returns the list of primes generated by the sieve for all test cases including edge case n=1.",
+          "last_run": "2026-04-26T11:04:11.950181"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 2,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 2,
+    "tests_passed": 2,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_0",
+  "class_name": "AccessGatewayFilter",
+  "config": "tdd_loop_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 444.6,
+  "gen_cost_usd": 0.690268,
+  "gen_session_count": 12,
+  "gen_iterations": 2,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 444.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "AccessGatewayFilterTestFilter": {
+        "passed": true,
+        "error": "",
+        "tests_run": 8,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTestIsStartWith": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTestGetJwtUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AccessGatewayFilterTest": {
+        "passed": true,
+        "error": "",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

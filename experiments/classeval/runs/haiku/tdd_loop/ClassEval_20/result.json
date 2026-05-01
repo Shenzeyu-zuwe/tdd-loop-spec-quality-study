@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_20",
+  "class_name": "Chat",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "error",
+  "gen_duration_s": 1474.2,
+  "gen_cost_usd": 1.645733,
+  "gen_session_count": 30,
+  "gen_iterations": 15,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 1,
+    "failed": 0,
+    "pending": 1,
+    "total_tests": 8,
+    "tests_passed": 5,
+    "tests_failed": 2,
+    "tests_pending": 1,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 1474.2,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 4,
+    "method_results": {
+      "ChatTestAddUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ChatTestRemoveUser": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ChatTestSendMessage": {
+        "passed": false,
+        "error": "=============\nFAIL: test_send_message (_sol.ChatTestSendMessage.test_send_message)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ChatTestSendMessage>\", line 7, in test_send_message\nAssertionError: {'John': [], 'Mary': []} != {'John': [{'sender': 'John', 'receiver': 'Mary', 'm[156 chars]4'}]}\n- {'John': [], 'Mary': []}\n+ {'John': [{'message': 'Hello',\n+            'receiver': 'Mary',\n+            'sender': 'John',\n+            'timestamp': '2026-04-25 22:03:54'}],\n+  'Mary': [{'message': 'Hello',\n+            'receiver': 'Mary',\n+            'sender': 'John',\n+            'timestamp': '2026-04-25 22:03:54'}]}\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=1)\n",
+        "tests_run": 5,
+        "failures": 1,
+        "errors": 0
+      },
+      "ChatTestGetMessages": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": " execut\n    [PASS] T-004-01 RUNTIME CHECK for `Chat.get_messages`.\n\nWrite the following \n    [FAIL] T-004-02 RUNTIME CHECK for `Chat.get_messages`.\n\nWrite the following \n2026-04-25 22:03:54,019 [WARNING] \nMax iterations reached (15), 24m34s\n2026-04-25 22:03:54,021 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_20\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

@@ -1,0 +1,68 @@
+{
+  "task_id": "ClassEval_23",
+  "class_name": "CombinationCalculator",
+  "config": "tdd_loop_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 441.5,
+  "gen_cost_usd": 1.429353,
+  "gen_session_count": 33,
+  "gen_iterations": 4,
+  "fl_summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 441.5,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "CombinationCalculatorTestCount": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestCountAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelect": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelectAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelect2": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

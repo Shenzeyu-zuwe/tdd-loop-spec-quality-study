@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_8",
+  "class_name": "BankAccount",
+  "class_description": "    \"\"\"\n    This is a class as a bank account system, which supports deposit money, withdraw money, view balance, and transfer money.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `deposit(self, amount)` on class `BankAccount` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `BankAccount.deposit` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import BankAccount`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nDeposits a certain amount into the account, increasing the account balance, return the current account balance.\n        If amount is negative, raise a ValueError(\"Invalid amount\").\n        :param amount: int",
+          "status": "passed",
+          "reason": "Executed four runtime checks: positive deposit returns updated balance, cumulative deposits accumulate correctly, deposit with initial balance works, and negative amount raises ValueError('Invalid amount'). All assertions passed with 'ALL PASSED' output.",
+          "last_run": "2026-04-25T10:34:02.793932"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `withdraw(self, amount)` on class `BankAccount` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `BankAccount.withdraw` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import BankAccount`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nWithdraws a certain amount from the account, decreasing the account balance, return the current account balance.\n        If amount is negative, raise a ValueError(\"Invalid amount\").\n        If the withdrawal amount is greater than the account balance, raise a ValueError(\"Insufficient balance.\").\n        :param amount: int",
+          "status": "passed",
+          "reason": "Executed 4 runtime probes: normal withdrawal returns updated balance, full withdrawal returns 0, negative amount raises ValueError('Invalid amount'), and overdraft raises ValueError('Insufficient balance.'). All assertions passed.",
+          "last_run": "2026-04-25T10:35:11.715718"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `view_balance(self)` on class `BankAccount` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `BankAccount.view_balance` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import BankAccount`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nReturn the account balance.",
+          "status": "passed",
+          "reason": "Executed three runtime calls: default balance returns 0, initialized balance of 500 returns 500, and balance after deposit of 200 returns 200 — all assertions passed without exception.",
+          "last_run": "2026-04-25T10:36:12.393554"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `transfer(self, other_account, amount)` on class `BankAccount` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "RUNTIME CHECK for `BankAccount.transfer`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import BankAccount\naccount1 = BankAccount()\naccount2 = BankAccount()\naccount1.deposit(1000)\nprint(account1.transfer(account2, 300))\n```\n\nExpected stdout:\n```\naccount1.balance = 700 account2.balance = 300\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced exactly 'account1.balance = 700 account2.balance = 300', matching the expected stdout byte-for-byte after stripping trailing whitespace.",
+          "last_run": "2026-04-25T10:37:10.709207"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

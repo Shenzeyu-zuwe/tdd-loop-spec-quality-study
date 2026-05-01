@@ -1,0 +1,49 @@
+{
+  "change_name": "ClassEval_6",
+  "class_name": "AvgPartition",
+  "class_description": "    \"\"\"\n    This is a class that partitions the given list into different blocks by specifying the number of partitions, with each block having a uniformly distributed length.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `setNum(self)` on class `AvgPartition` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `AvgPartition.setNum`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_setNum.py`) in the project root and execute `python _oracle_setNum.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import AvgPartition\n\nclass AvgPartitionTestSetNum(unittest.TestCase):\n    def test_setNum(self):\n        a = AvgPartition([1, 2, 3, 4], 2)\n        self.assertEqual(a.setNum(), (2, 0))\n\n    def test_setNum_2(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 2)\n        self.assertEqual(a.setNum(), (2, 1))\n\n    def test_setNum_3(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 3)\n        self.assertEqual(a.setNum(), (1, 2))\n\n    def test_setNum_4(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 4)\n        self.assertEqual(a.setNum(), (1, 1))\n\n    def test_setNum_5(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 5)\n        self.assertEqual(a.setNum(), (1, 0))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(AvgPartitionTestSetNum)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for `AvgPartition.setNum` passed with exit code 0 and unittest reporting OK. The method correctly returns `(size, remainder)` tuples for all test cases.",
+          "last_run": "2026-04-25T21:29:38.062501"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `get(self, index)` on class `AvgPartition` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `AvgPartition.get`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get.py`) in the project root and execute `python _oracle_get.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import AvgPartition\n\nclass AvgPartitionTestGet(unittest.TestCase):\n\n    def test_get(self):\n        a = AvgPartition([1, 2, 3, 4], 2)\n        self.assertEqual(a.get(0), [1, 2])\n\n    def test_get_2(self):\n        a = AvgPartition([1, 2, 3, 4], 2)\n        self.assertEqual(a.get(1), [3, 4])\n\n    def test_get_3(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 2)\n        self.assertEqual(a.get(0), [1, 2, 3])\n\n    def test_get_4(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 2)\n        self.assertEqual(a.get(1), [4, 5])\n\n    def test_get_5(self):\n        a = AvgPartition([1, 2, 3, 4, 5], 3)\n        self.assertEqual(a.get(0), [1, 2])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(AvgPartitionTestGet)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests passed with exit code 0 and unittest reported OK. The AvgPartition.get method correctly partitions lists with and without remainders.",
+          "last_run": "2026-04-25T21:30:37.089055"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 2,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 2,
+    "tests_passed": 2,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

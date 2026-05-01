@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_2",
+  "class_name": "ArgumentParser",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "timeout",
+  "gen_duration_s": 2700.0,
+  "gen_cost_usd": 3.254897,
+  "gen_session_count": 50,
+  "gen_iterations": 0,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 8,
+    "tests_passed": 8,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 2700.0,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 4,
+    "method_results": {
+      "ArgumentParserTestParseArguments": {
+        "passed": false,
+        "error": "L: test_parse_arguments_1 (_sol.ArgumentParserTestParseArguments.test_parse_arguments_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ArgumentParserTestParseArguments>\", line 16, in test_parse_arguments_1\nAssertionError: None != 'John'\n\n======================================================================\nFAIL: test_parse_arguments_2 (_sol.ArgumentParserTestParseArguments.test_parse_arguments_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ArgumentParserTestParseArguments>\", line 29, in test_parse_arguments_2\nAssertionError: None != True\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=2)\n",
+        "tests_run": 5,
+        "failures": 2,
+        "errors": 0
+      },
+      "ArgumentParserTestGetArgument": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestAddArgument": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "ArgumentParserTestConvertType": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "timeout"
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "ClassEval_26",
+  "class_name": "CSVProcessor",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "error",
+  "gen_duration_s": 785.1,
+  "gen_cost_usd": 1.069153,
+  "gen_session_count": 33,
+  "gen_iterations": 8,
+  "fl_summary": {
+    "total_features": 3,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 4,
+    "tests_failed": 1,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 785.1,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 3,
+    "method_results": {
+      "CSVProcessorTestReadCSV": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CSVProcessorTestWriteCSV": {
+        "passed": false,
+        "error": "st_write_csv_4 (_sol.CSVProcessorTestWriteCSV.test_write_csv_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 60, in test_write_csv_4\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_write_csv_5 (_sol.CSVProcessorTestWriteCSV.test_write_csv_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CSVProcessorTestWriteCSV>\", line 75, in test_write_csv_5\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.010s\n\nFAILED (errors=5)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 5
+      },
+      "CSVProcessorTestProcessCSVData": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "03 [INFO]   Progress: [████████████████████████▓▓▓▓▓▓] 80% (4/5 passed, 1 failed, 0 pending, 0 skipped)\n2026-04-26 13:01:56,103 [WARNING] No actionable features remaining\n2026-04-26 13:01:56,103 [WARNING] \nMax iterations reached (15), 13m4s\n2026-04-26 13:01:56,106 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_26\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

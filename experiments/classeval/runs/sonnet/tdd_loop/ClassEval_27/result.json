@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_27",
+  "class_name": "CurrencyConverter",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 453.7,
+  "gen_cost_usd": 1.36663,
+  "gen_session_count": 32,
+  "gen_iterations": 6,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 453.7,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 4,
+    "method_results": {
+      "CurrencyConverterTestConvert": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_convert_6 (_sol.CurrencyConverterTestConvert.test_convert_6)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestConvert>\", line 29, in test_convert_6\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_27\\solution.py\", line 33, in convert\n    return round(amount / self.rates[from_currency] * self.rates[to_currency], 2)\n                          ~~~~~~~~~~^^^^^^^^^^^^^^^\nKeyError: '???'\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 1
+      },
+      "CurrencyConverterTestGetSupportedCurrencies": {
+        "passed": false,
+        "error": "rrencies>\", line 20, in test_get_supported_currencies_4\nAssertionError: \"['USD','EUR','GBP','JPY','CAD','AUD','CNY']\" != ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CNY']\n\n======================================================================\nFAIL: test_get_supported_currencies_5 (_sol.CurrencyConverterTestGetSupportedCurrencies.test_get_supported_currencies_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CurrencyConverterTestGetSupportedCurrencies>\", line 25, in test_get_supported_currencies_5\nAssertionError: \"['USD','EUR','GBP','JPY','CAD','AUD','CNY']\" != ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CNY']\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=5)\n",
+        "tests_run": 5,
+        "failures": 5,
+        "errors": 0
+      },
+      "CurrencyConverterTestAddCurrencyRate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CurrencyConverterTestUpdateCurrencyRate": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

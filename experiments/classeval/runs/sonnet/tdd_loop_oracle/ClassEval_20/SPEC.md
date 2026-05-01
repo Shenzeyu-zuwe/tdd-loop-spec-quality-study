@@ -1,0 +1,97 @@
+# ClassEval_20 — Chat
+
+## Class description
+```
+"""
+    This is a chat class with the functions of adding users, removing users, sending messages, and obtaining messages.
+    """
+```
+
+## Required imports (prepend to solution.py)
+```python
+from datetime import datetime
+```
+
+## Skeleton (to implement)
+```python
+from datetime import datetime
+
+class Chat:
+    """
+    This is a chat class with the functions of adding users, removing users, sending messages, and obtaining messages.
+    """
+
+    def __init__(self):
+        """
+        Initialize the Chat with an attribute users, which is an empty dictionary.
+        """
+        self.users = {}
+
+    def add_user(self, username):
+        """
+        Add a new user to the Chat.
+        :param username: The user's name, str.
+        :return: If the user is already in the Chat, returns False, otherwise, returns True.
+        >>> chat = Chat()
+        >>> chat.add_user('John')
+        True
+        self.users = {'John': []}
+        >>> chat.add_user('John')
+        False
+
+        """
+
+    def remove_user(self, username):
+        """
+        Remove a user from the Chat.
+        :param username: The user's name, str.
+        :return: If the user is already in the Chat, returns True, otherwise, returns False.
+        >>> chat = Chat()
+        >>> chat.users = {'John': []}
+        >>> chat.remove_user('John')
+        True
+        >>> chat.remove_user('John')
+        False
+
+        """
+
+    def send_message(self, sender, receiver, message):
+        """
+        Send a message from a user to another user.
+        :param sender: The sender's name, str.
+        :param receiver: The receiver's name, str.
+        :param message: The message, str.
+        :return: If the sender or the receiver is not in the Chat, returns False, otherwise, returns True.
+        >>> chat = Chat()
+        >>> chat.users = {'John': [], 'Mary': []}
+        >>> chat.send_message('John', 'Mary', 'Hello')
+        True
+        >>> chat.send_message('John', 'Tom', 'Hello')
+        False
+
+        """
+
+    def get_messages(self, username):
+        """
+        Get all the messages of a user from the Chat.
+        :param username: The user's name, str.
+        :return: A list of messages, each message is a dictionary with keys 'sender', 'receiver', 'message', 'timestamp'.
+        >>> chat = Chat()
+        >>> chat.users = {'John': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': '2023-01-01 00:00:00'}]}
+        >>> chat.get_messages('John')
+        [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': '2023-01-01 00:00:00'}]
+        >>> chat.get_messages('Mary')
+        []
+
+        """
+```
+
+## Target file
+`solution.py` — write the completed class here. Do **not** modify
+any other file in the project root.
+
+## Verification discipline
+Every test intent in feature_list.json is a **RUNTIME CHECK**. The
+Tester must write a temp Python script, execute it via the Bash
+tool, and compare actual stdout to expected. Code review alone is
+never sufficient.

@@ -1,0 +1,109 @@
+{
+  "change_name": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "class_description": "    \"\"\"\n    This is a class as CalendarUtil that provides functionalities to manage calendar events, schedule appointments, and perform conflict checks.\n    \"\"\"\n",
+  "import_statement": "from datetime import datetime, timedelta",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add_event(self, event)` on class `CalendarUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `CalendarUtil.add_event`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime, timedelta\nfrom solution import CalendarUtil\ncalendar = CalendarUtil()\ncalendar.add_event({'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 1, 0), 'description': 'New Year'})\nprint(calendar.events)\n```\n\nExpected stdout:\n```\n[{'date': datetime.datetime(2023, 1, 1, 0, 0), 'start_time': datetime.datetime(2023, 1, 1, 0, 0), 'end_time': datetime.datetime(2023, 1, 1, 1, 0), 'description': 'New Year'}]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced stdout exactly matching the expected output: the event dict was appended to calendar.events and printed correctly.",
+          "last_run": "2026-04-25T11:59:49.875753"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `remove_event(self, event)` on class `CalendarUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `CalendarUtil.remove_event`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime, timedelta\nfrom solution import CalendarUtil\ncalendar = CalendarUtil()\ncalendar.events = [{'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 1, 0), 'description': 'New Year'}]\ncalendar.remove_event({'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 1, 0), 'description': 'New Year'})\nprint(calendar.events)\n```\n\nExpected stdout:\n```\n[]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced `[]` on stdout, exactly matching the expected output. `remove_event` correctly removes the matching event from the list.",
+          "last_run": "2026-04-25T12:01:08.187877"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `get_events(self, date)` on class `CalendarUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `CalendarUtil.get_events`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime, timedelta\nfrom solution import CalendarUtil\ncalendar = CalendarUtil()\ncalendar.events = [{'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 1, 0), 'description': 'New Year'}]\nprint(calendar.get_events(datetime(2023, 1, 1, 0, 0)))\n```\n\nExpected stdout:\n```\n[{'date': datetime.datetime(2023, 1, 1, 0, 0), 'start_time': datetime.datetime(2023, 1, 1, 0, 0), 'end_time': datetime.datetime(2023, 1, 1, 1, 0), 'description': 'New Year'}]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "The script executed successfully and stdout exactly matches the expected output, confirming `get_events` correctly filters events by date.",
+          "last_run": "2026-04-25T12:02:15.241136"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `is_available(self, start_time, end_time)` on class `CalendarUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "RUNTIME CHECK for `CalendarUtil.is_available`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime, timedelta\nfrom solution import CalendarUtil\ncalendar = CalendarUtil()\ncalendar.events = [{'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 1, 0), 'description': 'New Year'}]\nprint(calendar.is_available(datetime(2023, 1, 1, 0, 0), datetime(2023, 1, 1, 1, 0)))\n```\n\nExpected stdout:\n```\nFalse\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced `False`, which matches the expected stdout exactly. `is_available` correctly detects the overlapping event and returns False.",
+          "last_run": "2026-04-25T12:03:26.125971"
+        }
+      ]
+    },
+    {
+      "id": "F-005",
+      "intent": "Method `get_available_slots(self, date)` on class `CalendarUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-005-01",
+          "intent": "RUNTIME CHECK for `CalendarUtil.get_available_slots`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime, timedelta\nfrom solution import CalendarUtil\ncalendar = CalendarUtil()\ncalendar.events = [{'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 23, 0), 'description': 'New Year'}]\nprint(calendar.get_available_slots(datetime(2023, 1, 1)))\n```\n\nExpected stdout:\n```\n[(datetime.datetime(2023, 1, 1, 23, 0), datetime.datetime(2023, 1, 2, 0, 0))]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Script executed successfully and stdout exactly matches expected output: `[(datetime.datetime(2023, 1, 1, 23, 0), datetime.datetime(2023, 1, 2, 0, 0))]`.",
+          "last_run": "2026-04-25T12:04:38.829166"
+        }
+      ]
+    },
+    {
+      "id": "F-006",
+      "intent": "Method `get_upcoming_events(self, num_events)` on class `CalendarUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-006-01",
+          "intent": "RUNTIME CHECK for `CalendarUtil.get_upcoming_events`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime, timedelta\nfrom solution import CalendarUtil\ncalendar = CalendarUtil()\ncalendar.events = [{'date': datetime(2023, 1, 1, 0, 0), 'start_time': datetime(2023, 1, 1, 0, 0), 'end_time': datetime(2023, 1, 1, 23, 0), 'description': 'New Year'},{'date': datetime(2023, 1, 2, 0, 0),'end_time': datetime(2023, 1, 2, 1, 0), 'description': 'New Year 2'}]\nprint(calendar.get_upcoming_events(1))\n```\n\nExpected stdout:\n```\n[{'date': datetime.datetime(2023, 1, 1, 0, 0), 'start_time': datetime.datetime(2023, 1, 1, 0, 0), 'end_time': datetime.datetime(2023, 1, 1, 23, 0), 'description': 'New Year'}, {'date': datetime.datetime(2023, 1, 2, 0, 0), 'end_time': datetime.datetime(2023, 1, 2, 1, 0), 'description': 'New Year 2'}]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "The script ran without errors and stdout exactly matches the expected output, returning both events when get_upcoming_events(1) is called.",
+          "last_run": "2026-04-25T12:06:03.783293"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 6,
+    "passed": 6,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

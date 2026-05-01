@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_14",
+  "class_name": "BookManagementDB",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 835.9,
+  "gen_cost_usd": 1.241314,
+  "gen_session_count": 22,
+  "gen_iterations": 5,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 6,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 835.9,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 0,
+    "method_total": 6,
+    "method_results": {
+      "BookManagementDBTestCreateTable": {
+        "passed": false,
+        "error": "BookManagementDBTestCreateTable.test_create_table_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n======================================================================\nERROR: test_create_table_2 (_sol.BookManagementDBTestCreateTable.test_create_table_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestCreateTable>\", line 27, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.003s\n\nFAILED (errors=2)\n",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 2
+      },
+      "BookManagementDBTestAddBook": {
+        "passed": false,
+        "error": "raceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 11, in test_add_book\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_14\\solution.py\", line 45, in add_book\n    self.cursor.execute(\nsqlite3.OperationalError: table books has no column named availability\n\n======================================================================\nERROR: test_add_book (_sol.BookManagementDBTestAddBook.test_add_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestAddBook>\", line 25, in tearDown\nNameError: name 'os' is not defined. Did you forget to import 'os'\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nFAILED (errors=2)\n",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 2
+      },
+      "BookManagementDBTestRemoveBook": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_remove_book (_sol.BookManagementDBTestRemoveBook.test_remove_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestRemoveBook>\", line 8, in setUp\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_14\\solution.py\", line 45, in add_book\n    self.cursor.execute(\nsqlite3.OperationalError: table books has no column named availability\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 1
+      },
+      "BookManagementDBTestBorrowBook": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_borrow_book (_sol.BookManagementDBTestBorrowBook.test_borrow_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestBorrowBook>\", line 8, in setUp\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_14\\solution.py\", line 45, in add_book\n    self.cursor.execute(\nsqlite3.OperationalError: table books has no column named availability\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 1
+      },
+      "BookManagementDBTestReturnBook": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_return_book (_sol.BookManagementDBTestReturnBook.test_return_book)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestReturnBook>\", line 8, in setUp\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_14\\solution.py\", line 45, in add_book\n    self.cursor.execute(\nsqlite3.OperationalError: table books has no column named availability\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 1
+      },
+      "BookManagementDBTestSearchBooks": {
+        "passed": false,
+        "error": "======================================================================\nERROR: test_search_books (_sol.BookManagementDBTestSearchBooks.test_search_books)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementDBTestSearchBooks>\", line 8, in setUp\n  File \"E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_14\\solution.py\", line 45, in add_book\n    self.cursor.execute(\nsqlite3.OperationalError: table books has no column named availability\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (errors=1)\n",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 1
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

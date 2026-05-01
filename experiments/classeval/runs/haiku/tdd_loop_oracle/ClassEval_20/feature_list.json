@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_20",
+  "class_name": "Chat",
+  "class_description": "    \"\"\"\n    This is a chat class with the functions of adding users, removing users, sending messages, and obtaining messages.\n    \"\"\"\n",
+  "import_statement": "from datetime import datetime",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add_user(self, username)` on class `Chat` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `Chat.add_user`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_add_user.py`) in the project root and execute `python _oracle_add_user.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Chat\n\nclass ChatTestAddUser(unittest.TestCase):\n    def test_add_user(self):\n        chat = Chat()\n        self.assertEqual(chat.add_user('John'), True)\n        self.assertEqual(chat.users, {'John': []})\n    def test_add_user_2(self):\n        chat = Chat()\n        chat.users = {'John': []}\n        self.assertEqual(chat.add_user('John'), False)\n        self.assertEqual(chat.users, {'John': []})\n\n    def test_add_user_3(self):\n        chat = Chat()\n        chat.users = {'John': []}\n        self.assertEqual(chat.add_user('Mary'), True)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\n    def test_add_user_4(self):\n        chat = Chat()\n        chat.users = {'John': []}\n        self.assertEqual(chat.add_user('Mary'), True)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\n    def test_add_user_5(self):\n        chat = Chat()\n        self.assertEqual(chat.add_user('John'), True)\n        self.assertEqual(chat.add_user('Mary'), True)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ChatTestAddUser)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for Chat.add_user executed successfully with exit code 0. unittest reports OK with no failures or errors.",
+          "last_run": "2026-04-27T11:43:33.700970"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `remove_user(self, username)` on class `Chat` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `Chat.remove_user`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_remove_user.py`) in the project root and execute `python _oracle_remove_user.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Chat\n\nclass ChatTestRemoveUser(unittest.TestCase):\n    def test_remove_user(self):\n        chat = Chat()\n        chat.users = {'John': []}\n        self.assertEqual(chat.remove_user('John'), True)\n        self.assertEqual(chat.users, {})\n    def test_remove_user_2(self):\n        chat = Chat()\n        self.assertEqual(chat.remove_user('John'), False)\n        self.assertEqual(chat.users, {})\n\n    def test_remove_user_3(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.remove_user('John'), True)\n        self.assertEqual(chat.users, {'Mary': []})\n\n    def test_remove_user_4(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.remove_user('Mary'), True)\n        self.assertEqual(chat.remove_user('John'), True)\n        self.assertEqual(chat.users, {})\n\n    def test_remove_user_5(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.remove_user('Amy'), False)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ChatTestRemoveUser)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 test cases passed. The remove_user method correctly removes users from the chat and returns True when the user exists, False otherwise.",
+          "last_run": "2026-04-27T11:45:12.546373"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `send_message(self, sender, receiver, message)` on class `Chat` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `Chat.send_message`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_send_message.py`) in the project root and execute `python _oracle_send_message.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Chat\n\nclass ChatTestSendMessage(unittest.TestCase):\n    def test_send_message(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        timestamp = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        self.assertEqual(chat.send_message('John', 'Mary', 'Hello'), True)\n        self.assertEqual(chat.users, {'John': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': timestamp}], 'Mary': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': timestamp}]})\n\n    def test_send_message_2(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.send_message('John', 'Tom', 'Hello'), False)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\n    def test_send_message_3(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.send_message('Amy', 'Mary', 'Hello'), False)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\n    def test_send_message_4(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.send_message('Amy', 'Tom', 'Hello'), False)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\n    def test_send_message_5(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.send_message('Amy', 'Amy', 'Hello'), False)\n        self.assertEqual(chat.users, {'John': [], 'Mary': []})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ChatTestSendMessage)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle unit tests passed successfully. The `send_message` method correctly validates both sender and receiver exist, creates message dicts with proper structure including timestamps, and appends messages to both users' lists.",
+          "last_run": "2026-04-27T11:47:09.084957"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `get_messages(self, username)` on class `Chat` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `Chat.get_messages`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_messages.py`) in the project root and execute `python _oracle_get_messages.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Chat\n\nclass ChatTestGetMessages(unittest.TestCase):\n    def test_get_messages(self):\n        chat = Chat()\n        timestamp = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        chat.users = {'John': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': timestamp}]}\n        self.assertEqual(chat.get_messages('John'), [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': timestamp}])\n\n    def test_get_messages_2(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.get_messages('John'), [])\n\n    def test_get_messages_3(self):\n        chat = Chat()\n        chat.users = {'John': [], 'Mary': []}\n        self.assertEqual(chat.get_messages('Amy'), [])\n\n    def test_get_messages_4(self):\n        chat = Chat()\n        timestamp = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        chat.users = {'John': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': timestamp}]}\n        self.assertEqual(chat.get_messages('Mary'), [])\n\n    def test_get_messages_5(self):\n        chat = Chat()\n        timestamp = datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n        chat.users = {'John': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': timestamp}]}\n        self.assertEqual(chat.get_messages('Amy'), [])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ChatTestGetMessages)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for Chat.get_messages passed successfully. Process exited with code 0 and reported OK with no failures or errors.",
+          "last_run": "2026-04-27T11:48:33.460890"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

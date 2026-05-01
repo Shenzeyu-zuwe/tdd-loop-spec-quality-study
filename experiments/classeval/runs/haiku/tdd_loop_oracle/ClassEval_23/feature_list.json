@@ -1,0 +1,94 @@
+{
+  "change_name": "ClassEval_23",
+  "class_name": "CombinationCalculator",
+  "class_description": "    \"\"\"\n    This is a class that provides methods to calculate the number of combinations for a specific count, calculate all possible combinations, and generate combinations with a specified number of elements.\n    \"\"\"\n",
+  "import_statement": "import math\nfrom typing import List",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `count(n: int, m: int)` on class `CombinationCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `CombinationCalculator.count`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_count.py`) in the project root and execute `python _oracle_count.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport math\nfrom typing import List\nfrom solution import CombinationCalculator\n\nclass CombinationCalculatorTestCount(unittest.TestCase):\n    def test_count(self):\n        self.assertEqual(CombinationCalculator.count(4, 2), 6)\n    def test_count_2(self):\n        self.assertEqual(CombinationCalculator.count(5, 3), 10)\n\n    def test_count_3(self):\n        self.assertEqual(CombinationCalculator.count(6, 6), 1)\n\n    def test_count_4(self):\n        self.assertEqual(CombinationCalculator.count(6, 0), 1)\n\n    def test_count_5(self):\n        self.assertEqual(CombinationCalculator.count(6, 3), 20)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CombinationCalculatorTestCount)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases passed. CombinationCalculator.count correctly calculates combinations using math.comb.",
+          "last_run": "2026-04-27T12:12:19.476747"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `count_all(n: int)` on class `CombinationCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `CombinationCalculator.count_all`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_count_all.py`) in the project root and execute `python _oracle_count_all.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport math\nfrom typing import List\nfrom solution import CombinationCalculator\n\nclass CombinationCalculatorTestCountAll(unittest.TestCase):\n    def test_count_all(self):\n        self.assertEqual(CombinationCalculator.count_all(4), 15)\n\n    def test_count_all_2(self):\n        self.assertEqual(CombinationCalculator.count_all(-1), False)\n\n    def test_count_all_3(self):\n        self.assertEqual(CombinationCalculator.count_all(65), False)\n\n    def test_count_all_4(self):\n        self.assertEqual(CombinationCalculator.count_all(0), 0)\n\n    def test_count_all_5(self):\n        self.assertEqual(CombinationCalculator.count_all(63), float(\"inf\"))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CombinationCalculatorTestCountAll)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases passed successfully. The count_all method correctly returns 15 for n=4, False for negative/out-of-range values, 0 for n=0, and float('inf') for n≥63.",
+          "last_run": "2026-04-27T12:14:08.751637"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `select(self, m: int)` on class `CombinationCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `CombinationCalculator.select`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_select.py`) in the project root and execute `python _oracle_select.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport math\nfrom typing import List\nfrom solution import CombinationCalculator\n\nclass CombinationCalculatorTestSelect(unittest.TestCase):\n    def test_select(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        self.assertEqual(calc.count(4, 2), 6)\n\n    def test_select_2(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        self.assertEqual(calc.count(5, 3), 10)\n\n    def test_select_3(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        self.assertEqual(calc.count(6, 6), 1)\n\n    def test_select_4(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        self.assertEqual(calc.count(6, 0), 1)\n\n    def test_select_5(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        self.assertEqual(calc.count(6, 3), 20)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CombinationCalculatorTestSelect)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed. The CombinationCalculator.count method correctly calculates combinations using math.comb(). Exit code 0 with unittest OK status.",
+          "last_run": "2026-04-27T12:14:37.136485"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `select_all(self)` on class `CombinationCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `CombinationCalculator.select_all`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_select_all.py`) in the project root and execute `python _oracle_select_all.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport math\nfrom typing import List\nfrom solution import CombinationCalculator\n\nclass CombinationCalculatorTestSelectAll(unittest.TestCase):\n    def test_select_all(self):\n        calc = CombinationCalculator([\"A\"])\n        self.assertEqual(calc.select_all(), [['A']])\n\n    def test_select_all_2(self):\n        calc = CombinationCalculator([\"A\", \"B\"])\n        self.assertEqual(calc.select_all(), [['A'], ['B'], ['A', 'B']])\n\n    def test_select_all_3(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\"])\n        self.assertEqual(calc.select_all(),[['A'], ['B'], ['C'], ['A', 'B'], ['A', 'C'], ['B', 'C'], ['A', 'B', 'C']])\n\n    def test_select_all_4(self):\n        calc = CombinationCalculator([])\n        self.assertEqual(calc.select_all(),[])\n\n    def test_select_all_5(self):\n        calc = CombinationCalculator([\"B\"])\n        self.assertEqual(calc.select_all(),[['B']])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CombinationCalculatorTestSelectAll)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for CombinationCalculator.select_all passed successfully. The method correctly generates all possible combinations from the given data list.",
+          "last_run": "2026-04-27T12:16:34.179352"
+        }
+      ]
+    },
+    {
+      "id": "F-005",
+      "intent": "Method `_select(self, dataIndex: int, resultList: List[str], resultIndex: int, result: List[List[str]])` on class `CombinationCalculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-005-01",
+          "intent": "ORACLE TEST RUN for `CombinationCalculator._select`.\n\nWrite the following Python code to a temp file (e.g. `_oracle__select.py`) in the project root and execute `python _oracle__select.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport math\nfrom typing import List\nfrom solution import CombinationCalculator\n\nclass CombinationCalculatorTestSelect2(unittest.TestCase):\n    def test_select2(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        result = []\n        calc._select(0, [None] * 2, 0, result)\n        self.assertEqual(result, [['A', 'B'], ['A', 'C'], ['A', 'D'], ['B', 'C'], ['B', 'D'], ['C', 'D']])\n\n    def test_select2_2(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        result = []\n        calc._select(0, [None] * 3, 0, result)\n        self.assertEqual(result, [['A', 'B', 'C'], ['A', 'B', 'D'], ['A', 'C', 'D'], ['B', 'C', 'D']])\n\n    def test_select2_3(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        result = []\n        calc._select(0, [None] * 1, 0, result)\n        self.assertEqual(result, [['A'], ['B'], ['C'], ['D']])\n\n    def test_select2_4(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        result = []\n        calc._select(0, [None] * 0, 0, result)\n        self.assertEqual(result, [[]])\n\n    def test_select2_5(self):\n        calc = CombinationCalculator([\"A\", \"B\", \"C\", \"D\"])\n        result = []\n        calc._select(0, [None] * 4, 0, result)\n        self.assertEqual(result, [['A', 'B', 'C', 'D']])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CombinationCalculatorTestSelect2)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases passed successfully. The _select method correctly generates combinations recursively with exit code 0 and unittest reporting OK.",
+          "last_run": "2026-04-27T12:17:00.917867"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

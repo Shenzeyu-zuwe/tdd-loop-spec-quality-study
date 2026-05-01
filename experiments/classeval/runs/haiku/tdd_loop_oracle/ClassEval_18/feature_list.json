@@ -1,0 +1,124 @@
+{
+  "change_name": "ClassEval_18",
+  "class_name": "CamelCaseMap",
+  "class_description": "    \"\"\"\n    This is a custom class that allows keys to be in camel case style by converting them from underscore style, which provides dictionary-like functionality.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `__getitem__(self, key)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap.__getitem__`.\n\nWrite the following Python code to a temp file (e.g. `_oracle___getitem__.py`) in the project root and execute `python _oracle___getitem__.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestGetitem(unittest.TestCase):\n    def test_getitem_1(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        self.assertEqual(camelize_map.__getitem__('first_name'), 'John')\n\n    def test_getitem_2(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['last_name'] = 'Doe'\n        self.assertEqual(camelize_map.__getitem__('last_name'), 'Doe')\n\n    def test_getitem_3(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['age'] = 30\n        self.assertEqual(camelize_map.__getitem__('age'), 30)\n\n    def test_getitem_4(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        self.assertEqual(camelize_map.__getitem__('first_Name'), 'John')\n\n    def test_getitem_5(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        self.assertEqual(camelize_map.__getitem__('firstName'), 'John')\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestGetitem)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed (test_getitem_1 through test_getitem_5). Process exited with code 0 and unittest reported OK.",
+          "last_run": "2026-04-27T11:28:09.471747"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `__setitem__(self, key, value)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap.__setitem__`.\n\nWrite the following Python code to a temp file (e.g. `_oracle___setitem__.py`) in the project root and execute `python _oracle___setitem__.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestSetitem(unittest.TestCase):\n    def test_setitem_1(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__setitem__('first_name', 'newname')\n        self.assertEqual(camelize_map['first_name'], 'newname')\n\n    def test_setitem_2(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__setitem__('first_name', 'John')\n        self.assertEqual(camelize_map['first_name'], 'John')\n\n    def test_setitem_3(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__setitem__('first_Name', 'newname')\n        self.assertEqual(camelize_map['first_name'], 'newname')\n\n    def test_setitem_4(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__setitem__('firstName', 'newname')\n        self.assertEqual(camelize_map['first_name'], 'newname')\n\n    def test_setitem_5(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__setitem__('first_name', '')\n        self.assertEqual(camelize_map['first_name'], '')\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestSetitem)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle unit tests for __setitem__ passed successfully. The method correctly converts keys to camelCase and stores values in the internal _data dictionary.",
+          "last_run": "2026-04-27T11:28:36.103461"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `__delitem__(self, key)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap.__delitem__`.\n\nWrite the following Python code to a temp file (e.g. `_oracle___delitem__.py`) in the project root and execute `python _oracle___delitem__.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestDelitem(unittest.TestCase):\n    def test_delitem_1(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map['last_name'] = 'Doe'\n        camelize_map.__delitem__('first_name')\n        self.assertEqual(camelize_map['last_name'], 'Doe')\n\n    def test_delitem_2(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__delitem__('first_name')\n        self.assertEqual('first_name' in camelize_map, False)\n\n    def test_delitem_3(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__delitem__('first_Name')\n        self.assertEqual('first_name' in camelize_map, False)\n\n    def test_delitem_4(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map.__delitem__('firstName')\n        self.assertEqual('first_name' in camelize_map, False)\n\n    def test_delitem_5(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = ''\n        camelize_map.__delitem__('first_name')\n        self.assertEqual('first_name' in camelize_map, False)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestDelitem)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for __delitem__ executed successfully with exit code 0. Tests verify deletion across underscore, mixed-case, and camelCase key variants.",
+          "last_run": "2026-04-27T11:30:16.133078"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `__iter__(self)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap.__iter__`.\n\nWrite the following Python code to a temp file (e.g. `_oracle___iter__.py`) in the project root and execute `python _oracle___iter__.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestIter(unittest.TestCase):\n    def test_iter_1(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map['last_name'] = 'Doe'\n        camelize_map['age'] = 30\n        lst = ['firstName', 'lastName', 'age']\n        iter = camelize_map.__iter__()\n        i = 0\n        for key in iter:\n            self.assertEqual(key, lst[i])\n            i += 1\n\n    def test_iter_2(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['firstname'] = 'John'\n        camelize_map['lastname'] = 'Doe'\n        camelize_map['age'] = 30\n        lst = ['firstname', 'lastname', 'age']\n        iter = camelize_map.__iter__()\n        i = 0\n        for key in iter:\n            self.assertEqual(key, lst[i])\n            i += 1\n\n    def test_iter_3(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_Name'] = 'John'\n        camelize_map['last_Name'] = 'Doe'\n        camelize_map['age'] = 30\n        lst = ['firstName', 'lastName', 'age']\n        iter = camelize_map.__iter__()\n        i = 0\n        for key in iter:\n            self.assertEqual(key, lst[i])\n            i += 1\n\n    def test_iter_4(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_Name'] = 'John'\n        camelize_map['last_Name'] = 'Doe'\n        lst = ['firstName', 'lastName']\n        iter = camelize_map.__iter__()\n        i = 0\n        for key in iter:\n            self.assertEqual(key, lst[i])\n            i += 1\n\n    def test_iter_5(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_Name'] = 'John'\n        lst = ['firstName']\n        iter = camelize_map.__iter__()\n        i = 0\n        for key in iter:\n            self.assertEqual(key, lst[i])\n            i += 1\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestIter)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 test cases for CamelCaseMap.__iter__ passed successfully. The method correctly returns an iterator over the camelCase-converted keys stored in the internal _data dictionary.",
+          "last_run": "2026-04-27T11:32:18.863024"
+        }
+      ]
+    },
+    {
+      "id": "F-005",
+      "intent": "Method `__len__(self)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-005-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap.__len__`.\n\nWrite the following Python code to a temp file (e.g. `_oracle___len__.py`) in the project root and execute `python _oracle___len__.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestLen(unittest.TestCase):\n    def test_len_1(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        self.assertEqual(camelize_map.__len__(), 1)\n\n    def test_len_2(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['last_name'] = 'Doe'\n        self.assertEqual(camelize_map.__len__(), 1)\n\n    def test_len_3(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['age'] = 30\n        self.assertEqual(camelize_map.__len__(), 1)\n\n    def test_len_4(self):\n        camelize_map = CamelCaseMap()\n        camelize_map['first_name'] = 'John'\n        camelize_map['last_Name'] = 'Doe'\n        camelize_map['age'] = 30\n        self.assertEqual(camelize_map.__len__(), 3)\n\n    def test_len_5(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map.__len__(), 0)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestLen)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for __len__() passed. Process exited with code 0 and unittest reported OK with no failures or errors.",
+          "last_run": "2026-04-27T11:33:45.130071"
+        }
+      ]
+    },
+    {
+      "id": "F-006",
+      "intent": "Method `_convert_key(self, key)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-006-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap._convert_key`.\n\nWrite the following Python code to a temp file (e.g. `_oracle__convert_key.py`) in the project root and execute `python _oracle__convert_key.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestConvertKey(unittest.TestCase):\n    def test_convert_key_1(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map._convert_key('aaa_bbb'), 'aaaBbb')\n\n    def test_convert_key_2(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map._convert_key('first_name'), 'firstName')\n\n    def test_convert_key_3(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map._convert_key('last_name'), 'lastName')\n\n    def test_convert_key_4(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map._convert_key('ccc_ddd'), 'cccDdd')\n\n    def test_convert_key_5(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map._convert_key('eee_fff'), 'eeeFff')\n\n    def test_convert_key_6(self):\n        camelize_map = CamelCaseMap()\n        self.assertEqual(camelize_map._convert_key(1234), 1234)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestConvertKey)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 6 unit tests for _convert_key passed successfully. Process exited with code 0 and unittest reported OK with no failures or errors.",
+          "last_run": "2026-04-27T11:35:13.094545"
+        }
+      ]
+    },
+    {
+      "id": "F-007",
+      "intent": "Method `_to_camel_case(key)` on class `CamelCaseMap` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-007-01",
+          "intent": "ORACLE TEST RUN for `CamelCaseMap._to_camel_case`.\n\nWrite the following Python code to a temp file (e.g. `_oracle__to_camel_case.py`) in the project root and execute `python _oracle__to_camel_case.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import CamelCaseMap\n\nclass CamelCaseMapTestToCamelCase(unittest.TestCase):\n    def test_to_camel_case_1(self):\n        self.assertEqual(CamelCaseMap._to_camel_case('aaa_bbb'), 'aaaBbb')\n\n    def test_to_camel_case_2(self):\n        self.assertEqual(CamelCaseMap._to_camel_case('first_name'), 'firstName')\n\n    def test_to_camel_case_3(self):\n        self.assertEqual(CamelCaseMap._to_camel_case('last_name'), 'lastName')\n\n    def test_to_camel_case_4(self):\n        self.assertEqual(CamelCaseMap._to_camel_case('ccc_ddd'), 'cccDdd')\n\n    def test_to_camel_case_5(self):\n        self.assertEqual(CamelCaseMap._to_camel_case('eee_fff'), 'eeeFff')\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CamelCaseMapTestToCamelCase)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests passed. The _to_camel_case method correctly converts underscore-delimited strings to camelCase format.",
+          "last_run": "2026-04-27T11:35:39.036561"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 7,
+    "passed": 7,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 7,
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_13",
+  "class_name": "BookManagement",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 364.1,
+  "gen_cost_usd": 0.567279,
+  "gen_session_count": 12,
+  "gen_iterations": 2,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 364.1,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 3,
+    "method_total": 4,
+    "method_results": {
+      "BookManagementTestAddBook": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BookManagementTestRemoveBook": {
+        "passed": false,
+        "error": "======================\nFAIL: test_remove_book_4 (_sol.BookManagementTestRemoveBook.test_remove_book_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementTestRemoveBook>\", line 24, in test_remove_book_4\nAssertionError: Exception not raised\n\n======================================================================\nFAIL: test_remove_book_5 (_sol.BookManagementTestRemoveBook.test_remove_book_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<BookManagementTestRemoveBook>\", line 28, in test_remove_book_5\nAssertionError: Exception not raised\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=3)\n",
+        "tests_run": 5,
+        "failures": 3,
+        "errors": 0
+      },
+      "BookManagementTestViewInventory": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BookManagementTestViewBookQuantity": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

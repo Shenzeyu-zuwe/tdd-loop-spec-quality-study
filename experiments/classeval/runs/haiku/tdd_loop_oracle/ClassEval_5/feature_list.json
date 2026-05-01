@@ -1,0 +1,49 @@
+{
+  "change_name": "ClassEval_5",
+  "class_name": "AutomaticGuitarSimulator",
+  "class_description": "    \"\"\"\n    This class is an automatic guitar simulator that can interpret and play based on the input guitar sheet music.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `interpret(self, display=False)` on class `AutomaticGuitarSimulator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `AutomaticGuitarSimulator.interpret`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_interpret.py`) in the project root and execute `python _oracle_interpret.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import AutomaticGuitarSimulator\n\nclass AutomaticGuitarSimulatorTestInterpret(unittest.TestCase):\n    def test_interpret_1(self):\n        context = AutomaticGuitarSimulator(\"C53231323\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [{'Chord': 'C', 'Tune': '53231323'}])\n\n    def test_interpret_2(self):\n        context = AutomaticGuitarSimulator(\"F43231323\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [{'Chord': 'F', 'Tune': '43231323'}])\n\n    def test_interpret_3(self):\n        context = AutomaticGuitarSimulator(\"Em43231323\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [{'Chord': 'Em', 'Tune': '43231323'}])\n\n    def test_interpret_4(self):\n        context = AutomaticGuitarSimulator(\"G63231323\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [{'Chord': 'G', 'Tune': '63231323'}])\n\n    def test_interpret_5(self):\n        context = AutomaticGuitarSimulator(\"F43231323 G63231323\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [{'Chord': 'F', 'Tune': '43231323'}, {'Chord': 'G', 'Tune': '63231323'}])\n\n    def test_interpret_6(self):\n        context = AutomaticGuitarSimulator(\" \")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [])\n\n    def test_interpret_7(self):\n        context = AutomaticGuitarSimulator(\"ABC43231323 DEF63231323\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [{'Chord': 'ABC', 'Tune': '43231323'}, {'Chord': 'DEF', 'Tune': '63231323'}])\n\n    def test_interpret_8(self):\n        context = AutomaticGuitarSimulator(\"C53231323\")\n        play_list = context.interpret(display=True)\n        self.assertEqual(play_list, [{'Chord': 'C', 'Tune': '53231323'}])\n\n    def test_interpret_9(self):\n        context = AutomaticGuitarSimulator(\"\")\n        play_list = context.interpret()\n        self.assertEqual(play_list, [])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(AutomaticGuitarSimulatorTestInterpret)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 9 unit tests executed successfully. Process exited with code 0 and unittest reported OK with no failures or errors.",
+          "last_run": "2026-04-26T14:14:41.067870"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `display(self, key, value)` on class `AutomaticGuitarSimulator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `AutomaticGuitarSimulator.display`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_display.py`) in the project root and execute `python _oracle_display.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import AutomaticGuitarSimulator\n\nclass AutomaticGuitarSimulatorTestDisplay(unittest.TestCase):\n    def test_display_1(self):\n        context = AutomaticGuitarSimulator(\"C53231323 Em43231323\")\n        play_list = context.interpret()\n        str = context.display(play_list[0]['Chord'], play_list[0]['Tune'])\n        self.assertEqual(str, \"Normal Guitar Playing -- Chord: C, Play Tune: 53231323\")\n\n    def test_display_2(self):\n        context = AutomaticGuitarSimulator(\"C53231323 Em43231323\")\n        play_list = context.interpret()\n        str = context.display(play_list[1]['Chord'], play_list[1]['Tune'])\n        self.assertEqual(str, \"Normal Guitar Playing -- Chord: Em, Play Tune: 43231323\")\n\n    def test_display_3(self):\n        context = AutomaticGuitarSimulator(\"F43231323 G63231323\")\n        play_list = context.interpret()\n        str = context.display(play_list[0]['Chord'], play_list[0]['Tune'])\n        self.assertEqual(str, \"Normal Guitar Playing -- Chord: F, Play Tune: 43231323\")\n\n    def test_display_4(self):\n        context = AutomaticGuitarSimulator(\"F43231323 G63231323\")\n        play_list = context.interpret()\n        str = context.display(play_list[1]['Chord'], play_list[1]['Tune'])\n        self.assertEqual(str, \"Normal Guitar Playing -- Chord: G, Play Tune: 63231323\")\n\n    def test_display_5(self):\n        context = AutomaticGuitarSimulator(\"\")\n        str = context.display('', '')\n        self.assertEqual(str, \"Normal Guitar Playing -- Chord: , Play Tune: \")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(AutomaticGuitarSimulatorTestDisplay)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests passed with exit code 0. The display method correctly returns the formatted string for all test cases including edge cases.",
+          "last_run": "2026-04-26T14:16:07.545828"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 2,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 2,
+    "tests_passed": 2,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

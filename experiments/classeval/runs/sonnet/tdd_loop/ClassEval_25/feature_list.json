@@ -1,0 +1,64 @@
+{
+  "change_name": "ClassEval_25",
+  "class_name": "CookiesUtil",
+  "class_description": "    \"\"\"\n    This is a class as utility for managing and manipulating Cookies, including methods for retrieving, saving, and setting Cookies data.\n    \"\"\"\n",
+  "import_statement": "import json",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `get_cookies(self, reponse)` on class `CookiesUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `CookiesUtil.get_cookies`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport json\nfrom solution import CookiesUtil\ncookies_util = CookiesUtil('cookies.json')\ncookies_util.get_cookies({'cookies': {'key1': 'value1', 'key2': 'value2'}})\nprint(cookies_util.cookies)\n```\n\nExpected stdout:\n```\n{'key1': 'value1', 'key2': 'value2'}\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Script executed successfully and stdout `{'key1': 'value1', 'key2': 'value2'}` matches expected output exactly.",
+          "last_run": "2026-04-25T15:48:14.838211"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `load_cookies(self)` on class `CookiesUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `CookiesUtil.load_cookies`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport json\nfrom solution import CookiesUtil\ncookies_util = CookiesUtil('cookies.json')\nprint(cookies_util.load_cookies())\n```\n\nExpected stdout:\n```\n{'key1': 'value1', 'key2': 'value2'}\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced exactly `{'key1': 'value1', 'key2': 'value2'}`, matching the expected stdout byte-for-byte after stripping trailing whitespace.",
+          "last_run": "2026-04-25T15:51:13.522541"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `_save_cookies(self)` on class `CookiesUtil` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `CookiesUtil._save_cookies`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nimport json\nfrom solution import CookiesUtil\ncookies_util = CookiesUtil('cookies.json')\ncookies_util.cookies = {'key1': 'value1', 'key2': 'value2'}\nprint(cookies_util._save_cookies())\n```\n\nExpected stdout:\n```\nTrue\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced exactly 'True' on stdout, matching the expected output. The method correctly saves cookies and returns True.",
+          "last_run": "2026-04-25T15:51:34.195426"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

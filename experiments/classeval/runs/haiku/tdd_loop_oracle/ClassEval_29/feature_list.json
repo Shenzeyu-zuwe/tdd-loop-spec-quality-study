@@ -1,0 +1,64 @@
+{
+  "change_name": "ClassEval_29",
+  "class_name": "DataStatistics",
+  "class_description": "    \"\"\"\n    This is a class for performing data statistics, supporting to calculate the mean, median, and mode of a given data set.\n    \"\"\"\n",
+  "import_statement": "from collections import Counter",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `mean(self, data)` on class `DataStatistics` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `DataStatistics.mean`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_mean.py`) in the project root and execute `python _oracle_mean.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom collections import Counter\nfrom solution import DataStatistics\n\nclass DataStatisticsTestMean(unittest.TestCase):\n    def test_mean_1(self):\n        ds = DataStatistics()\n        res = ds.mean([1, 2, 3, 4, 5])\n        self.assertEqual(res, 3.00)\n\n    def test_mean_2(self):\n        ds = DataStatistics()\n        res = ds.mean([1, 2, 3, 4, 5, 6])\n        self.assertEqual(res, 3.50)\n\n    def test_mean_3(self):\n        ds = DataStatistics()\n        res = ds.mean([1, 2, 4, 5, 6, 7])\n        self.assertEqual(res, 4.17)\n\n    def test_mean_4(self):\n        ds = DataStatistics()\n        res = ds.mean([1, 2, 4, 5, 6, 7, 8])\n        self.assertEqual(res, 4.71)\n\n    def test_mean_5(self):\n        ds = DataStatistics()\n        res = ds.mean([1, 2, 4, 5, 6, 7, 8, 9])\n        self.assertEqual(res, 5.25)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(DataStatisticsTestMean)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed successfully with exit code 0 and unittest reported OK (no failures or errors).",
+          "last_run": "2026-04-27T13:01:14.660929"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `median(self, data)` on class `DataStatistics` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `DataStatistics.median`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_median.py`) in the project root and execute `python _oracle_median.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom collections import Counter\nfrom solution import DataStatistics\n\nclass DataStatisticsTestMedian(unittest.TestCase):\n    def test_median_1(self):\n        ds = DataStatistics()\n        res = ds.median([2, 5, 1, 3, 4])\n        self.assertEqual(res, 3)\n\n    def test_median_2(self):\n        ds = DataStatistics()\n        res = ds.median([2, 5, 1, 3, 4, 6])\n        self.assertEqual(res, 3.50)\n\n    def test_median_3(self):\n        ds = DataStatistics()\n        res = ds.median([2, 5, 1, 4, 6, 7])\n        self.assertEqual(res, 4.5)\n\n    def test_median_4(self):\n        ds = DataStatistics()\n        res = ds.median([2, 5, 1, 4, 6, 7, 8])\n        self.assertEqual(res, 5)\n\n    def test_median_5(self):\n        ds = DataStatistics()\n        res = ds.median([2, 5, 1, 4, 6, 7, 8, 9])\n        self.assertEqual(res, 5.5)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(DataStatisticsTestMedian)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 tests passed with exit code 0. The median method correctly sorts data and calculates the middle value (odd length) or average of two middle values (even length), rounding to 2 decimal places.",
+          "last_run": "2026-04-27T13:02:43.446109"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `mode(self, data)` on class `DataStatistics` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `DataStatistics.mode`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_mode.py`) in the project root and execute `python _oracle_mode.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nfrom collections import Counter\nfrom solution import DataStatistics\n\nclass DataStatisticsTestMode(unittest.TestCase):\n    def test_mode_1(self):\n        ds = DataStatistics()\n        res = ds.mode([2, 2, 3, 3, 4])\n        self.assertEqual(res, [2, 3])\n\n    def test_mode_2(self):\n        ds = DataStatistics()\n        res = ds.mode([2, 2, 2, 3, 3, 4])\n        self.assertEqual(res, [2])\n\n    def test_mode_3(self):\n        ds = DataStatistics()\n        res = ds.mode([2, 2, 3, 3, 4, 4])\n        self.assertEqual(res, [2, 3, 4])\n\n    def test_mode_4(self):\n        ds = DataStatistics()\n        res = ds.mode([2, 2, 3, 3, 4, 4, 4])\n        self.assertEqual(res, [4])\n\n    def test_mode_5(self):\n        ds = DataStatistics()\n        res = ds.mode([2, 2, 3, 3, 4, 4, 4, 5])\n        self.assertEqual(res, [4])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(DataStatisticsTestMode)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests executed successfully with no failures or errors. The mode method correctly identifies and returns the mode(s) of the data in sorted order.",
+          "last_run": "2026-04-27T13:04:08.276179"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

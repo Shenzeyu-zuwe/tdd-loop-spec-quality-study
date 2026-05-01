@@ -1,0 +1,68 @@
+{
+  "task_id": "ClassEval_1",
+  "class_name": "AreaCalculator",
+  "config": "tdd_loop_oracle",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 478.6,
+  "gen_cost_usd": 1.538349,
+  "gen_session_count": 20,
+  "gen_iterations": 5,
+  "fl_summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 478.6,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "AreaCalculatorTestCalculateCircleArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateSphereArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateCylinderArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateSectorArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateAnnulusArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

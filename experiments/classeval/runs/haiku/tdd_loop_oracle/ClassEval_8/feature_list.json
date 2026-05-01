@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_8",
+  "class_name": "BankAccount",
+  "class_description": "    \"\"\"\n    This is a class as a bank account system, which supports deposit money, withdraw money, view balance, and transfer money.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `deposit(self, amount)` on class `BankAccount` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `BankAccount.deposit`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_deposit.py`) in the project root and execute `python _oracle_deposit.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BankAccount\n\nclass BankAccountTestDeposit(unittest.TestCase):\n\n    def test_deposit(self):\n        account1 = BankAccount()\n        ret = account1.deposit(1000)\n        self.assertEqual(ret, 1000)\n\n    def test_deposit_2(self):\n        account1 = BankAccount()\n        account1.deposit(1000)\n        ret = account1.deposit(2000)\n        self.assertEqual(ret, 3000)\n\n\n    def test_deposit_3(self):\n        account1 = BankAccount()\n        with self.assertRaises(ValueError) as context:\n            account1.deposit(-1000)\n        self.assertEqual(str(context.exception), \"Invalid amount\")\n\n    def test_deposit_4(self):\n        account1 = BankAccount()\n        ret = account1.deposit(0)\n        self.assertEqual(ret, 0)\n\n    def test_deposit_5(self):\n        account1 = BankAccount()\n        account1.deposit(1000)\n        ret = account1.deposit(1000)\n        self.assertEqual(ret, 2000)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BankAccountTestDeposit)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases for BankAccount.deposit passed. Method correctly deposits amounts, returns accumulated balance, raises ValueError for negative amounts, and handles zero deposits.",
+          "last_run": "2026-04-27T09:51:47.117858"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `withdraw(self, amount)` on class `BankAccount` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `BankAccount.withdraw`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_withdraw.py`) in the project root and execute `python _oracle_withdraw.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BankAccount\n\nclass BankAccountTestWithdraw(unittest.TestCase):\n\n    def test_withdraw(self):\n        account1 = BankAccount()\n        account1.balance = 1000\n        ret = account1.withdraw(200)\n        self.assertEqual(ret, 800)\n\n    def test_withdraw_2(self):\n        account1 = BankAccount()\n        account1.balance = 500\n        with self.assertRaises(ValueError) as context:\n            account1.withdraw(1000)\n        self.assertEqual(str(context.exception), \"Insufficient balance.\")\n\n    def test_withdraw_3(self):\n        account1 = BankAccount()\n        with self.assertRaises(ValueError) as context:\n            account1.withdraw(-1000)\n        self.assertEqual(str(context.exception), \"Invalid amount\")\n\n    def test_withdraw_4(self):\n        account1 = BankAccount()\n        account1.balance = 1000\n        ret = account1.withdraw(500)\n        self.assertEqual(ret, 500)\n\n    def test_withdraw_5(self):\n        account1 = BankAccount()\n        account1.balance = 1000\n        ret = account1.withdraw(1000)\n        self.assertEqual(ret, 0)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BankAccountTestWithdraw)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle unit tests for BankAccount.withdraw passed. The method correctly validates input (rejecting negative amounts with 'Invalid amount' and insufficient balance with 'Insufficient balance.'), performs the withdrawal, and returns the updated balance. Process exited with code 0 and unittest reported OK.",
+          "last_run": "2026-04-27T09:53:26.612946"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `view_balance(self)` on class `BankAccount` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `BankAccount.view_balance`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_view_balance.py`) in the project root and execute `python _oracle_view_balance.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BankAccount\n\nclass BankAccountTestViewBalance(unittest.TestCase):\n\n    def test_view_balance(self):\n        account1 = BankAccount()\n        self.assertEqual(account1.view_balance(), 0)\n\n    def test_view_balance_2(self):\n        account1 = BankAccount()\n        account1.balance = 1000\n        self.assertEqual(account1.view_balance(), 1000)\n\n    def test_view_balance_3(self):\n        account1 = BankAccount()\n        account1.balance = 500\n        self.assertEqual(account1.view_balance(), 500)\n\n    def test_view_balance_4(self):\n        account1 = BankAccount()\n        account1.balance = 1500\n        self.assertEqual(account1.view_balance(), 1500)\n\n    def test_view_balance_5(self):\n        account1 = BankAccount()\n        account1.balance = 2000\n        self.assertEqual(account1.view_balance(), 2000)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BankAccountTestViewBalance)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases for view_balance() passed successfully. The method correctly returns the account balance in all scenarios (default 0, and with various preset balances).",
+          "last_run": "2026-04-27T09:54:43.760710"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `transfer(self, other_account, amount)` on class `BankAccount` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `BankAccount.transfer`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_transfer.py`) in the project root and execute `python _oracle_transfer.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BankAccount\n\nclass BankAccountTestTransfer(unittest.TestCase):\n\n    def test_transfer(self):\n        account1 = BankAccount()\n        account2 = BankAccount()\n        account1.balance = 800\n        account2.balance = 1000\n        account1.transfer(account2, 300)\n        self.assertEqual(account1.view_balance(), 500)\n        self.assertEqual(account2.view_balance(), 1300)\n\n    def test_transfer_2(self):\n        account1 = BankAccount()\n        account2 = BankAccount()\n        account1.balance = 500\n        with self.assertRaises(ValueError) as context:\n            account1.transfer(account2, 600)\n        self.assertEqual(str(context.exception), \"Insufficient balance.\")\n\n    def test_transfer_3(self):\n        account1 = BankAccount()\n        account2 = BankAccount()\n        account1.balance = 500\n        account2.balance = 1000\n        with self.assertRaises(ValueError) as context:\n            account1.transfer(account2, -600)\n        self.assertEqual(str(context.exception), \"Invalid amount\")\n\n    def test_transfer_4(self):\n        account1 = BankAccount()\n        account2 = BankAccount()\n        account1.balance = 500\n        account2.balance = 1000\n        account1.transfer(account2, 500)\n        self.assertEqual(account1.view_balance(), 0)\n        self.assertEqual(account2.view_balance(), 1500)\n\n    def test_transfer_5(self):\n        account1 = BankAccount()\n        account2 = BankAccount()\n        account1.balance = 500\n        account2.balance = 1000\n        account1.transfer(account2, 200)\n        self.assertEqual(account1.view_balance(), 300)\n        self.assertEqual(account2.view_balance(), 1200)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BankAccountTestTransfer)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed. Process exited with code 0 and unittest reports OK. The transfer method correctly withdraws from source account and deposits to destination account, with proper validation for insufficient balance and negative amounts.",
+          "last_run": "2026-04-27T09:56:22.096230"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

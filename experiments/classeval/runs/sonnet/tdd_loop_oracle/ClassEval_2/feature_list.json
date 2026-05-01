@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_2",
+  "class_name": "ArgumentParser",
+  "class_description": "    \"\"\"\n    This is a class for parsing command line arguments to a dictionary.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `parse_arguments(self, command_string)` on class `ArgumentParser` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `ArgumentParser.parse_arguments`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_parse_arguments.py`) in the project root and execute `python _oracle_parse_arguments.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ArgumentParser\n\nclass ArgumentParserTestParseArguments(unittest.TestCase):\n\n    def setUp(self):\n        self.parser = ArgumentParser()\n\n    # key value arguments\n    def test_parse_arguments_1(self):\n        command_str = \"script --name=John --age=25\"\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", arg_type=int)\n\n        result, missing_args = self.parser.parse_arguments(command_str)\n\n        self.assertTrue(result)\n        self.assertIsNone(missing_args)\n        self.assertEqual(self.parser.get_argument(\"name\"), \"John\")\n        self.assertEqual(self.parser.get_argument(\"age\"), 25)\n\n    # switches options\n    def test_parse_arguments_2(self):\n        command_str = \"script --verbose -d\"\n        self.parser.add_argument(\"verbose\", arg_type=bool)\n        self.parser.add_argument(\"d\", arg_type=bool)\n\n        result, missing_args = self.parser.parse_arguments(command_str)\n\n        self.assertTrue(result)\n        self.assertIsNone(missing_args)\n        self.assertEqual(self.parser.get_argument(\"verbose\"), True)\n        self.assertEqual(self.parser.get_argument(\"d\"), True)\n\n    # miss required\n    def test_parse_arguments_3(self):\n        command_str = \"script --name=John\"\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=True, arg_type=int)\n\n        result, missing_args = self.parser.parse_arguments(command_str)\n\n        self.assertFalse(result)\n        self.assertEqual(missing_args, {\"age\"})\n\n    def test_parse_arguments_4(self):\n        command_str = \"script --name=John\"\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=False, arg_type=int)\n\n        result, missing_args = self.parser.parse_arguments(command_str)\n\n        self.assertTrue(result)\n        self.assertEqual(missing_args, None)\n\n    def test_parse_arguments_5(self):\n        command_str = \"script --name=John\"\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", arg_type=int)\n\n        result, missing_args = self.parser.parse_arguments(command_str)\n\n        self.assertTrue(result)\n        self.assertEqual(missing_args, None)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ArgumentParserTestParseArguments)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 tests ran successfully with exit code 0 and unittest reported OK. The parse_arguments method correctly handles key-value args with type conversion, boolean switches, missing required args, and optional args.",
+          "last_run": "2026-04-25T21:03:57.124489"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `get_argument(self, key)` on class `ArgumentParser` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `ArgumentParser.get_argument`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_argument.py`) in the project root and execute `python _oracle_get_argument.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ArgumentParser\n\nclass ArgumentParserTestGetArgument(unittest.TestCase):\n\n    def setUp(self):\n        self.parser = ArgumentParser()\n\n    # key exists\n    def test_get_argument_1(self):\n        self.parser.arguments = {\"name\": \"John\"}\n        result = self.parser.get_argument(\"name\")\n        self.assertEqual(result, \"John\")\n\n    # key not exists\n    def test_get_argument_2(self):\n        self.parser.arguments = {\"name\": \"John\", \"age\": 25}\n        result = self.parser.get_argument(\"age\")\n        self.assertEqual(result, 25)\n\n    def test_get_argument_3(self):\n        self.parser.arguments = {\"name\": \"John\", \"age\": \"25\", \"verbose\": True}\n        result = self.parser.get_argument(\"verbose\")\n        self.assertEqual(result, True)\n\n    def test_get_argument_4(self):\n        self.parser.arguments = {\"name\": \"Amy\", \"age\": 25, \"verbose\": True, \"d\": True}\n        result = self.parser.get_argument(\"d\")\n        self.assertEqual(result, True)\n\n    def test_get_argument_5(self):\n        self.parser.arguments = {\"name\": \"John\", \"age\": 25, \"verbose\": True, \"d\": True, \"option\": \"value\"}\n        result = self.parser.get_argument(\"option\")\n        self.assertEqual(result, \"value\")\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ArgumentParserTestGetArgument)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for `ArgumentParser.get_argument` ran and passed with exit code 0 and unittest reporting OK.",
+          "last_run": "2026-04-25T21:04:19.655239"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `add_argument(self, arg, required=False, arg_type=str)` on class `ArgumentParser` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `ArgumentParser.add_argument`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_add_argument.py`) in the project root and execute `python _oracle_add_argument.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ArgumentParser\n\nclass ArgumentParserTestAddArgument(unittest.TestCase):\n\n    def setUp(self):\n        self.parser = ArgumentParser()\n\n    def test_add_argument(self):\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=True, arg_type=int)\n\n        self.assertEqual(self.parser.required, {\"age\"})\n        self.assertEqual(self.parser.types, {\"name\": str, \"age\": int})\n\n    def test_add_argument_2(self):\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=False, arg_type=int)\n        self.parser.add_argument(\"verbose\", arg_type=bool)\n\n        self.assertEqual(self.parser.required, set())\n        self.assertEqual(self.parser.types, {\"name\": str, \"age\": int, \"verbose\": bool})\n\n    def test_add_argument_3(self):\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=False, arg_type=int)\n        self.parser.add_argument(\"verbose\", arg_type=bool)\n        self.parser.add_argument(\"d\")\n\n        self.assertEqual(self.parser.required, set())\n        self.assertEqual(self.parser.types, {\"name\": str, \"age\": int, \"verbose\": bool, \"d\": str})\n\n    def test_add_argument_4(self):\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=False, arg_type=int)\n        self.parser.add_argument(\"verbose\", arg_type=bool)\n        self.parser.add_argument(\"d\")\n        self.parser.add_argument(\"option\")\n\n        self.assertEqual(self.parser.required, set())\n        self.assertEqual(self.parser.types, {\"name\": str, \"age\": int, \"verbose\": bool, \"d\": str, \"option\": str})\n\n    def test_add_argument_5(self):\n        self.parser.add_argument(\"name\")\n        self.parser.add_argument(\"age\", required=False, arg_type=int)\n        self.parser.add_argument(\"verbose\", arg_type=bool)\n        self.parser.add_argument(\"d\")\n        self.parser.add_argument(\"option\")\n        self.parser.add_argument(\"option2\", arg_type=bool)\n\n        self.assertEqual(self.parser.required, set())\n        self.assertEqual(self.parser.types, {\"name\": str, \"age\": int, \"verbose\": bool, \"d\": str, \"option\": str, \"option2\": bool})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ArgumentParserTestAddArgument)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for `ArgumentParser.add_argument` passed with exit code 0 and unittest reported OK. The method correctly adds arguments to `self.types` and `self.required` based on the `required` and `arg_type` parameters.",
+          "last_run": "2026-04-25T21:04:52.152825"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `_convert_type(self, arg, value)` on class `ArgumentParser` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `ArgumentParser._convert_type`.\n\nWrite the following Python code to a temp file (e.g. `_oracle__convert_type.py`) in the project root and execute `python _oracle__convert_type.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import ArgumentParser\n\nclass ArgumentParserTestConvertType(unittest.TestCase):\n\n    def setUp(self):\n        self.parser = ArgumentParser()\n\n    def test_convert_type_1(self):\n        self.parser.types = {\"age\": int}\n        result = self.parser._convert_type(\"age\", \"25\")\n        self.assertEqual(result, 25)\n\n    # fail\n    def test_convert_type_2(self):\n        self.parser.types = {\"age\": int}\n        result = self.parser._convert_type(\"age\", \"twenty-five\")\n        self.assertEqual(result, \"twenty-five\")\n\n    def test_convert_type_3(self):\n        self.parser.types = {\"age\": int}\n        result = self.parser._convert_type(\"age\", \"25\")\n        self.assertEqual(result, 25)\n\n    def test_convert_type_4(self):\n        self.parser.types = {\"age\": int, \"verbose\": bool}\n        result = self.parser._convert_type(\"verbose\", \"True\")\n        self.assertEqual(result, True)\n    \n    def test_convert_type_5(self):\n        self.parser.types = {\"age\": int, \"verbose\": bool}\n        result = self.parser._convert_type(\"verbose\", \"False\")\n        self.assertEqual(result, True)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(ArgumentParserTestConvertType)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 tests passed with exit code 0 and unittest reported OK. The `_convert_type` method correctly converts types, handles conversion failures by returning the original value, and handles bool conversion.",
+          "last_run": "2026-04-25T21:05:21.066800"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

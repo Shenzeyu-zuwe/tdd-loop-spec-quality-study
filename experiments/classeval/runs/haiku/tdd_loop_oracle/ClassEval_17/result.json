@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_17",
+  "class_name": "CalendarUtil",
+  "config": "tdd_loop_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 1794.8,
+  "gen_cost_usd": 1.48799,
+  "gen_session_count": 42,
+  "gen_iterations": 6,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 6,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 1794.8,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 6,
+    "method_total": 6,
+    "method_results": {
+      "CalendarTestAddEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestRemoveEvent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 2,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestIsAvailable": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetAvailableSlots": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalendarTestGetUpcomingEvents": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

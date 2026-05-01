@@ -1,0 +1,61 @@
+{
+  "task_id": "ClassEval_10",
+  "class_name": "BinaryDataProcessor",
+  "config": "tdd_loop_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 465.2,
+  "gen_cost_usd": 0.768994,
+  "gen_session_count": 28,
+  "gen_iterations": 4,
+  "fl_summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 465.2,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 4,
+    "method_total": 4,
+    "method_results": {
+      "BinaryDataProcessorTestCleanNonBinaryChars": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestCalculateBinaryInfo": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToAscii": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "BinaryDataProcessorTestConvertToUtf8": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

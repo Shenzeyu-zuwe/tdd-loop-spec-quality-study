@@ -1,0 +1,68 @@
+{
+  "task_id": "ClassEval_23",
+  "class_name": "CombinationCalculator",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "ok",
+  "gen_duration_s": 442.4,
+  "gen_cost_usd": 1.276986,
+  "gen_session_count": 33,
+  "gen_iterations": 4,
+  "fl_summary": {
+    "total_features": 5,
+    "passed": 5,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 442.4,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 4,
+    "method_total": 5,
+    "method_results": {
+      "CombinationCalculatorTestCount": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestCountAll": {
+        "passed": false,
+        "error": "=================\nFAIL: test_count_all_3 (_sol.CombinationCalculatorTestCountAll.test_count_all_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 9, in test_count_all_3\nAssertionError: inf != False\n\n======================================================================\nFAIL: test_count_all_5 (_sol.CombinationCalculatorTestCountAll.test_count_all_5)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CombinationCalculatorTestCountAll>\", line 15, in test_count_all_5\nAssertionError: 9223372036854775807 != inf\n\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nFAILED (failures=2)\n",
+        "tests_run": 5,
+        "failures": 2,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelect": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelectAll": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CombinationCalculatorTestSelect2": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

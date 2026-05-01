@@ -1,0 +1,64 @@
+{
+  "change_name": "ClassEval_15",
+  "class_name": "BoyerMooreSearch",
+  "class_description": "    \"\"\"\n    his is a class that implements the Boyer-Moore algorithm for string searching, which is used to find occurrences of a pattern within a given text.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `match_in_pattern(self, char)` on class `BoyerMooreSearch` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `BoyerMooreSearch.match_in_pattern`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import BoyerMooreSearch\nboyerMooreSearch = BoyerMooreSearch(\"ABAABA\", \"AB\")\nprint(boyerMooreSearch.match_in_pattern(\"A\"))\n```\n\nExpected stdout:\n```\n0\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced stdout '0', which matches the expected output exactly.",
+          "last_run": "2026-04-25T11:42:45.499687"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `mismatch_in_text(self, currentPos)` on class `BoyerMooreSearch` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `BoyerMooreSearch.mismatch_in_text`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import BoyerMooreSearch\nboyerMooreSearch = BoyerMooreSearch(\"ABAABA\", \"ABC\")\nprint(boyerMooreSearch.mismatch_in_text(0))\n```\n\nExpected stdout:\n```\n2\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced stdout '2', which matches the expected output exactly.",
+          "last_run": "2026-04-25T11:43:43.778453"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `bad_character_heuristic(self)` on class `BoyerMooreSearch` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `BoyerMooreSearch.bad_character_heuristic`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import BoyerMooreSearch\nboyerMooreSearch = BoyerMooreSearch(\"ABAABA\", \"AB\")\nprint(boyerMooreSearch.bad_character_heuristic())\n```\n\nExpected stdout:\n```\n[0, 3]\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced `[0, 3]` on stdout, exactly matching the expected output.",
+          "last_run": "2026-04-25T11:44:56.438264"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

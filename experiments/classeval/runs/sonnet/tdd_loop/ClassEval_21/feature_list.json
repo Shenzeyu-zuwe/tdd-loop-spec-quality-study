@@ -1,0 +1,88 @@
+{
+  "change_name": "ClassEval_21",
+  "class_name": "Classroom",
+  "class_description": "    \"\"\"\n    This is a class representing a classroom, capable of adding and removing courses, checking availability at a given time, and detecting conflicts when scheduling new courses.\n    \"\"\"\n",
+  "import_statement": "from datetime import datetime",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add_course(self, course)` on class `Classroom` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `Classroom.add_course` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import Classroom`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nAdd course to self.courses list if the course wasn't in it.\n        :param course: dict, information of the course, including 'start_time', 'end_time' and 'name'\n        >>> classroom = Classroom(1)\n        >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})",
+          "status": "passed",
+          "reason": "Executed three runtime checks: course is added to the list on first call, duplicate is not added on second call, and two distinct courses both appear. All assertions passed with no exceptions.",
+          "last_run": "2026-04-25T12:40:03.317475"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `remove_course(self, course)` on class `Classroom` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `Classroom.remove_course` (no doctest examples in the spec — you must design the test).\n\nRead the docstring below carefully. Design at least two concrete runtime calls that exercise the behaviour it describes. Write them into a temp Python script in the project root (import the class via `from solution import Classroom`). Execute it with `python <temp>.py` via the Bash tool. Verify that:\n  1. The script runs without exception.\n  2. For each call, the observed return value matches what the docstring says it should be.\n\nA test is only PASSED if you executed the script and observed correct behaviour. Code review alone is NOT acceptable as evidence.\n\nDocstring contract:\nRemove course from self.courses list if the course was in it.\n        :param course: dict, information of the course, including 'start_time', 'end_time' and 'name'\n        >>> classroom = Classroom(1)\n        >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})\n        >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})",
+          "status": "passed",
+          "reason": "Executed three runtime probes: remove an existing course leaves it absent, remove a non-existent course raises no exception, and duplicate-add-then-remove also leaves the course absent. All assertions passed and the script printed 'ALL PASSED'.",
+          "last_run": "2026-04-25T12:41:10.027437"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `is_free_at(self, check_time)` on class `Classroom` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "skipped",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `Classroom.is_free_at`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Classroom\nclassroom = Classroom(1)\nclassroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})\nprint(classroom.is_free_at('10:00'))\n```\n\nExpected stdout:\n```\nTrue\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced exactly 'True', matching the expected stdout. The is_free_at method correctly returns True when check_time '10:00' is outside the math course window 8:00–9:40.",
+          "last_run": "2026-04-25T12:42:32.916731"
+        },
+        {
+          "id": "T-003-02",
+          "intent": "RUNTIME CHECK for `Classroom.is_free_at`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Classroom\n\nprint(classroom.is_free_at('9:00'))\n```\n\nExpected stdout:\n```\nFalse\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "skipped",
+          "reason": "Auto-skipped: 4 consecutive failures (threshold=3)",
+          "last_run": "2026-04-25T12:47:32.449680",
+          "fail_count": 4,
+          "last_reason_sig": "ae89c5e687339db2"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `check_course_conflict(self, new_course)` on class `Classroom` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "RUNTIME CHECK for `Classroom.check_course_conflict`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\nfrom datetime import datetime\nfrom solution import Classroom\nclassroom = Classroom(1)\nclassroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})\nprint(classroom.check_course_conflict({'name': 'SE', 'start_time': '9:40', 'end_time': '10:40'}))\n```\n\nExpected stdout:\n```\nFalse\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced exactly 'False', matching the expected output. The boundary-time conflict (9:40 == 9:40) is correctly detected and returns False.",
+          "last_run": "2026-04-25T12:44:59.752818"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 1
+  }
+}

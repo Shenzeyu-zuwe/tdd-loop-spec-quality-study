@@ -1,0 +1,54 @@
+{
+  "task_id": "ClassEval_16",
+  "class_name": "Calculator",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "error",
+  "gen_duration_s": 734.1,
+  "gen_cost_usd": 1.712024,
+  "gen_session_count": 19,
+  "gen_iterations": 8,
+  "fl_summary": {
+    "total_features": 3,
+    "passed": 2,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 1
+  },
+  "wall_time_s": 734.1,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 1,
+    "method_total": 3,
+    "method_results": {
+      "CalculatorTestCalculate": {
+        "passed": false,
+        "error": "================================================================\nFAIL: test_calculate_3 (_sol.CalculatorTestCalculate.test_calculate_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalculatorTestCalculate>\", line 15, in test_calculate_3\nAssertionError: 10.0 != 11\n\n======================================================================\nFAIL: test_calculate_4 (_sol.CalculatorTestCalculate.test_calculate_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalculatorTestCalculate>\", line 20, in test_calculate_4\nAssertionError: 40.0 != 37\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nFAILED (failures=3, errors=1)\n",
+        "tests_run": 8,
+        "failures": 3,
+        "errors": 1
+      },
+      "CalculatorTestPrecedence": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "CalculatorTestApplyOperator": {
+        "passed": false,
+        "error": "--------------\nTraceback (most recent call last):\n  File \"<CalculatorTestApplyOperator>\", line 24, in test_apply_operator_3\nAssertionError: Lists differ: ['/'] != ['+']\n\nFirst differing element 0:\n'/'\n'+'\n\n- ['/']\n?   ^\n\n+ ['+']\n?   ^\n\n\n======================================================================\nFAIL: test_apply_operator_4 (_sol.CalculatorTestApplyOperator.test_apply_operator_4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<CalculatorTestApplyOperator>\", line 32, in test_apply_operator_4\nAssertionError: Lists differ: ['^'] != ['+']\n\nFirst differing element 0:\n'^'\n'+'\n\n- ['^']\n?   ^\n\n+ ['+']\n?   ^\n\n\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nFAILED (failures=4)\n",
+        "tests_run": 5,
+        "failures": 4,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "[INFO]   Progress: [██████████████████████░░░░░░░·] 75% (3/4 passed, 0 failed, 0 pending, 1 skipped)\n2026-04-25 11:58:32,977 [WARNING] No actionable features remaining\n2026-04-25 11:58:32,977 [WARNING] \nMax iterations reached (15), 12m13s\n2026-04-25 11:58:32,981 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_16\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

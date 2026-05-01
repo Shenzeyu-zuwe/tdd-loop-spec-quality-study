@@ -1,0 +1,75 @@
+{
+  "task_id": "ClassEval_4",
+  "class_name": "AssessmentSystem",
+  "config": "tdd_loop_oracle",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 862.5,
+  "gen_cost_usd": 1.315959,
+  "gen_session_count": 24,
+  "gen_iterations": 6,
+  "fl_summary": {
+    "total_features": 6,
+    "passed": 6,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 6,
+    "tests_passed": 6,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 862.5,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 6,
+    "method_total": 6,
+    "method_results": {
+      "AssessmentSystemTestAddStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestAddCourseScore": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetGPA": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetAllStudentsWithFailCourse": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetCourseAverage": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AssessmentSystemTestGetTopStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": ""
+}

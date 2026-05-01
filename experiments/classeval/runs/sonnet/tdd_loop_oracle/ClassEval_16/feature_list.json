@@ -1,0 +1,64 @@
+{
+  "change_name": "ClassEval_16",
+  "class_name": "Calculator",
+  "class_description": "    \"\"\"\n    This is a class for a calculator, capable of performing basic arithmetic calculations on numerical expressions using the operators +, -, *, /, and ^ (exponentiation).\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `calculate(self, expression)` on class `Calculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `Calculator.calculate`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_calculate.py`) in the project root and execute `python _oracle_calculate.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import Calculator\n\nclass CalculatorTestCalculate(unittest.TestCase):\n    def test_calculate_1(self):\n        calculator = Calculator()\n        res = calculator.calculate('1+2')\n        self.assertEqual(res, 3)\n\n    def test_calculate_2(self):\n        calculator = Calculator()\n        res = calculator.calculate('1+2*3')\n        self.assertEqual(res, 7)\n\n    def test_calculate_3(self):\n        calculator = Calculator()\n        res = calculator.calculate('1+2*3+4')\n        self.assertEqual(res, 11)\n\n    def test_calculate_4(self):\n        calculator = Calculator()\n        res = calculator.calculate('1+2^3*2+4*5')\n        self.assertEqual(res, 37)\n\n    def test_calculate_5(self):\n        calculator = Calculator()\n        res = calculator.calculate('1+2+3')\n        self.assertEqual(res, 6)\n\n    def test_calculate_6(self):\n        calculator = Calculator()\n        res = calculator.calculate('(1+2)+3')\n        self.assertEqual(res, 6)\n\n    def test_calculate_7(self):\n        calculator = Calculator()\n        res = calculator.calculate('')\n        self.assertEqual(res, None)\n\n    def test_calculate_8(self):\n        calculator = Calculator()\n        res = calculator.calculate('1+2?')\n        self.assertEqual(res, 3)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CalculatorTestCalculate)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 8 tests passed with exit code 0 and unittest reported OK. The Calculator.calculate method correctly handles basic arithmetic, operator precedence, parentheses, empty input, and invalid characters.",
+          "last_run": "2026-04-26T00:07:48.728765"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `precedence(self, operator)` on class `Calculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `Calculator.precedence`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_precedence.py`) in the project root and execute `python _oracle_precedence.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import Calculator\n\nclass CalculatorTestPrecedence(unittest.TestCase):\n    def test_precedence_1(self):\n        calculator = Calculator()\n        res1 = calculator.precedence('+')\n        res2 = calculator.precedence('-')\n        self.assertEqual(res1, res2)\n\n    def test_precedence_2(self):\n        calculator = Calculator()\n        res1 = calculator.precedence('*')\n        res2 = calculator.precedence('/')\n        self.assertEqual(res1, res2)\n\n    def test_precedence_3(self):\n        calculator = Calculator()\n        res1 = calculator.precedence('+')\n        res2 = calculator.precedence('/')\n        self.assertNotEqual(res1, res2)\n\n    def test_precedence_4(self):\n        calculator = Calculator()\n        res1 = calculator.precedence('+')\n        res2 = calculator.precedence('/')\n        self.assertNotEqual(res1, res2)\n\n    def test_precedence_5(self):\n        calculator = Calculator()\n        res1 = calculator.precedence('*')\n        res2 = calculator.precedence('-')\n        self.assertNotEqual(res1, res2)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CalculatorTestPrecedence)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 tests passed: precedence('+') == precedence('-'), precedence('*') == precedence('/'), and the ordering +/- < *// < ^ is correctly implemented. Process exited with code 0 and unittest reported OK.",
+          "last_run": "2026-04-26T00:08:14.220901"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `apply_operator(self, operand_stack, operator_stack)` on class `Calculator` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `Calculator.apply_operator`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_apply_operator.py`) in the project root and execute `python _oracle_apply_operator.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import Calculator\n\nclass CalculatorTestApplyOperator(unittest.TestCase):\n    def test_apply_operator_1(self):\n        calculator = Calculator()\n        operand_stack = [1, 2, 3]\n        operator_stack = ['+', '-']\n        calculator.apply_operator(operand_stack, operator_stack)\n        self.assertEqual(operand_stack, [1, -1])\n        self.assertEqual(operator_stack, ['+'])\n\n    def test_apply_operator_2(self):\n        calculator = Calculator()\n        operand_stack = [1, 2, 3]\n        operator_stack = ['+', '*']\n        calculator.apply_operator(operand_stack, operator_stack)\n        self.assertEqual(operand_stack, [1, 6])\n        self.assertEqual(operator_stack, ['+'])\n\n    def test_apply_operator_3(self):\n        calculator = Calculator()\n        operand_stack = [6, 3, 3]\n        operator_stack = ['+', '/']\n        calculator.apply_operator(operand_stack, operator_stack)\n        self.assertEqual(operand_stack, [6, 1])\n        self.assertEqual(operator_stack, ['+'])\n\n    def test_apply_operator_4(self):\n        calculator = Calculator()\n        operand_stack = [1, 2, 3]\n        operator_stack = ['+', '^']\n        calculator.apply_operator(operand_stack, operator_stack)\n        self.assertEqual(operand_stack, [1, 8])\n        self.assertEqual(operator_stack, ['+'])\n\n    def test_apply_operator_5(self):\n        calculator = Calculator()\n        operand_stack = [1, 2, 3]\n        operator_stack = ['+', '+']\n        calculator.apply_operator(operand_stack, operator_stack)\n        self.assertEqual(operand_stack, [1, 5])\n        self.assertEqual(operator_stack, ['+'])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CalculatorTestApplyOperator)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for Calculator.apply_operator passed with exit code 0 and unittest reporting OK. The method correctly pops two operands and one operator, applies the operation, and pushes the result back.",
+          "last_run": "2026-04-26T00:08:47.125741"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

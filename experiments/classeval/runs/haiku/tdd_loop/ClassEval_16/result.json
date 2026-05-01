@@ -1,0 +1,32 @@
+{
+  "task_id": "ClassEval_16",
+  "class_name": "Calculator",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "ok",
+  "gen_duration_s": 206.6,
+  "gen_cost_usd": 1.33728,
+  "gen_session_count": 28,
+  "gen_iterations": 0,
+  "fl_summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  },
+  "wall_time_s": 206.6,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 0,
+    "method_total": 3,
+    "method_results": {},
+    "class_load_error": "evaluator timeout (60s)"
+  },
+  "error": ""
+}

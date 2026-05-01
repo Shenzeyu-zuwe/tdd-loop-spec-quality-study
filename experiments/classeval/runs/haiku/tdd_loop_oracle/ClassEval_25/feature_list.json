@@ -1,0 +1,64 @@
+{
+  "change_name": "ClassEval_25",
+  "class_name": "CookiesUtil",
+  "class_description": "    \"\"\"\n    This is a class as utility for managing and manipulating Cookies, including methods for retrieving, saving, and setting Cookies data.\n    \"\"\"\n",
+  "import_statement": "import json",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `get_cookies(self, reponse)` on class `CookiesUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `CookiesUtil.get_cookies`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_get_cookies.py`) in the project root and execute `python _oracle_get_cookies.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport json\nfrom solution import CookiesUtil\n\nclass CookiesUtilTestGetCookies(unittest.TestCase):\n\n    def test_get_cookies(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.response = {'cookies': {'key1': 'value1', 'key2': 'value2'}}\n        self.cookies_util.get_cookies(self.response)\n        self.assertEqual(self.cookies_util.cookies, {'key1': 'value1', 'key2': 'value2'})\n\n    def test_get_cookies_2(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.response = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                         'cookies2': {'key3': 'value3', 'key4': 'value4'}}\n        self.cookies_util.get_cookies(self.response)\n        self.assertEqual(self.cookies_util.cookies, {'key1': 'value1', 'key2': 'value2'})\n\n    def test_get_cookies_3(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.response = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                         'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                         'cookies3': {'key5': 'value5', 'key6': 'value6'}}\n        self.cookies_util.get_cookies(self.response)\n        self.assertEqual(self.cookies_util.cookies, {'key1': 'value1', 'key2': 'value2'})\n\n    def test_get_cookies_4(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.response = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                         'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                         'cookies3': {'key5': 'value5', 'key6': 'value6'},\n                         'cookies4': {'key7': 'value7', 'key8': 'value8'}}\n        self.cookies_util.get_cookies(self.response)\n        self.assertEqual(self.cookies_util.cookies, {'key1': 'value1', 'key2': 'value2'})\n\n    def test_get_cookies_5(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.response = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                         'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                         'cookies3': {'key5': 'value5', 'key6': 'value6'},\n                         'cookies4': {'key7': 'value7', 'key8': 'value8'},\n                         'cookies5': {'key9': 'value9', 'key10': 'value10'}}\n        self.cookies_util.get_cookies(self.response)\n        self.assertEqual(self.cookies_util.cookies, {'key1': 'value1', 'key2': 'value2'})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CookiesUtilTestGetCookies)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle test cases passed with exit code 0 and unittest reported OK. The get_cookies method correctly extracts the 'cookies' key from the response dict and saves it to the cookies file.",
+          "last_run": "2026-04-27T12:28:10.709142"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `load_cookies(self)` on class `CookiesUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `CookiesUtil.load_cookies`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_load_cookies.py`) in the project root and execute `python _oracle_load_cookies.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport json\nfrom solution import CookiesUtil\n\nclass CookiesUtilTestLoadCookies(unittest.TestCase):\n\n    def test_load_cookies(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.assertEqual(self.cookies_util.load_cookies(), {'key1': 'value1', 'key2': 'value2'})\n\n    def test_load_cookies_2(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'}}\n        self.assertEqual(self.cookies_util.load_cookies(), {'key1': 'value1', 'key2': 'value2'})\n\n    def test_load_cookies_3(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'}}\n        self.assertEqual(self.cookies_util.load_cookies(), {'key1': 'value1', 'key2': 'value2'})\n\n    def test_load_cookies_4(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                                     'cookies3': {'key5': 'value5', 'key6': 'value6'}}\n        self.assertEqual(self.cookies_util.load_cookies(), {'key1': 'value1', 'key2': 'value2'})\n\n    def test_load_cookies_5(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                                     'cookies3': {'key5': 'value5', 'key6': 'value6'},\n                                     'cookies4': {'key7': 'value7', 'key8': 'value8'}}\n        self.assertEqual(self.cookies_util.load_cookies(), {'key1': 'value1', 'key2': 'value2'})\n\n    def test_load_cookies_6(self):\n        self.cookies_util = CookiesUtil('')\n        self.assertEqual(self.cookies_util.load_cookies(), {})\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CookiesUtilTestLoadCookies)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 6 unit tests executed successfully with exit code 0. The load_cookies method correctly returns the nested 'cookies' dict when present, or the full dict when 'cookies' key is absent, and returns empty dict on file errors.",
+          "last_run": "2026-04-27T12:30:23.117745"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `_save_cookies(self)` on class `CookiesUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `CookiesUtil._save_cookies`.\n\nWrite the following Python code to a temp file (e.g. `_oracle__save_cookies.py`) in the project root and execute `python _oracle__save_cookies.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\nimport json\nfrom solution import CookiesUtil\n\nclass CookiesUtilTestSaveCookies(unittest.TestCase):\n    def setUp(self):\n        self.cookies_util = CookiesUtil('cookies.json')\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'}}\n\n    def test_save_cookies(self):\n        self.assertTrue(self.cookies_util._save_cookies())\n\n    def test_save_cookies_2(self):\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'}}\n        self.assertTrue(self.cookies_util._save_cookies())\n\n    def test_save_cookies_3(self):\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                                     'cookies3': {'key5': 'value5', 'key6': 'value6'}}\n        self.assertTrue(self.cookies_util._save_cookies())\n\n    def test_save_cookies_4(self):\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                                     'cookies3': {'key5': 'value5', 'key6': 'value6'},\n                                     'cookies4': {'key7': 'value7', 'key8': 'value8'}}\n        self.assertTrue(self.cookies_util._save_cookies())\n\n    def test_save_cookies_5(self):\n        self.cookies_util.cookies = {'cookies': {'key1': 'value1', 'key2': 'value2'},\n                                     'cookies2': {'key3': 'value3', 'key4': 'value4'},\n                                     'cookies3': {'key5': 'value5', 'key6': 'value6'},\n                                     'cookies4': {'key7': 'value7', 'key8': 'value8'},\n                                     'cookies5': {'key9': 'value9', 'key10': 'value10'}}\n        self.assertTrue(self.cookies_util._save_cookies())\n\n    def test_save_cookies_6(self):\n        self.cookies_util = CookiesUtil('')\n        self.assertFalse(self.cookies_util._save_cookies())\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(CookiesUtilTestSaveCookies)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 6 oracle unit tests for _save_cookies() passed successfully. The method correctly saves cookies to file with proper error handling.",
+          "last_run": "2026-04-27T12:30:47.054366"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 3,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

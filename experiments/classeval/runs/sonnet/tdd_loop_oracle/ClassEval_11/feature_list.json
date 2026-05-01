@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_11",
+  "class_name": "BitStatusUtil",
+  "class_description": "    \"\"\"\n    This is a utility class that provides methods for manipulating and checking status using bitwise operations.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add(states, stat)` on class `BitStatusUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "ORACLE TEST RUN for `BitStatusUtil.add`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_add.py`) in the project root and execute `python _oracle_add.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BitStatusUtil\n\nclass BitStatusUtilTestAdd(unittest.TestCase):\n    def test_add(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.add(2, 4), 6)\n\n    def test_add_2(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.add(2, 0), 2)\n\n    def test_add_3(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.add(0, 0), 0)\n\n    def test_add_4(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.add(0, 2), 2)\n\n    def test_add_5(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.add(2, 2), 2)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BitStatusUtilTestAdd)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 unit tests for BitStatusUtil.add passed with exit code 0 and unittest reported OK. The method correctly handles adding statuses via bitwise OR, including edge cases with 0 and duplicate statuses.",
+          "last_run": "2026-04-25T21:53:15.031178"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `has(states, stat)` on class `BitStatusUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "ORACLE TEST RUN for `BitStatusUtil.has`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_has.py`) in the project root and execute `python _oracle_has.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BitStatusUtil\n\nclass BitStatusUtilTestHas(unittest.TestCase):\n    def test_has(self):\n        bit_status_util = BitStatusUtil()\n        self.assertTrue(bit_status_util.has(6, 2))\n\n    def test_has_2(self):\n        bit_status_util = BitStatusUtil()\n        self.assertFalse(bit_status_util.has(8, 2))\n\n    def test_has_3(self):\n        bit_status_util = BitStatusUtil()\n        self.assertTrue(bit_status_util.has(6, 4))\n\n    def test_has_4(self):\n        bit_status_util = BitStatusUtil()\n        self.assertFalse(bit_status_util.has(8, 6))\n\n    def test_has_5(self):\n        bit_status_util = BitStatusUtil()\n        self.assertTrue(bit_status_util.has(6, 6))\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BitStatusUtilTestHas)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 tests passed with exit code 0 and unittest reported OK. The `has` method correctly uses bitwise AND to check if states contains stat.",
+          "last_run": "2026-04-25T21:54:23.907441"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `remove(states, stat)` on class `BitStatusUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "ORACLE TEST RUN for `BitStatusUtil.remove`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_remove.py`) in the project root and execute `python _oracle_remove.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BitStatusUtil\n\nclass BitStatusUtilTestRemove(unittest.TestCase):\n    def test_remove(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.remove(6, 2), 4)\n\n    def test_remove_2(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.remove(8, 2), 8)\n\n    def test_remove_3(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.remove(6, 4), 2)\n\n    def test_remove_4(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.remove(8, 6), 8)\n\n    def test_remove_5(self):\n        bit_status_util = BitStatusUtil()\n        self.assertEqual(bit_status_util.remove(6, 6), 0)\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BitStatusUtilTestRemove)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests for BitStatusUtil.remove passed with exit code 0 and unittest reported OK.",
+          "last_run": "2026-04-25T21:55:31.725845"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `check(args)` on class `BitStatusUtil` passes its hidden unit-test suite (oracle ablation arm).",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "ORACLE TEST RUN for `BitStatusUtil.check`.\n\nWrite the following Python code to a temp file (e.g. `_oracle_check.py`) in the project root and execute `python _oracle_check.py` via the Bash tool. The script runs the hidden unit tests for this method.\n\nPASS criteria: process exits with code 0 AND unittest reports `OK` (no failures, no errors).\nFAIL criteria: any failure, error, exception, or non-zero exit. Do NOT modify the test code. Do NOT infer the result without actually executing the script.\n\nScript:\n```python\nimport sys, unittest\nsys.path.insert(0, '.')\n\nfrom solution import BitStatusUtil\n\nclass BitStatusUtilTestCheck(unittest.TestCase):\n    def test_check(self):\n        bit_status_util = BitStatusUtil()\n        bit_status_util.check([2])\n\n    def test_check_2(self):\n        bit_status_util = BitStatusUtil()\n        with self.assertRaises(ValueError):\n            bit_status_util.check([3])\n\n    def test_check_3(self):\n        bit_status_util = BitStatusUtil()\n        with self.assertRaises(ValueError):\n            bit_status_util.check([-1])\n\n    def test_check_4(self):\n        bit_status_util = BitStatusUtil()\n        with self.assertRaises(ValueError):\n            bit_status_util.check([2, 3, 4])\n\n    def test_check_5(self):\n        bit_status_util = BitStatusUtil()\n        with self.assertRaises(ValueError):\n            bit_status_util.check([2, 3, 4, 5])\n\nif __name__ == '__main__':\n    suite = unittest.TestLoader().loadTestsFromTestCase(BitStatusUtilTestCheck)\n    runner = unittest.TextTestRunner(verbosity=2)\n    result = runner.run(suite)\n    sys.exit(0 if result.wasSuccessful() else 1)\n```\n",
+          "status": "passed",
+          "reason": "All 5 oracle tests passed with exit code 0 and unittest reported OK. The check method correctly accepts valid even non-negative values and raises ValueError for odd numbers, negative numbers, and mixed lists.",
+          "last_run": "2026-04-25T21:55:58.071388"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}

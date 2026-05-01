@@ -1,0 +1,68 @@
+{
+  "task_id": "ClassEval_22",
+  "class_name": "ClassRegistrationSystem",
+  "config": "tdd_loop",
+  "model": "haiku",
+  "gen_status": "error",
+  "gen_duration_s": 1127.9,
+  "gen_cost_usd": 1.187661,
+  "gen_session_count": 24,
+  "gen_iterations": 14,
+  "fl_summary": {
+    "total_features": 5,
+    "passed": 3,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 7,
+    "tests_passed": 3,
+    "tests_failed": 1,
+    "tests_pending": 0,
+    "tests_skipped": 3
+  },
+  "wall_time_s": 1127.9,
+  "eval": {
+    "ok": false,
+    "class_passed": false,
+    "method_pass_count": 2,
+    "method_total": 5,
+    "method_results": {
+      "ClassRegistrationSystemTestRegisterStudent": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestRegisterClass": {
+        "passed": true,
+        "error": "",
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestGetStudent": {
+        "passed": false,
+        "error": "major3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestGetStudent>\", line 32, in test_get_students_by_major3\nAssertionError: '[\"John\", \"Bob\"]' != ['John', 'Bob']\n\n======================================================================\nFAIL: test_get_students_by_major4 (_sol.ClassRegistrationSystemTestGetStudent.test_get_students_by_major4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestGetStudent>\", line 44, in test_get_students_by_major4\nAssertionError: '[\"John\", \"Bob\"]' != ['John', 'Bob']\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nFAILED (failures=4)\n",
+        "tests_run": 4,
+        "failures": 4,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestGetMajor": {
+        "passed": false,
+        "error": "--------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestGetMajor>\", line 21, in test_get_all_major2\nAssertionError: '[\"Computer Science\", \"Mathematics\"]' != ['Computer Science', 'Mathematics']\n\n======================================================================\nFAIL: test_get_all_major3 (_sol.ClassRegistrationSystemTestGetMajor.test_get_all_major3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestGetMajor>\", line 32, in test_get_all_major3\nAssertionError: '[\"Computer Science\", \"Mathematics\", \"Physics\"]' != ['Computer Science', 'Mathematics', 'Physics']\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=3)\n",
+        "tests_run": 3,
+        "failures": 3,
+        "errors": 0
+      },
+      "ClassRegistrationSystemTestPopularClass": {
+        "passed": false,
+        "error": "-------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestPopularClass>\", line 17, in test_get_most_popular_class_in_major\nAssertionError: None != 'Data Structures'\n\n======================================================================\nFAIL: test_get_most_popular_class_in_major2 (_sol.ClassRegistrationSystemTestPopularClass.test_get_most_popular_class_in_major2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ClassRegistrationSystemTestPopularClass>\", line 36, in test_get_most_popular_class_in_major2\nAssertionError: None != 'Data Structures'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (failures=2)\n",
+        "tests_run": 2,
+        "failures": 2,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "4 [INFO]   Progress: [████████████▓▓▓▓░░░░░░░░░░░░··] 42% (3/7 passed, 1 failed, 0 pending, 3 skipped)\n2026-04-26 00:15:51,874 [WARNING] No actionable features remaining\n2026-04-26 00:15:51,874 [WARNING] \nMax iterations reached (15), 18m47s\n2026-04-26 00:15:51,877 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\haiku\\tdd_loop\\ClassEval_22\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       haiku\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

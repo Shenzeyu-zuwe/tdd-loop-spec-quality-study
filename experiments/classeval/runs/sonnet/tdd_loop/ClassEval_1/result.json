@@ -1,0 +1,68 @@
+{
+  "task_id": "ClassEval_1",
+  "class_name": "AreaCalculator",
+  "config": "tdd_loop",
+  "model": "sonnet",
+  "gen_status": "error",
+  "gen_duration_s": 442.9,
+  "gen_cost_usd": 2.363025,
+  "gen_session_count": 34,
+  "gen_iterations": 5,
+  "fl_summary": {
+    "total_features": 5,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 5,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 1
+  },
+  "wall_time_s": 442.9,
+  "eval": {
+    "ok": true,
+    "class_passed": true,
+    "method_pass_count": 5,
+    "method_total": 5,
+    "method_results": {
+      "AreaCalculatorTestCalculateCircleArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateSphereArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateCylinderArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateSectorArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      },
+      "AreaCalculatorTestCalculateAnnulusArea": {
+        "passed": true,
+        "error": "",
+        "tests_run": 5,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    "class_load_error": ""
+  },
+  "error": "9 [INFO]   Progress: [████████████████████████░░░░░░] 80% (4/5 passed, 0 failed, 0 pending, 1 skipped)\n2026-04-25 00:01:32,980 [WARNING] No actionable features remaining\n2026-04-25 00:01:32,980 [WARNING] \nMax iterations reached (15), 7m22s\n2026-04-25 00:01:32,985 [INFO]   Report: E:\\AICoding\\Paper\\experiments\\classeval\\runs\\sonnet\\tdd_loop\\ClassEval_1\\.tdd_loop_temp\\report.md\n\n============================================================\n  TDD-LOOP (Tester + Worker)\n  Model:       sonnet\n  Environment: python_local\n  Max iters:   15\n============================================================\n\n"
+}

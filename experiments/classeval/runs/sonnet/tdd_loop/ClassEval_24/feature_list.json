@@ -1,0 +1,79 @@
+{
+  "change_name": "ClassEval_24",
+  "class_name": "ComplexCalculator",
+  "class_description": "    \"\"\"\n    This is a class that implements addition, subtraction, multiplication, and division operations for complex numbers.\n    \"\"\"\n",
+  "import_statement": "",
+  "features": [
+    {
+      "id": "F-001",
+      "intent": "Method `add(c1, c2)` on class `ComplexCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-001-01",
+          "intent": "RUNTIME CHECK for `ComplexCalculator.add`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\ncomplexCalculator = ComplexCalculator()\nprint(complexCalculator.add(1+2j, 3+4j))\n```\n\nExpected stdout:\n```\n(4+6j)\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced `(4+6j)`, which matches the expected stdout exactly.",
+          "last_run": "2026-04-25T15:42:43.740138"
+        }
+      ]
+    },
+    {
+      "id": "F-002",
+      "intent": "Method `subtract(c1, c2)` on class `ComplexCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-002-01",
+          "intent": "RUNTIME CHECK for `ComplexCalculator.subtract`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\ncomplexCalculator = ComplexCalculator()\nprint(complexCalculator.subtract(1+2j, 3+4j))\n```\n\nExpected stdout:\n```\n(-2-2j)\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the probe script produced `(-2-2j)`, which matches the expected stdout exactly.",
+          "last_run": "2026-04-25T15:43:38.273834"
+        }
+      ]
+    },
+    {
+      "id": "F-003",
+      "intent": "Method `multiply(c1, c2)` on class `ComplexCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-003-01",
+          "intent": "RUNTIME CHECK for `ComplexCalculator.multiply`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\ncomplexCalculator = ComplexCalculator()\nprint(complexCalculator.multiply(1+2j, 3+4j))\n```\n\nExpected stdout:\n```\n(-5+10j)\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced `(-5+10j)` which matches the expected stdout exactly.",
+          "last_run": "2026-04-25T15:44:38.546620"
+        }
+      ]
+    },
+    {
+      "id": "F-004",
+      "intent": "Method `divide(c1, c2)` on class `ComplexCalculator` executes correctly at runtime against its docstring's concrete examples.",
+      "status": "passed",
+      "dependencies": [],
+      "test_cases": [
+        {
+          "id": "T-004-01",
+          "intent": "RUNTIME CHECK for `ComplexCalculator.divide`.\n\nWrite the following Python code to a temp file (e.g. `_t.py`) in the project root and run `python _t.py` via the Bash tool. Capture its stdout. The stdout, stripped of trailing whitespace, must equal the expected output exactly.\n\nScript:\n```python\nimport sys\nsys.path.insert(0, '.')\n\nfrom solution import ComplexCalculator\ncomplexCalculator = ComplexCalculator()\nprint(complexCalculator.divide(1+2j, 3+4j))\n```\n\nExpected stdout:\n```\n(0.44+0.08j)\n```\n\nIf the script raises an exception, stdout diverges, or you do not actually execute it, the test is FAILED (not passed). Do not infer behaviour from reading code.",
+          "status": "passed",
+          "reason": "Running the script produced exactly `(0.44+0.08j)`, matching the expected stdout byte-for-byte after stripping trailing whitespace.",
+          "last_run": "2026-04-25T15:45:50.531618"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_features": 4,
+    "passed": 4,
+    "failed": 0,
+    "pending": 0,
+    "total_tests": 4,
+    "tests_passed": 4,
+    "tests_failed": 0,
+    "tests_pending": 0,
+    "tests_skipped": 0
+  }
+}
