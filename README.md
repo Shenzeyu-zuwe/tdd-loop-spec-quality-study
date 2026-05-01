@@ -1,5 +1,7 @@
 # tdd-loop-spec-quality-study
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19939111.svg)](https://doi.org/10.5281/zenodo.19939111)
+
 An empirical research artifact for studying LLM code-generation agents with a controlled 2x2 factorial design:
 
 - **Architecture axis**: single-agent baseline vs two-agent TDD-Loop
@@ -12,7 +14,6 @@ The main finding of this study is that **spec quality dominates architecture** u
 - `tdd_loop/`: deterministic two-agent framework (Tester + Worker + orchestrator)
 - `experiments/classeval/`: benchmark harness, aggregation, bootstrap CI, failure classifier
 - `experiments/classeval/runs/`: raw run artifacts used by the paper
-- `docs/manuscript_draft.md`: manuscript draft
 - `docs/findings_report.md`: analysis notes and result synthesis
 - `examples/hello_world/`: runnable smoke test
 - `prompts/`: agent prompts
@@ -51,7 +52,10 @@ PYTHONIOENCODING=utf-8 python -m experiments.classeval.bootstrap_ci
 
 ## Intended Citation
 
-If you use this artifact, please cite the associated paper once published.
+If you use this artifact, please cite the associated paper and the archived software release:
+
+- Release: `v1.0.0`
+- DOI: `10.5281/zenodo.19939111`
 
 ## License
 
