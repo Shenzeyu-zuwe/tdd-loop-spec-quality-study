@@ -54,8 +54,8 @@ PYTHONIOENCODING=utf-8 python -m experiments.classeval.bootstrap_ci
 
 If you use this artifact, please cite the associated paper and the archived software release:
 
-- Release: `v1.0.0`
-- DOI: `10.5281/zenodo.19939111`
+- Release: `v1.0.1` (classifier aligned with manuscript: `LATE_CLI_MIN_ITERS`, F5/F6 Env/CLI subtypes)
+- Concept DOI: `10.5281/zenodo.19939111` (versioned record minted on Zenodo for this release)
 
 ## License
 
