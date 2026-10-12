@@ -8,13 +8,21 @@ Taxonomy:
   F1 Tester false-reject   — feature skipped/failed but method passes held-out test
   F2 Tester false-accept   — all features marked passed but method fails held-out test
   F3 Worker could-not-fix  — feature skipped/failed AND method fails held-out test
-  F5 Environment/CLI fail  — gen_status in {error, timeout, crashed}, no convergence-cap signal
-  F6 Convergence cap       — loop exited at max_iterations or threshold-skip while features remain
+  F5 Other Env/CLI failure — gen_status in {error, timeout, crashed}, without F6 pattern
+  F6 Late Env/CLI failure with mixed feature states — non-ok exit with
+                               iters >= LATE_CLI_MIN_ITERS and a mix of passed/skipped features
   F0 Mixed                 — task contains both F1 and F3 signals; reported with breakdown
+  F4                       — unused in this release (historical placeholder)
 
 The mapping between feature[i] and method/test class is based on extracting
 the method name from each feature's intent and matching against the keys of
 result.eval.method_results (which follow the pattern <ClassName>Test<MethodName>).
+
+LATE_CLI_MIN_ITERS is a *retrospective analysis* constant (fixed before generating
+the labels reported in the paper; not a runtime knob of the factorial runs).
+It is distinct from orchestrator safeguards (FEATURE_SKIP_THRESHOLD=5, etc.) and
+max_iterations=20. Chosen as 7 ≈ just above FEATURE_SKIP_THRESHOLD so that a
+skip/pass mix is plausible.
 """
 from __future__ import annotations
 
@@ -26,6 +34,9 @@ from pathlib import Path
 
 RUNS = Path("E:/AICoding/Paper/experiments/classeval/runs")
 METHOD_RX = re.compile(r"`([A-Za-z_][A-Za-z0-9_]*)\(")  # extracts `name(` -> name
+
+# Retrospective analysis constant (not an orchestrator runtime knob).
+LATE_CLI_MIN_ITERS = 7
 
 
 def _read_json(path: Path) -> dict | None:
@@ -92,19 +103,19 @@ def classify_task(task_dir: Path) -> dict:
         record["label"] = "PASS"
         return record
 
-    # Environment/CLI failure dominates if signaled
+    # Env/CLI non-ok status: F6 = late + mixed feature progress; F5 = other.
     if gen_status in ("error", "timeout", "crashed"):
-        # Distinguish F5 vs F6: if any feature is skipped and the others passed
-        # before the crash, it's more F6-like. Use a soft heuristic: if iters
-        # is large (> 7) and the loop has been running, lean F6.
         feats = (fj or {}).get("features") or []
         skipped = sum(1 for f in feats if f.get("status") in ("skipped", "failed"))
         passed = sum(1 for f in feats if f.get("status") == "passed")
-        if skipped and passed and (iters or 0) >= 7:
+        if skipped and passed and (iters or 0) >= LATE_CLI_MIN_ITERS:
             record["label"] = "F6"
         else:
             record["label"] = "F5"
-        record["detail"] = f"gen_status={gen_status} feats(passed={passed},skipped={skipped})"
+        record["detail"] = (
+            f"gen_status={gen_status} feats(passed={passed},skipped={skipped})"
+            f" iters={iters} min_iters={LATE_CLI_MIN_ITERS}"
+        )
         return record
 
     feats = (fj or {}).get("features") or []
